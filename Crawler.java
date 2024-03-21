@@ -60,6 +60,40 @@ public class Crawler
 
 	}
 
+
+    public Vector<String> breadthFirstSearch(int limit) throws ParserException {
+        Vector<String> result = new Vector<String>();
+        Queue<String> queue = new LinkedList<String>();
+        Set<String> visited = new HashSet<String>();
+
+        queue.add(url);
+        visited.add(url);
+
+        while (!queue.isEmpty() && result.size() < limit) {
+            String currentUrl = queue.poll();
+            result.add(currentUrl);
+
+            try {
+                URLConnection uc = new URL(currentUrl).openConnection();
+                LinkBean lb = new LinkBean();
+                lb.setConnection(uc);
+                String[] links = Arrays.stream(lb.getLinks()).map(URL::toString).toArray(String[]::new);
+
+                for (String link : links) {
+                    if (!visited.contains(link)) {
+                        queue.add(link);
+                        visited.add(link);
+                    }
+                }
+            } catch (Exception ex) {
+                System.err.println(ex.toString());
+            }
+        }
+
+        return result;
+    }
+
+
     public Vector<String> extractTitle() throws IOException{
         Document doc = Jsoup.connect(this.url).get();
         String[] title = doc.title().split("\\s+");
@@ -116,7 +150,14 @@ public class Crawler
 			for(int i = 0; i < links.size(); i++)		
 				System.out.println(links.get(i));
 			System.out.println("");
-            
+
+
+            int limit = 30; // Specify the number of links to retrieve
+            Vector<String> bfsLinks = crawler.breadthFirstSearch(limit);
+            System.out.println("BFS Links in " + crawler.url + " (limit = " + limit + "):");
+            for (String bfsLink : bfsLinks) {
+                System.out.println(bfsLink);
+            }            
 			
 		}
 		catch (ParserException e)
