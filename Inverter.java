@@ -86,6 +86,7 @@ public class Inverter {
     }
     
     public static void main(String[] args) throws IOException,ParserException {
+        String docid = args[0];
         Inverter inverter = new Inverter("stopwords.txt");
 
         //create new Crawler to get the words first
@@ -121,15 +122,19 @@ public class Inverter {
         System.out.println("Printing word frequencies for page body");
         //print out word frequencies
         ForwardIndex forwardIndex = new ForwardIndex("fiRM","forwardindex");
+        InvertedIndex invertedIndex = new InvertedIndex("iiRM","invertedindex");
+
         for (Map.Entry<String, Integer> entry: wordFrequencies.entrySet()) {
             String word = entry.getKey();
             int frequency = entry.getValue();
             forwardIndex.addEntry(args[0],word,frequency);
+            invertedIndex.addEntry(word, docid, frequency);
             System.out.println("file is: " + args[0] + ", word is: " + word + ", freqeuency is" + frequency);
             System.out.println(entry.getKey() + ": " +entry.getValue());
         }
         
         forwardIndex.finalize();
+        invertedIndex.finalize();
 
         Vector<String> title = crawler.extractTitle();
         title = inverter.removeStopwords(title);
@@ -143,7 +148,6 @@ public class Inverter {
                 System.out.println("...");
             }
         System.out.println("\n\n");
-
 
     
     }
