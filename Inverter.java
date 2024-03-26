@@ -48,7 +48,6 @@ public class Inverter {
         BufferedReader bs = new BufferedReader(fs);
         String word = bs.readLine();
         while(word != null){
-            //System.out.println("word is " + word );
             stopWords.add(word);
             word = bs.readLine();
         }
