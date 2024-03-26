@@ -46,7 +46,31 @@ public class Crawler
         return v;
 
 	}
+    
+    public int getPageSize(String inputurl) throws ParserException {
+        int pageSize = -1; 
+        try {
+            URL url = new URL(inputurl);
+            URLConnection uc = url.openConnection();
+            pageSize = uc.getContentLength();
+        } catch (Exception ex)  {
+            System.err.println(ex.toString());
+        }
+        return pageSize;
+    }
 
+
+    public long getLastModificationDate(String inputurl) throws ParserException {
+        long lastModified = -1;
+        try {
+            URL url = new URL(inputurl);
+            URLConnection uc = url.openConnection();
+            lastModified = uc.getLastModified();
+        } catch (Exception ex)  {
+            System.err.println(ex.toString());
+        }
+        return lastModified;
+    }
 
     public Vector<String> breadthFirstSearch(int limit, String url) throws ParserException {
         Vector<String> result = new Vector<String>();
@@ -55,7 +79,6 @@ public class Crawler
 
         queue.add(url);
         visited.add(url);
-        result.add(url);
 
         while (!queue.isEmpty() && result.size() < limit) {
             String currentUrl = queue.poll();

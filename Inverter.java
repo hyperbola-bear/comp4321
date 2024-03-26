@@ -40,6 +40,7 @@ public class Inverter {
     private WordMapping wordMap;
     private ForwardIndex forwardindex;
     private InvertedIndex invertedindex; 
+    private Metadata metadata; 
 
     
 
@@ -56,10 +57,11 @@ public class Inverter {
             word = bs.readLine();
         }
 
-        this.docMap = new DocMapping("docMap");
-        this.wordMap = new WordMapping("wordMap"); 
+        this.docMap = new DocMapping();
+        this.wordMap = new WordMapping(); 
         this.forwardindex = new ForwardIndex(); 
         this.invertedindex = new InvertedIndex();
+        this.metadata = new Metadata();
 
     }
 
@@ -96,7 +98,59 @@ public class Inverter {
         Crawler crawler = new Crawler();
         Vector<String> links = crawler.getThirtyLinks(rootlink);
 
+        int docCount = 0; 
+        int wordCount = 0; 
+        //START
+        for (String link: links) {
+            Vector<String> childLinks = crawler.extractLinks(link); 
+            Vector<String> title = crawler.extractTitle(link);
+            long lastModificationDate = crawler.getLastModificationDate(link);
+            int pageSize = crawler.getPageSize(link);
+            inverter.metadata.addEntry(link, childLinks,pageSize,lastModificationDate,title);
 
+
+            System.out.println("now processing: " + link);
+            inverter.docMap.addMapping(docCount,link);
+            docCount++;
+          
+            //to count the words in that link
+            Map<String, Integer> wordFrequencies = new HashMap<String,Integer>(); 
+            Vector<String> words = inverter.stemify(inverter.removeStopwords(crawler.extractWords(link)));
+            for (String word: words) {
+                if ((word == "") || (word) == null) {
+                    continue;
+                }
+                if (inverter.wordMap.getId(word) == null) {
+                    inverter.wordMap.addMapping(wordCount, word);
+                    wordCount++;
+                }
+                if (wordFrequencies.containsKey(word)) {
+                    wordFrequencies.put(word,wordFrequencies.get(word) + 1); 
+                } else {
+                    wordFrequencies.put(word,1);
+                }
+            }
+            //we now have wordFrequencies for that link
+            
+
+            for (Map.Entry<String, Integer> entry: wordFrequencies.entrySet()) {
+                String word = entry.getKey();
+                int wordId = inverter.wordMap.getId(word);
+                int docId = inverter.docMap.getId(link);
+                int frequency = entry.getValue();
+                inverter.forwardindex.addEntry(docId,wordId,frequency);
+                inverter.invertedindex.addEntry(docId,wordId,frequency);
+            }
+        }
+
+        inverter.forwardindex.finalize();
+        inverter.invertedindex.finalize();
+        inverter.wordMap.finalize();
+        inverter.docMap.finalize();
+        inverter.metadata.finalize();
+
+
+        /*
         Vector<String> words = crawler.extractWords();
 
         //Then, we iterate through the entire string, and remove stop words
@@ -153,6 +207,6 @@ public class Inverter {
             }
         System.out.println("\n\n");
 
-    
+        */
     }
 }

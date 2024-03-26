@@ -5,25 +5,24 @@ import jdbm.helper.FastIterator;
 import java.util.Vector;
 import java.io.IOException;
 import java.io.Serializable;
-import java.util.ArrayList;
 
 
 public class InvertedIndex
 {
-	private RecordManager recman;
-	private HTree hashtable;
+	public RecordManager recman;
+    public HTree hashtable;
 
-	InvertedIndex(String recordmanager, String objectname) throws IOException
+	public InvertedIndex() throws IOException
 	{
-		recman = RecordManagerFactory.createRecordManager(recordmanager);
-		long recid = recman.getNamedObject(objectname);
+		recman = RecordManagerFactory.createRecordManager("invertedIndexrecman");
+		long recid = recman.getNamedObject("invertedindex");
 			
 		if (recid != 0)
 			hashtable = HTree.load(recman, recid);
 		else
 		{
 			hashtable = HTree.createInstance(recman);
-			recman.setNamedObject( "ht1", hashtable.getRecid() );
+			recman.setNamedObject( "invertedindex", hashtable.getRecid() );
 		}
 	}
 
@@ -40,12 +39,12 @@ public class InvertedIndex
 		Posting newPosting = new Posting(docID, freq);
 
 		try {
-			// Cast object type to ArrayList
-			ArrayList<Posting> curPostingList = (ArrayList<Posting>) hashtable.get(wordID);
+			// Cast object type to Vector
+			Vector<Posting> curPostingList = (Vector<Posting>) hashtable.get(wordID);
 
 			// Check if wordID already exists in hashtable
 			if(curPostingList != null) {
-				// Check if docID already exists in ArrayList
+				// Check if docID already exists in Vector
 				for(int i = 0; i < curPostingList.size(); i++) {
 					// If posting is identical, do nothing
 					if(curPostingList.get(i).id == docID && curPostingList.get(i).freq == freq) {
@@ -59,11 +58,11 @@ public class InvertedIndex
 					}
 				}
 
-				// Otherwise add new posting to ArrayList
+				// Otherwise add new posting to Vector
 				curPostingList.add(newPosting);
 			} else {
-				// Initialize ArrayList with new posting and add to hashtable
-				ArrayList<Posting> postingList = new ArrayList<>();
+				// Initialize Vector with new posting and add to hashtable
+				Vector<Posting> postingList = new Vector<Posting>();
 				postingList.add(newPosting);
 				hashtable.put(wordID, postingList);
 			}
@@ -71,13 +70,13 @@ public class InvertedIndex
 			System.err.println(ex.toString());
 		}
 	}
-	public void delEntry(ArrayList<Integer> words, int docID) throws IOException
+	public void delEntry(Vector<Integer> words, int docID) throws IOException
 	{
-		// ArrayList<String> words --> Contains the list of words that are in the doc being deleted
+		// Vector<String> words --> Contains the list of words that are in the doc being deleted
 		try {
 			for (int i = 0; i < words.size(); i++) {
 				// Only search targeted posting lists
-				ArrayList<Posting> postingList = (ArrayList<Posting>) hashtable.get(words.get(i));
+				Vector<Posting> postingList = (Vector<Posting>) hashtable.get(words.get(i));
 				for (int j = 0; j < postingList.size(); j++) {
 					// Check if docID matches posting
 					if(postingList.get(j).id == docID) {
@@ -102,7 +101,7 @@ public class InvertedIndex
 
 			while ((key = (Integer) iter.next()) != null) {
 				// Print info
-				ArrayList<Posting> postingList = (ArrayList<Posting>) hashtable.get(key);
+				Vector<Posting> postingList = (Vector<Posting>) hashtable.get(key);
 				System.out.println("Posting list for wordID: " + String.valueOf(key));
 				for(int i = 0; i < postingList.size(); i++) {
 					System.out.println("docID: " + String.valueOf(postingList.get(i).id) +
@@ -119,7 +118,7 @@ public class InvertedIndex
 	{
 		try
 		{
-			InvertedIndex index = new InvertedIndex("InvertedIndex","ht1");
+			InvertedIndex index = new InvertedIndex();
 
 			// Adding entries for doc0
 			index.addEntry(0, 0, 30);
@@ -140,7 +139,7 @@ public class InvertedIndex
 			index.printAll();
 
 			// Deletion test for doc0
-			ArrayList<Integer> wordList = new ArrayList<>();
+			Vector<Integer> wordList = new Vector<>();
 			wordList.add(0);
 			wordList.add(1);
 			wordList.add(2);

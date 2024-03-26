@@ -8,25 +8,15 @@ import java.util.Vector;
 import java.io.IOException;
 import java.io.Serializable;
 
-
 public class ForwardIndex {
-    private RecordManager recman; 
-    private HTree hashtable; 
+    public RecordManager recman; 
+    public HTree hashtable; 
 
-
-    /*private RecordManager wordMappingrecman; 
-    private HTree wordToId; 
-    private HTree idToWord; 
-    */
-    private WordMapping wordMap; 
     
-    public ForwardIndex(String recordmanager, String objectname) throws IOException {
-        recman = RecordManagerFactory.createRecordManager(recordmanager); 
-        long recid = recman.getNamedObject(objectname); 
+    public ForwardIndex() throws IOException {
+        recman = RecordManagerFactory.createRecordManager("forwardIndexRecMan"); 
+        long recid = recman.getNamedObject("forwardindex"); 
 
-        //wordMappingrecman = RecordManagerFactory.createRecordManager("wordMapping");
-        //long ID_wordToId = wordMappingrecman.getNamedObject("wordToId");
-        //long ID_idToWord = wordMappingrecman.getNamedObject("idToWord");     
 
         if (recid!=0) 
             hashtable = HTree.load(recman,recid); 
@@ -34,19 +24,8 @@ public class ForwardIndex {
             hashtable = HTree.createInstance(recman); 
             recman.setNamedObject("forwardindex",hashtable.getRecid());
         }
-        wordMap = new WordMapping("WordMapping");
 
-        /*
-        if (ID_wordToId && ID_idToWord) {
-            wordToId = HTree.load(wordMappingrecman,ID_wordToId);
-            idToWord = HTree.load(wordMappingrecman, ID_idToWord);
-        } else {
-            wordToId = HTree.createInstance(wordMappingrecman);
-            idToWord = HTree.createInstance(wordMappingrecman); 
-            wordMappingrecman.setNamedObject("wordToID",wordToId.getRecid());
-            wordMappingrecman.setNamedObject("idToWord",wordToId.getRecid());
-        }
-        */
+        
         
     }
 
@@ -55,22 +34,21 @@ public class ForwardIndex {
         recman.close(); 
     }
 
-    public void addEntry(String url, String word, int freq) throws IOException {
+    public void addEntry(int docId, int wordId, int freq) throws IOException {
         try {
             //key is the document id 
             // Value is the word + frequency
             //
-            int wordId = wordMap.getId(word);
                 
-            ArrayList<Posting> postings = (ArrayList<Posting>)hashtable.get(url);
+            Vector<Posting> postings = (Vector<Posting>)hashtable.get(docId);
             if (postings != null) {
                 postings.add(new Posting(wordId, freq));
-                hashtable.put(url,postings);
+                hashtable.put(docId,postings);
             } else {
                 //url does not exist\
-                postings = new ArrayList<Posting>();
+                postings = new Vector<Posting>();
                 postings.add(new Posting(wordId,freq));
-                hashtable.put(url,postings);
+                hashtable.put(docId,postings);
             }
             
         } catch (java.io.IOException ex) {
@@ -78,29 +56,26 @@ public class ForwardIndex {
         }
     }
 
-    public void deleteEntry(String url) throws IOException {
+    public void deleteEntry(int docId) throws IOException {
         try {
-            hashtable.remove(url);
+            hashtable.remove(docId);
         } catch (java.io.IOException ex) {
             System.err.println(ex.toString());
         }
     }
-
-public void printAll() throws IOException {
-    try {
-        FastIterator iter = hashtable.keys();
-        String key;
-        while ((key = (String) iter.next()) != null) {
-            System.out.println("is not null!");
-            ArrayList<Posting> postings = (ArrayList<Posting>) hashtable.get(key);
-            System.out.println("Key: " + key);
-            for (Posting posting : postings) {
-                System.out.println("Word: " + wordMap.getWord(posting.id) + ", Frequency: " + posting.freq);
+    public void printAll() throws IOException {
+        try {
+            FastIterator iter = hashtable.keys();
+            Integer key;
+            while ((key = (Integer)iter.next()) != null) {
+                Vector<Posting> postings = (Vector<Posting>) hashtable.get(key);
+                System.out.println("docid: " + key);
+                for (Posting posting : postings) {
+                    System.out.println("wordId: " + posting.id + ", Frequency: " + posting.freq);
+                }
             }
+        } catch (java.io.IOException e) {
+            System.err.println(e.toString());
         }
-    } catch (java.io.IOException e) {
-        System.err.println(e.toString());
     }
-}
-    
 }

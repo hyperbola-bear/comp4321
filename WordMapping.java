@@ -10,13 +10,13 @@ import java.lang.Exception;
 
 
 public class WordMapping {
-	private RecordManager recman;
-	private HTree wordToId;
-	private HTree idToWord;
+	public RecordManager recman;
+	public HTree wordToId;
+	public HTree idToWord;
 
-	WordMapping(String recordmanager) throws IOException{
+    public WordMapping() throws IOException{
 		try {
-			recman = RecordManagerFactory.createRecordManager(recordmanager);
+			recman = RecordManagerFactory.createRecordManager("wordMap");
 			long ID_wordToId = recman.getNamedObject("wordToId");
 			long ID_idToWord = recman.getNamedObject("idToWord");
 
@@ -33,7 +33,7 @@ public class WordMapping {
 				recman.setNamedObject("idToWord", idToWord.getRecid());
 			} else {
 				// If only one mapping exists, throw Exception
-				throw new IOException("Doc Mapping corrupted: one of the mapping hashtables do not exist");
+				throw new IOException("Constructor: Word Mapping corrupted: one of the mapping hashtables do not exist");
 			}
 		} catch(java.io.IOException ex) {
 			System.err.println(ex);
@@ -53,11 +53,11 @@ public class WordMapping {
 				idToWord.put(wordID, word);
 				wordToId.put(word, wordID);
 				System.out.println("Successfully inserted:\n" + "WORD: " + word);
-			} else if ((idToWord.get(wordID) == null) && (wordToId.get(word) == null)) {
+			} else if ((idToWord.get(wordID) != null) && (wordToId.get(word) != null)) {
 				System.out.println("WORD already found");
 			} else {
 				// If mapping only exists for one hashtable, throw exception
-				throw new IOException("Doc Mapping corrupted: mapping only exists on one hashtable");
+				throw new IOException("addMapping: Word Mapping corrupted: mapping only exists on one hashtable");
 			}
 		} catch (java.io.IOException ex) {
 			System.err.println(ex.toString());
@@ -133,7 +133,7 @@ public class WordMapping {
 	{
 		try
 		{
-			WordMapping wordMapping = new WordMapping("WordMapping");
+			WordMapping wordMapping = new WordMapping();
 			wordMapping.addMapping(0, "apple");
 			wordMapping.addMapping(1, "chocolate");
 			wordMapping.addMapping(2, "hamster");

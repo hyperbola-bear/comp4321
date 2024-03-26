@@ -10,13 +10,13 @@ import java.lang.Exception;
 
 
 public class DocMapping {
-	private RecordManager recman;
-	private HTree urlToId;
-	private HTree idToUrl;
+	public RecordManager recman;
+	public HTree urlToId;
+	public HTree idToUrl;
 
-	DocMapping(String recordmanager) throws IOException{
+	public DocMapping() throws IOException{
 		try {
-			recman = RecordManagerFactory.createRecordManager(recordmanager);
+			recman = RecordManagerFactory.createRecordManager("docMap");
 			long ID_urlToId = recman.getNamedObject("urlToId");
 			long ID_idToUrl = recman.getNamedObject("idToUrl");
 
@@ -33,7 +33,7 @@ public class DocMapping {
 				recman.setNamedObject("idToUrl", idToUrl.getRecid());
 			} else {
 				// If only one mapping exists, throw Exception
-				throw new IOException("Doc Mapping corrupted: one of the mapping hashtables do not exist");
+				throw new IOException("Constructor: Doc Mapping corrupted: one of the mapping hashtables do not exist");
 			}
 		} catch(java.io.IOException ex) {
 			System.err.println(ex);
@@ -53,11 +53,11 @@ public class DocMapping {
 				idToUrl.put(docID, url);
 				urlToId.put(url, docID);
 				System.out.println("Successfully inserted:\n" + "URL: " + url);
-			} else if ((idToUrl.get(docID) == null) && (urlToId.get(url) == null)) {
+			} else if ((idToUrl.get(docID) != null) && (urlToId.get(url) != null)) {
 				System.out.println("URL already found");
 			} else {
 				// If mapping only exists for one hashtable, throw exception
-				throw new IOException("Doc Mapping corrupted: mapping only exists on one hashtable");
+				throw new IOException("addmapping: Doc Mapping corrupted: mapping only exists on one hashtable");
 			}
 		} catch (java.io.IOException ex) {
 			System.err.println(ex.toString());
@@ -133,7 +133,7 @@ public class DocMapping {
 	{
 		try
 		{
-			DocMapping docMapping = new DocMapping("DocMapping");
+			DocMapping docMapping = new DocMapping();
 			docMapping.addMapping(0, "google.com");
 			docMapping.addMapping(1, "facebook.com");
 			docMapping.addMapping(2, "yahoo.com");
