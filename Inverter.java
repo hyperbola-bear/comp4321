@@ -44,11 +44,6 @@ public class Inverter {
         super();    //not sure why this is here
         porter = new Porter(); 
         stopWords = new HashSet<String>(); 
-		stopWords.add("is");
-		stopWords.add("am");
-		stopWords.add("are");
-		stopWords.add("was");
-		stopWords.add("were");
         FileReader fs = new FileReader(str); 
         BufferedReader bs = new BufferedReader(fs);
         String word = bs.readLine();
@@ -117,8 +112,6 @@ public class Inverter {
         }
 
         //create forwardIndex
-
-        
         System.out.println("Printing word frequencies for page body");
         //print out word frequencies
         ForwardIndex forwardIndex = new ForwardIndex("fiRM","forwardindex");

@@ -13,9 +13,20 @@ public class ForwardIndex {
     private RecordManager recman; 
     private HTree hashtable; 
 
+
+    /*private RecordManager wordMappingrecman; 
+    private HTree wordToId; 
+    private HTree idToWord; 
+    */
+    private WordMapping wordMap; 
+    
     public ForwardIndex(String recordmanager, String objectname) throws IOException {
         recman = RecordManagerFactory.createRecordManager(recordmanager); 
         long recid = recman.getNamedObject(objectname); 
+
+        //wordMappingrecman = RecordManagerFactory.createRecordManager("wordMapping");
+        //long ID_wordToId = wordMappingrecman.getNamedObject("wordToId");
+        //long ID_idToWord = wordMappingrecman.getNamedObject("idToWord");     
 
         if (recid!=0) 
             hashtable = HTree.load(recman,recid); 
@@ -23,6 +34,20 @@ public class ForwardIndex {
             hashtable = HTree.createInstance(recman); 
             recman.setNamedObject("forwardindex",hashtable.getRecid());
         }
+        wordMap = new WordMapping("WordMapping");
+
+        /*
+        if (ID_wordToId && ID_idToWord) {
+            wordToId = HTree.load(wordMappingrecman,ID_wordToId);
+            idToWord = HTree.load(wordMappingrecman, ID_idToWord);
+        } else {
+            wordToId = HTree.createInstance(wordMappingrecman);
+            idToWord = HTree.createInstance(wordMappingrecman); 
+            wordMappingrecman.setNamedObject("wordToID",wordToId.getRecid());
+            wordMappingrecman.setNamedObject("idToWord",wordToId.getRecid());
+        }
+        */
+        
     }
 
     public void finalize() throws IOException {
@@ -33,15 +58,18 @@ public class ForwardIndex {
     public void addEntry(String url, String word, int freq) throws IOException {
         try {
             //key is the document id 
-            // Value is the word + frequency 
+            // Value is the word + frequency
+            //
+            int wordId = wordMap.getId(word);
+                
             ArrayList<Posting> postings = (ArrayList<Posting>)hashtable.get(url);
             if (postings != null) {
-                postings.add(new Posting(word, freq));
+                postings.add(new Posting(wordId, freq));
                 hashtable.put(url,postings);
             } else {
                 //url does not exist\
                 postings = new ArrayList<Posting>();
-                postings.add(new Posting(word,freq));
+                postings.add(new Posting(wordId,freq));
                 hashtable.put(url,postings);
             }
             
@@ -67,7 +95,7 @@ public void printAll() throws IOException {
             ArrayList<Posting> postings = (ArrayList<Posting>) hashtable.get(key);
             System.out.println("Key: " + key);
             for (Posting posting : postings) {
-                System.out.println("Word: " + posting.word + ", Frequency: " + posting.freq);
+                System.out.println("Word: " + wordMap.getWord(posting.id) + ", Frequency: " + posting.freq);
             }
         }
     } catch (java.io.IOException e) {

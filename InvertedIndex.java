@@ -7,15 +7,6 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-class Posting implements Serializable {
-	public int id;
-	public int freq;
-
-	Posting(int id, int freq) {
-		this.id = id;
-		this.freq = freq;
-	}
-}
 
 public class InvertedIndex
 {
