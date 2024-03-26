@@ -8,14 +8,6 @@ import java.util.Vector;
 import java.io.IOException;
 import java.io.Serializable;
 
-class Posting implements Serializable {
-    public String word;
-    public int freq; 
-    Posting(String word, int freq) {
-        this.word = word;
-        this.freq = freq; 
-    }
-}
 
 public class ForwardIndex {
     private RecordManager recman; 
@@ -65,26 +57,6 @@ public class ForwardIndex {
             System.err.println(ex.toString());
         }
     }
-
-/*
-	public void printAll() throws IOException
-	{
-		// Print all the data in the hashtable
-		// ADD YOUR CODES HERE
-        try {
-            System.out.println(hashtable.keys());
-            FastIterator iter = hashtable.keys();
-            String key; 
-            while ( (key = (String)iter.next())!= null) {
-                System.out.println(key + " : " + hashtable.get(key));
-            }
-
-        } catch(java.io.IOException e) {
-            System.err.println(e.toString());
-        }
-
-	}	
-*/
 
 public void printAll() throws IOException {
     try {
