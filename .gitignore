@@ -1,0 +1,9 @@
+# Ignore .class files
+*.class
+
+# Ignore spider_result.txt
+spider_result.txt
+
+#ignore database fikes 
+*.db 
+*.lg
