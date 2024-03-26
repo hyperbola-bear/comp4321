@@ -55,6 +55,7 @@ public class Crawler
 
         queue.add(url);
         visited.add(url);
+        result.add(url);
 
         while (!queue.isEmpty() && result.size() < limit) {
             String currentUrl = queue.poll();

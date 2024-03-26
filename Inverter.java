@@ -36,6 +36,10 @@ public class Inverter {
     public boolean isStopWord(String str) {
         return stopWords.contains(str); 
     }
+    private DocMapping docMap;
+    private WordMapping wordMap;
+    private ForwardIndex forwardindex;
+    private InvertedIndex invertedindex; 
 
     
 
@@ -51,6 +55,12 @@ public class Inverter {
             stopWords.add(word);
             word = bs.readLine();
         }
+
+        this.docMap = new DocMapping("docMap");
+        this.wordMap = new WordMapping("wordMap"); 
+        this.forwardindex = new ForwardIndex(); 
+        this.invertedindex = new InvertedIndex();
+
     }
 
     public Vector<String> removeStopwords(Vector<String> words) {
@@ -67,7 +77,6 @@ public class Inverter {
 
     public Vector<String> stemify(Vector<String> words) {
         Vector<String> stemified = new Vector<>();
-
         // Iterate over the vector and add non-stopwords to the new vector
         for (String word : words) {
             stemified.add(this.stem(word));
@@ -80,11 +89,14 @@ public class Inverter {
     }
     
     public static void main(String[] args) throws IOException,ParserException {
-        String docid = args[0];
+        String rootlink = args[0];
         Inverter inverter = new Inverter("stopwords.txt");
 
         //create new Crawler to get the words first
-        Crawler crawler = new Crawler(args[0]);
+        Crawler crawler = new Crawler();
+        Vector<String> links = crawler.getThirtyLinks(rootlink);
+
+
         Vector<String> words = crawler.extractWords();
 
         //Then, we iterate through the entire string, and remove stop words
