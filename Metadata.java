@@ -49,7 +49,7 @@ public class Metadata {
             return container; 
         } else {
             System.err.println("Meta data does not exist for " + url);
-            return container;
+            return null;
         }
 
     }

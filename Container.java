@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.Serializable;
 
 public class Container implements Serializable {
+	private static final long serialVersionUID = 1L;
     public Vector<String> childLinks; 
     public int pageSize; 
     public long lastModificationDate; 
@@ -14,4 +15,8 @@ public class Container implements Serializable {
         this.lastModificationDate = lastModificationDate; 
         this.title =title; 
     }
+
+	public long getLastModificationDate() {
+		return this.lastModificationDate;
+	}
 }

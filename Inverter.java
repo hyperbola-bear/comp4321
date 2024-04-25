@@ -42,6 +42,11 @@ public class Inverter {
     private InvertedIndex invertedindex; 
     private Metadata metadata; 
 
+
+	//to Handle the Title
+	private TitleForwardIndex titleforwardindex;
+	private TitleInvertedIndex titleinvertedindex; 
+
     
 
     //constructor
@@ -61,6 +66,8 @@ public class Inverter {
         this.wordMap = new WordMapping(); 
         this.forwardindex = new ForwardIndex(); 
         this.invertedindex = new InvertedIndex();
+		this.titleforwardindex = new TitleForwardIndex();
+		this.titleinvertedindex = new TitleInvertedIndex(); 
         this.metadata = new Metadata();
 
     }
@@ -96,12 +103,28 @@ public class Inverter {
 
         //create new Crawler to get the words first
         Crawler crawler = new Crawler();
-        Vector<String> links = crawler.getThirtyLinks(rootlink);
+        Vector<String> links = crawler.getThreeHundredLinks(rootlink);
 
         int docCount = 0; 
         int wordCount = 0; 
         //START
         for (String link: links) {
+			//check if the page alreadt exists in the database
+			Container container = inverter.metadata.getMeta(link); 
+			if (container != null) {
+				long lastModifiedDB = inverter.metadata.getMeta(link).getLastModificationDate();
+				long lastModifiedWeb = crawler.getLastModificationDate(link);
+
+				//compare the last modification date
+				if (lastModifiedWeb <= lastModifiedDB) {
+					//skip crawling
+					System.out.println("Latest version of page already in database");
+					continue;
+				}
+			}
+			
+
+
             Vector<String> childLinks = crawler.extractLinks(link); 
             Vector<String> title = crawler.extractTitle(link);
             long lastModificationDate = crawler.getLastModificationDate(link);
@@ -131,8 +154,6 @@ public class Inverter {
                 }
             }
             //we now have wordFrequencies for that link
-            
-
             for (Map.Entry<String, Integer> entry: wordFrequencies.entrySet()) {
                 String word = entry.getKey();
                 int wordId = inverter.wordMap.getId(word);
@@ -141,72 +162,44 @@ public class Inverter {
                 inverter.forwardindex.addEntry(docId,wordId,frequency);
                 inverter.invertedindex.addEntry(docId,wordId,frequency);
             }
+
+			//handles Titles almost identically to above
+            Map<String, Integer> titleWordFrequencies = new HashMap<String,Integer>(); 
+            Vector<String> titlewords = inverter.stemify(inverter.removeStopwords(crawler.extractTitle(link)));
+            for (String word: titlewords) {
+                if ((word == "") || (word) == null) {
+                    continue;
+                }
+                if (inverter.wordMap.getId(word) == null) {
+                    inverter.wordMap.addMapping(wordCount, word);
+                    wordCount++;
+                }
+                if (titleWordFrequencies.containsKey(word)) {
+                    titleWordFrequencies.put(word,wordFrequencies.get(word) + 1); 
+                } else {
+                    titleWordFrequencies.put(word,1);
+                }
+            }
+            //we now have titleWordFrequencies for that link
+            for (Map.Entry<String, Integer> entry: titleWordFrequencies.entrySet()) {
+                String word = entry.getKey();
+                int wordId = inverter.wordMap.getId(word);
+                int docId = inverter.docMap.getId(link);
+                int frequency = entry.getValue();
+                inverter.titleforwardindex.addEntry(docId,wordId,frequency);
+                inverter.titleinvertedindex.addEntry(docId,wordId,frequency);
+            }
+
         }
 
         inverter.forwardindex.finalize();
         inverter.invertedindex.finalize();
+        inverter.titleforwardindex.finalize();
+        inverter.titleinvertedindex.finalize();
         inverter.wordMap.finalize();
         inverter.docMap.finalize();
         inverter.metadata.finalize();
 
 
-        /*
-        Vector<String> words = crawler.extractWords();
-
-        //Then, we iterate through the entire string, and remove stop words
-        words = inverter.removeStopwords(words);
-        //Then, we use porter's algorithm to handle stemming
-        words = inverter.stemify(words);
-        System.out.println("Words in page "+" (size = "+words.size()+") :");
-        for(int i = 0; i < words.size(); i++)
-            if(i<5 || i>words.size()-6){
-                System.out.println(words.get(i));
-            } else if(i==5){
-                System.out.println("...");
-            }
-        System.out.println("\n\n");
-
-        Map<String,Integer> wordFrequencies = new HashMap<String,Integer>(); 
-
-        for (String word: words) {
-            if (wordFrequencies.containsKey(word)){
-                wordFrequencies.put(word,wordFrequencies.get(word) +1);
-            } else {
-                wordFrequencies.put(word, 1); 
-            }
-        }
-
-        //create forwardIndex
-        System.out.println("Printing word frequencies for page body");
-        //print out word frequencies
-        ForwardIndex forwardIndex = new ForwardIndex("fiRM","forwardindex");
-        InvertedIndex invertedIndex = new InvertedIndex("iiRM","invertedindex");
-
-        for (Map.Entry<String, Integer> entry: wordFrequencies.entrySet()) {
-            String word = entry.getKey();
-            int frequency = entry.getValue();
-            forwardIndex.addEntry(args[0],word,frequency);
-            invertedIndex.addEntry(word, docid, frequency);
-            System.out.println("file is: " + args[0] + ", word is: " + word + ", freqeuency is" + frequency);
-            System.out.println(entry.getKey() + ": " +entry.getValue());
-        }
-        
-        forwardIndex.finalize();
-        invertedIndex.finalize();
-
-        Vector<String> title = crawler.extractTitle();
-        title = inverter.removeStopwords(title);
-        title = inverter.stemify(title);
-
-        System.out.println("Title in page "+" (size = "+words.size()+") :");
-        for(int i = 0; i < title.size(); i++)
-            if(i<5 || i>title.size()-6){
-                System.out.println(title.get(i));
-            } else if(i==5){
-                System.out.println("...");
-            }
-        System.out.println("\n\n");
-
-        */
     }
 }

@@ -16,7 +16,7 @@ To compile and run this project, you need to have the following dependencies ins
 To compile the project, use the following command:
 
 ```shell
-java -cp htmlparser.jar:jsoup-1.17.2.jar:jdbm-1.0.jar:. *.java
+javac -cp htmlparser.jar:jsoup-1.17.2.jar:jdbm-1.0.jar:. *.java
 ```
 ## Running the Inverter
 
