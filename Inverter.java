@@ -40,7 +40,9 @@ public class Inverter {
     private WordMapping wordMap;
     private ForwardIndex forwardindex;
     private InvertedIndex invertedindex; 
-    private Metadata metadata; 
+    private Metadata metadata;
+
+    private SearchEngine searchEngine;
 
 
 	//to Handle the Title
@@ -69,6 +71,7 @@ public class Inverter {
 		this.titleforwardindex = new TitleForwardIndex();
 		this.titleinvertedindex = new TitleInvertedIndex(); 
         this.metadata = new Metadata();
+        this.searchEngine = new SearchEngine();
 
     }
 
