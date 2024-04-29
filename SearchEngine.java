@@ -128,12 +128,12 @@ public class SearchEngine
 
 		Vector<Integer> parsed_query = new Vector<>();
 
-		String[] tokens = query.split(" ");
+		tokens = query.split(" ");
 
 		for (String token : tokens) {
 			try {
-				int id = wordToId.get(token);
-				parsed_query.add(tokens);
+				int id = (int)wordToId.get(token);
+				parsed_query.add(id);
 			} catch (IOException ex) {
 				System.err.println(ex);
 			}

@@ -31,9 +31,9 @@ import java.util.Map;
 
 public class Inverter {
 
-    private Porter porter;
-    private HashSet<String> stopWords; 
-    public boolean isStopWord(String str) {
+    private static Porter porter;
+    private static HashSet<String> stopWords; 
+    public static boolean isStopWord(String str) {
         return stopWords.contains(str); 
     }
     private DocMapping docMap;
@@ -48,6 +48,10 @@ public class Inverter {
 	//to Handle the Title
 	private TitleForwardIndex titleforwardindex;
 	private TitleInvertedIndex titleinvertedindex; 
+
+
+    //to handle ngrams
+    private static NgramIndex ngramindex; 
 
     
 
@@ -72,45 +76,46 @@ public class Inverter {
 		this.titleinvertedindex = new TitleInvertedIndex(); 
         this.metadata = new Metadata();
         this.searchEngine = new SearchEngine();
+        this.ngramindex = new NgramIndex(); 
 
     }
 
-    public Vector<String> removeStopwords(Vector<String> words) {
+    public static Vector<String> removeStopwords(Vector<String> words) {
         Vector<String> stopwordsRemoved = new Vector<>();
 
         // Iterate over the vector and add non-stopwords to the new vector
         for (String word : words) {
-            if (!this.isStopWord(word)) {
+            if (!isStopWord(word)) {
                 stopwordsRemoved.add(word);
             }
         }
         return stopwordsRemoved;
     }
 
-    public Vector<String> stemify(Vector<String> words) {
+    public static Vector<String> stemify(Vector<String> words) {
         Vector<String> stemified = new Vector<>();
         // Iterate over the vector and add non-stopwords to the new vector
         for (String word : words) {
-            stemified.add(this.stem(word));
+            stemified.add(stem(word));
         }
         return stemified;
     }
 
-    public String stem(String str) {
+    public static String stem(String str) {
         return porter.stripAffixes(str); 
     }
 
-    public Vector<String> extractNGrams (Vector<String> words, int n) {
+    public static Vector<String> extractNgrams (Vector<String> words, int n) {
         Vector<String> ngrams = new Vector<String>(); 
         for (int i=0; i< words.size() - n +1; i++) {
             String ngram = "";
             for (int j=0; j<n; j++) {
                 String word = words.get(i+j).toLowerCase();
-                if (this.isStopWord(word)) {
+                if (isStopWord(word)) {
                     ngram = "";
                     break;
                 }
-                ngram += this.stem(word) + " ";
+                ngram += stem(word) + " ";
             }
             if (ngram!= ""){
                 ngrams.add(ngram);
@@ -212,6 +217,16 @@ public class Inverter {
                 inverter.titleinvertedindex.addEntry(docId,wordId,frequency);
             }
 
+            //handle bigrams
+            Vector<String> bigrams = extractNgrams(crawler.extractWords(link),2);
+            for (String bigram: bigrams) {
+                ngramindex.addBigramEntry(bigram,inverter.docMap.getId(link));
+            }
+
+            Vector<String> trigrams = extractNgrams(crawler.extractWords(link),3);
+            for (String trigram: trigrams) {
+                ngramindex.addTrigramEntry(trigram,inverter.docMap.getId(link));
+            }
         }
 
         inverter.forwardindex.finalize();
@@ -221,6 +236,7 @@ public class Inverter {
         inverter.wordMap.finalize();
         inverter.docMap.finalize();
         inverter.metadata.finalize();
+        inverter.ngramindex.finalize();
 
 
     }
