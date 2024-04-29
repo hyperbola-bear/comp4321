@@ -99,6 +99,25 @@ public class Inverter {
     public String stem(String str) {
         return porter.stripAffixes(str); 
     }
+
+    public Vector<String> extractNGrams (Vector<String> words, int n) {
+        Vector<String> ngrams = new Vector<String>(); 
+        for (int i=0; i< words.size() - n +1; i++) {
+            String ngram = "";
+            for (int j=0; j<n; j++) {
+                String word = words.get(i+j).toLowerCase();
+                if (this.isStopWord(word)) {
+                    ngram = "";
+                    break;
+                }
+                ngram += this.stem(word) + " ";
+            }
+            if (ngram!= ""){
+                ngrams.add(ngram);
+            }
+        }
+        return ngrams; 
+    }
     
     public static void main(String[] args) throws IOException,ParserException {
         String rootlink = args[0];
