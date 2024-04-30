@@ -16,7 +16,7 @@ public class DocMapping {
 
 	public DocMapping() throws IOException{
 		try {
-			recman = RecordManagerFactory.createRecordManager("docMap");
+			recman = RecordManagerFactory.createRecordManager("Database");
 			long ID_urlToId = recman.getNamedObject("urlToId");
 			long ID_idToUrl = recman.getNamedObject("idToUrl");
 

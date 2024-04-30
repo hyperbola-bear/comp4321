@@ -16,7 +16,7 @@ public class NgramIndex {
     public HTree trigram; 
 
     public NgramIndex() throws IOException {
-        recman = RecordManagerFactory.createRecordManager("NgramRecman");
+        recman = RecordManagerFactory.createRecordManager("Database");
         long bigram_recid = recman.getNamedObject("bigram"); 
         long trigram_recid = recman.getNamedObject("trigram");
         

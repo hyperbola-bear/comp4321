@@ -16,7 +16,7 @@ public class WordMapping {
 
     public WordMapping() throws IOException{
 		try {
-			recman = RecordManagerFactory.createRecordManager("wordMap");
+			recman = RecordManagerFactory.createRecordManager("Database");
 			long ID_wordToId = recman.getNamedObject("wordToId");
 			long ID_idToWord = recman.getNamedObject("idToWord");
 
