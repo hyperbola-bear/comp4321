@@ -1,0 +1,2677 @@
+17-Apr-2024 12:31:32.234 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+17-Apr-2024 12:31:32.234 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+17-Apr-2024 12:31:40.497 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+17-Apr-2024 12:31:40.497 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+17-Apr-2024 12:31:40.505 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@5dda6f9')
+17-Apr-2024 18:08:06.992 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [15] in the generated java file: [C:\Code\Java\COMP4321\COMP4321-Crawler\src\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. com.google.gson.Gson resolves to a package
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Gson cannot be resolved to a type
+12:     // Here you can use the query parameter to fetch data based on the query
+13: 
+14:     // Convert data to JSON format using Gson
+15:     Gson gson = new Gson();
+16:     String json = gson.toJson(data);
+17: 
+18:     // Set response content type to JSON
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Gson cannot be resolved to a type
+12:     // Here you can use the query parameter to fetch data based on the query
+13: 
+14:     // Convert data to JSON format using Gson
+15:     Gson gson = new Gson();
+16:     String json = gson.toJson(data);
+17: 
+18:     // Set response content type to JSON
+
+
+An error occurred at line: [28] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable data
+25: 
+26: <!-- <%
+27:     // Simulated data
+28:     ArrayList<String> data = new ArrayList<>();
+29:     data.add("Item 1");
+30:     data.add("Item 2");
+31:     data.add("Item 3");
+
+
+An error occurred at line: [34] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable json
+31:     data.add("Item 3");
+32: 
+33:     // Convert data to JSON format
+34:     StringBuilder json = new StringBuilder();
+35:     json.append("{ \"data\": [");
+36:     for (int i = 0; i < data.size(); i++) {
+37:         json.append("\"").append(data.get(i)).append("\"");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [15] in the generated java file: [C:\Code\Java\COMP4321\COMP4321-Crawler\src\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. com.google.gson.Gson resolves to a package
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Gson cannot be resolved to a type
+12:     // Here you can use the query parameter to fetch data based on the query
+13: 
+14:     // Convert data to JSON format using Gson
+15:     Gson gson = new Gson();
+16:     String json = gson.toJson(data);
+17: 
+18:     // Set response content type to JSON
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Gson cannot be resolved to a type
+12:     // Here you can use the query parameter to fetch data based on the query
+13: 
+14:     // Convert data to JSON format using Gson
+15:     Gson gson = new Gson();
+16:     String json = gson.toJson(data);
+17: 
+18:     // Set response content type to JSON
+
+
+An error occurred at line: [28] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable data
+25: 
+26: <!-- <%
+27:     // Simulated data
+28:     ArrayList<String> data = new ArrayList<>();
+29:     data.add("Item 1");
+30:     data.add("Item 2");
+31:     data.add("Item 3");
+
+
+An error occurred at line: [34] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable json
+31:     data.add("Item 3");
+32: 
+33:     // Convert data to JSON format
+34:     StringBuilder json = new StringBuilder();
+35:     json.append("{ \"data\": [");
+36:     for (int i = 0; i < data.size(); i++) {
+37:         json.append("\"").append(data.get(i)).append("\"");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+17-Apr-2024 18:08:20.751 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [15] in the generated java file: [C:\Code\Java\COMP4321\COMP4321-Crawler\src\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. com.google.gson.Gson resolves to a package
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Gson cannot be resolved to a type
+12:     // Here you can use the query parameter to fetch data based on the query
+13: 
+14:     // Convert data to JSON format using Gson
+15:     Gson gson = new Gson();
+16:     String json = gson.toJson(data);
+17: 
+18:     // Set response content type to JSON
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Gson cannot be resolved to a type
+12:     // Here you can use the query parameter to fetch data based on the query
+13: 
+14:     // Convert data to JSON format using Gson
+15:     Gson gson = new Gson();
+16:     String json = gson.toJson(data);
+17: 
+18:     // Set response content type to JSON
+
+
+An error occurred at line: [28] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable data
+25: 
+26: <!-- <%
+27:     // Simulated data
+28:     ArrayList<String> data = new ArrayList<>();
+29:     data.add("Item 1");
+30:     data.add("Item 2");
+31:     data.add("Item 3");
+
+
+An error occurred at line: [34] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable json
+31:     data.add("Item 3");
+32: 
+33:     // Convert data to JSON format
+34:     StringBuilder json = new StringBuilder();
+35:     json.append("{ \"data\": [");
+36:     for (int i = 0; i < data.size(); i++) {
+37:         json.append("\"").append(data.get(i)).append("\"");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [15] in the generated java file: [C:\Code\Java\COMP4321\COMP4321-Crawler\src\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. com.google.gson.Gson resolves to a package
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Gson cannot be resolved to a type
+12:     // Here you can use the query parameter to fetch data based on the query
+13: 
+14:     // Convert data to JSON format using Gson
+15:     Gson gson = new Gson();
+16:     String json = gson.toJson(data);
+17: 
+18:     // Set response content type to JSON
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Gson cannot be resolved to a type
+12:     // Here you can use the query parameter to fetch data based on the query
+13: 
+14:     // Convert data to JSON format using Gson
+15:     Gson gson = new Gson();
+16:     String json = gson.toJson(data);
+17: 
+18:     // Set response content type to JSON
+
+
+An error occurred at line: [28] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable data
+25: 
+26: <!-- <%
+27:     // Simulated data
+28:     ArrayList<String> data = new ArrayList<>();
+29:     data.add("Item 1");
+30:     data.add("Item 2");
+31:     data.add("Item 3");
+
+
+An error occurred at line: [34] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable json
+31:     data.add("Item 3");
+32: 
+33:     // Convert data to JSON format
+34:     StringBuilder json = new StringBuilder();
+35:     json.append("{ \"data\": [");
+36:     for (int i = 0; i < data.size(); i++) {
+37:         json.append("\"").append(data.get(i)).append("\"");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+17-Apr-2024 18:13:03.529 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the jsp file: [/apis/getData.jsp]
+Gson cannot be resolved to a type
+11:     // Here you can use the query parameter to fetch data based on the query
+12: 
+13:     // Convert data to JSON format using Gson
+14:     Gson gson = new Gson();
+15:     String json = gson.toJson(data);
+16: 
+17:     // Set response content type to JSON
+
+
+An error occurred at line: [14] in the jsp file: [/apis/getData.jsp]
+Gson cannot be resolved to a type
+11:     // Here you can use the query parameter to fetch data based on the query
+12: 
+13:     // Convert data to JSON format using Gson
+14:     Gson gson = new Gson();
+15:     String json = gson.toJson(data);
+16: 
+17:     // Set response content type to JSON
+
+
+An error occurred at line: [27] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable data
+24: 
+25: <!-- <%
+26:     // Simulated data
+27:     ArrayList<String> data = new ArrayList<>();
+28:     data.add("Item 1");
+29:     data.add("Item 2");
+30:     data.add("Item 3");
+
+
+An error occurred at line: [33] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable json
+30:     data.add("Item 3");
+31: 
+32:     // Convert data to JSON format
+33:     StringBuilder json = new StringBuilder();
+34:     json.append("{ \"data\": [");
+35:     for (int i = 0; i < data.size(); i++) {
+36:         json.append("\"").append(data.get(i)).append("\"");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the jsp file: [/apis/getData.jsp]
+Gson cannot be resolved to a type
+11:     // Here you can use the query parameter to fetch data based on the query
+12: 
+13:     // Convert data to JSON format using Gson
+14:     Gson gson = new Gson();
+15:     String json = gson.toJson(data);
+16: 
+17:     // Set response content type to JSON
+
+
+An error occurred at line: [14] in the jsp file: [/apis/getData.jsp]
+Gson cannot be resolved to a type
+11:     // Here you can use the query parameter to fetch data based on the query
+12: 
+13:     // Convert data to JSON format using Gson
+14:     Gson gson = new Gson();
+15:     String json = gson.toJson(data);
+16: 
+17:     // Set response content type to JSON
+
+
+An error occurred at line: [27] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable data
+24: 
+25: <!-- <%
+26:     // Simulated data
+27:     ArrayList<String> data = new ArrayList<>();
+28:     data.add("Item 1");
+29:     data.add("Item 2");
+30:     data.add("Item 3");
+
+
+An error occurred at line: [33] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable json
+30:     data.add("Item 3");
+31: 
+32:     // Convert data to JSON format
+33:     StringBuilder json = new StringBuilder();
+34:     json.append("{ \"data\": [");
+35:     for (int i = 0; i < data.size(); i++) {
+36:         json.append("\"").append(data.get(i)).append("\"");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+17-Apr-2024 18:13:11.373 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the jsp file: [/apis/getData.jsp]
+Gson cannot be resolved to a type
+11:     // Here you can use the query parameter to fetch data based on the query
+12: 
+13:     // Convert data to JSON format using Gson
+14:     Gson gson = new Gson();
+15:     String json = gson.toJson(data);
+16: 
+17:     // Set response content type to JSON
+
+
+An error occurred at line: [14] in the jsp file: [/apis/getData.jsp]
+Gson cannot be resolved to a type
+11:     // Here you can use the query parameter to fetch data based on the query
+12: 
+13:     // Convert data to JSON format using Gson
+14:     Gson gson = new Gson();
+15:     String json = gson.toJson(data);
+16: 
+17:     // Set response content type to JSON
+
+
+An error occurred at line: [27] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable data
+24: 
+25: <!-- <%
+26:     // Simulated data
+27:     ArrayList<String> data = new ArrayList<>();
+28:     data.add("Item 1");
+29:     data.add("Item 2");
+30:     data.add("Item 3");
+
+
+An error occurred at line: [33] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable json
+30:     data.add("Item 3");
+31: 
+32:     // Convert data to JSON format
+33:     StringBuilder json = new StringBuilder();
+34:     json.append("{ \"data\": [");
+35:     for (int i = 0; i < data.size(); i++) {
+36:         json.append("\"").append(data.get(i)).append("\"");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the jsp file: [/apis/getData.jsp]
+Gson cannot be resolved to a type
+11:     // Here you can use the query parameter to fetch data based on the query
+12: 
+13:     // Convert data to JSON format using Gson
+14:     Gson gson = new Gson();
+15:     String json = gson.toJson(data);
+16: 
+17:     // Set response content type to JSON
+
+
+An error occurred at line: [14] in the jsp file: [/apis/getData.jsp]
+Gson cannot be resolved to a type
+11:     // Here you can use the query parameter to fetch data based on the query
+12: 
+13:     // Convert data to JSON format using Gson
+14:     Gson gson = new Gson();
+15:     String json = gson.toJson(data);
+16: 
+17:     // Set response content type to JSON
+
+
+An error occurred at line: [27] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable data
+24: 
+25: <!-- <%
+26:     // Simulated data
+27:     ArrayList<String> data = new ArrayList<>();
+28:     data.add("Item 1");
+29:     data.add("Item 2");
+30:     data.add("Item 3");
+
+
+An error occurred at line: [33] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable json
+30:     data.add("Item 3");
+31: 
+32:     // Convert data to JSON format
+33:     StringBuilder json = new StringBuilder();
+34:     json.append("{ \"data\": [");
+35:     for (int i = 0; i < data.size(); i++) {
+36:         json.append("\"").append(data.get(i)).append("\"");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+17-Apr-2024 18:13:30.001 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+17-Apr-2024 18:13:30.001 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+17-Apr-2024 18:13:38.999 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+17-Apr-2024 18:13:38.999 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+17-Apr-2024 18:13:39.003 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@3b4ef7')
+17-Apr-2024 18:13:44.555 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the jsp file: [/apis/getData.jsp]
+Gson cannot be resolved to a type
+11:     // Here you can use the query parameter to fetch data based on the query
+12: 
+13:     // Convert data to JSON format using Gson
+14:     Gson gson = new Gson();
+15:     String json = gson.toJson(data);
+16: 
+17:     // Set response content type to JSON
+
+
+An error occurred at line: [14] in the jsp file: [/apis/getData.jsp]
+Gson cannot be resolved to a type
+11:     // Here you can use the query parameter to fetch data based on the query
+12: 
+13:     // Convert data to JSON format using Gson
+14:     Gson gson = new Gson();
+15:     String json = gson.toJson(data);
+16: 
+17:     // Set response content type to JSON
+
+
+An error occurred at line: [27] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable data
+24: 
+25: <!-- <%
+26:     // Simulated data
+27:     ArrayList<String> data = new ArrayList<>();
+28:     data.add("Item 1");
+29:     data.add("Item 2");
+30:     data.add("Item 3");
+
+
+An error occurred at line: [33] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable json
+30:     data.add("Item 3");
+31: 
+32:     // Convert data to JSON format
+33:     StringBuilder json = new StringBuilder();
+34:     json.append("{ \"data\": [");
+35:     for (int i = 0; i < data.size(); i++) {
+36:         json.append("\"").append(data.get(i)).append("\"");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the jsp file: [/apis/getData.jsp]
+Gson cannot be resolved to a type
+11:     // Here you can use the query parameter to fetch data based on the query
+12: 
+13:     // Convert data to JSON format using Gson
+14:     Gson gson = new Gson();
+15:     String json = gson.toJson(data);
+16: 
+17:     // Set response content type to JSON
+
+
+An error occurred at line: [14] in the jsp file: [/apis/getData.jsp]
+Gson cannot be resolved to a type
+11:     // Here you can use the query parameter to fetch data based on the query
+12: 
+13:     // Convert data to JSON format using Gson
+14:     Gson gson = new Gson();
+15:     String json = gson.toJson(data);
+16: 
+17:     // Set response content type to JSON
+
+
+An error occurred at line: [27] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable data
+24: 
+25: <!-- <%
+26:     // Simulated data
+27:     ArrayList<String> data = new ArrayList<>();
+28:     data.add("Item 1");
+29:     data.add("Item 2");
+30:     data.add("Item 3");
+
+
+An error occurred at line: [33] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable json
+30:     data.add("Item 3");
+31: 
+32:     // Convert data to JSON format
+33:     StringBuilder json = new StringBuilder();
+34:     json.append("{ \"data\": [");
+35:     for (int i = 0; i < data.size(); i++) {
+36:         json.append("\"").append(data.get(i)).append("\"");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+17-Apr-2024 18:14:16.906 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the jsp file: [/apis/getData.jsp]
+com.google.Gson cannot be resolved to a type
+11:     // Here you can use the query parameter to fetch data based on the query
+12: 
+13:     // Convert data to JSON format using Gson
+14:     com.google.Gson gson = new Gson();
+15:     String json = gson.toJson(data);
+16: 
+17:     // Set response content type to JSON
+
+
+An error occurred at line: [14] in the jsp file: [/apis/getData.jsp]
+Gson cannot be resolved to a type
+11:     // Here you can use the query parameter to fetch data based on the query
+12: 
+13:     // Convert data to JSON format using Gson
+14:     com.google.Gson gson = new Gson();
+15:     String json = gson.toJson(data);
+16: 
+17:     // Set response content type to JSON
+
+
+An error occurred at line: [27] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable data
+24: 
+25: <!-- <%
+26:     // Simulated data
+27:     ArrayList<String> data = new ArrayList<>();
+28:     data.add("Item 1");
+29:     data.add("Item 2");
+30:     data.add("Item 3");
+
+
+An error occurred at line: [33] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable json
+30:     data.add("Item 3");
+31: 
+32:     // Convert data to JSON format
+33:     StringBuilder json = new StringBuilder();
+34:     json.append("{ \"data\": [");
+35:     for (int i = 0; i < data.size(); i++) {
+36:         json.append("\"").append(data.get(i)).append("\"");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the jsp file: [/apis/getData.jsp]
+com.google.Gson cannot be resolved to a type
+11:     // Here you can use the query parameter to fetch data based on the query
+12: 
+13:     // Convert data to JSON format using Gson
+14:     com.google.Gson gson = new Gson();
+15:     String json = gson.toJson(data);
+16: 
+17:     // Set response content type to JSON
+
+
+An error occurred at line: [14] in the jsp file: [/apis/getData.jsp]
+Gson cannot be resolved to a type
+11:     // Here you can use the query parameter to fetch data based on the query
+12: 
+13:     // Convert data to JSON format using Gson
+14:     com.google.Gson gson = new Gson();
+15:     String json = gson.toJson(data);
+16: 
+17:     // Set response content type to JSON
+
+
+An error occurred at line: [27] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable data
+24: 
+25: <!-- <%
+26:     // Simulated data
+27:     ArrayList<String> data = new ArrayList<>();
+28:     data.add("Item 1");
+29:     data.add("Item 2");
+30:     data.add("Item 3");
+
+
+An error occurred at line: [33] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable json
+30:     data.add("Item 3");
+31: 
+32:     // Convert data to JSON format
+33:     StringBuilder json = new StringBuilder();
+34:     json.append("{ \"data\": [");
+35:     for (int i = 0; i < data.size(); i++) {
+36:         json.append("\"").append(data.get(i)).append("\"");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+17-Apr-2024 18:18:55.895 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [/apis/getData.jsp (line: [4], column: [1]) Unterminated [&lt;%@ page] tag] with root cause
+	org.apache.jasper.JasperException: /apis/getData.jsp (line: [4], column: [1]) Unterminated [&lt;%@ page] tag
+		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:299)
+		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:99)
+		at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:515)
+		at org.apache.jasper.compiler.Parser.parseFileDirectives(Parser.java:1796)
+		at org.apache.jasper.compiler.Parser.parse(Parser.java:135)
+		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:245)
+		at org.apache.jasper.compiler.ParserController.parseDirectives(ParserController.java:128)
+		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:207)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+17-Apr-2024 18:18:58.296 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.apis.getData_jsp] with root cause
+	java.lang.ClassNotFoundException: org.apache.jsp.apis.getData_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+17-Apr-2024 18:19:03.735 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+17-Apr-2024 18:19:03.735 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+17-Apr-2024 18:19:08.723 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+17-Apr-2024 18:19:08.723 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+17-Apr-2024 18:19:08.725 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@d71adc2')
+17-Apr-2024 18:19:23.157 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [/apis/getData.jsp (line: [4], column: [1]) Unterminated [&lt;%@ page] tag] with root cause
+	org.apache.jasper.JasperException: /apis/getData.jsp (line: [4], column: [1]) Unterminated [&lt;%@ page] tag
+		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:299)
+		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:99)
+		at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:515)
+		at org.apache.jasper.compiler.Parser.parseFileDirectives(Parser.java:1796)
+		at org.apache.jasper.compiler.Parser.parse(Parser.java:135)
+		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:245)
+		at org.apache.jasper.compiler.ParserController.parseDirectives(ParserController.java:128)
+		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:207)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+17-Apr-2024 20:35:49.512 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [15] in the generated java file: [C:\Code\Java\COMP4321\COMP4321-Crawler\src\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. org.apache.jdbm.RecordManager resolves to a package
+
+An error occurred at line: [16] in the generated java file: [C:\Code\Java\COMP4321\COMP4321-Crawler\src\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. org.apache.jdbm.RecordManagerFactory resolves to a package
+
+An error occurred at line: [17] in the generated java file: [C:\Code\Java\COMP4321\COMP4321-Crawler\src\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. org.apache.jdbm.htree.HTree resolves to a package
+
+An error occurred at line: [18] in the generated java file: [C:\Code\Java\COMP4321\COMP4321-Crawler\src\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. org.apache.jdbm.helper.FastIterator resolves to a package
+
+An error occurred at line: [16] in the jsp file: [/apis/getData.jsp]
+RecordManager cannot be resolved to a type
+13: 
+14: <% 
+15:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database.db");
+16:     RecordManager recman = RecordManagerFactory.createRecordManager(dbPath);
+17: 
+18:     long recid = recman.getNamedObject("PageInfo");
+19:     HTree pageinfo = null;
+
+
+An error occurred at line: [16] in the jsp file: [/apis/getData.jsp]
+RecordManagerFactory cannot be resolved
+13: 
+14: <% 
+15:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database.db");
+16:     RecordManager recman = RecordManagerFactory.createRecordManager(dbPath);
+17: 
+18:     long recid = recman.getNamedObject("PageInfo");
+19:     HTree pageinfo = null;
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+HTree cannot be resolved to a type
+16:     RecordManager recman = RecordManagerFactory.createRecordManager(dbPath);
+17: 
+18:     long recid = recman.getNamedObject("PageInfo");
+19:     HTree pageinfo = null;
+20:     if (recid != 0) {
+21:         pageinfo = HTree.load(recman, recid);
+22:     }
+
+
+An error occurred at line: [21] in the jsp file: [/apis/getData.jsp]
+HTree cannot be resolved
+18:     long recid = recman.getNamedObject("PageInfo");
+19:     HTree pageinfo = null;
+20:     if (recid != 0) {
+21:         pageinfo = HTree.load(recman, recid);
+22:     }
+23:     // get all the data and convert it into JSON format
+24:     StringBuilder json = new StringBuilder();
+
+
+An error occurred at line: [27] in the jsp file: [/apis/getData.jsp]
+FastIterator cannot be resolved to a type
+24:     StringBuilder json = new StringBuilder();
+25:     json.append("{ \"data\": [");
+26:     if (pageinfo != null) {
+27:         FastIterator iter = pageinfo.keys();
+28:         String url;
+29:         while ((url = (String) iter.next()) != null) {
+30:             String[] data = (String[]) pageinfo.get(url);
+
+
+An error occurred at line: [59] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable json
+56:     data.add("Item 3");
+57: 
+58:     // Convert data to JSON format
+59:     StringBuilder json = new StringBuilder();
+60:     json.append("{ \"data\": [");
+61:     for (int i = 0; i < data.size(); i++) {
+62:         json.append("\"").append(data.get(i)).append("\"");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [15] in the generated java file: [C:\Code\Java\COMP4321\COMP4321-Crawler\src\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. org.apache.jdbm.RecordManager resolves to a package
+
+An error occurred at line: [16] in the generated java file: [C:\Code\Java\COMP4321\COMP4321-Crawler\src\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. org.apache.jdbm.RecordManagerFactory resolves to a package
+
+An error occurred at line: [17] in the generated java file: [C:\Code\Java\COMP4321\COMP4321-Crawler\src\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. org.apache.jdbm.htree.HTree resolves to a package
+
+An error occurred at line: [18] in the generated java file: [C:\Code\Java\COMP4321\COMP4321-Crawler\src\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. org.apache.jdbm.helper.FastIterator resolves to a package
+
+An error occurred at line: [16] in the jsp file: [/apis/getData.jsp]
+RecordManager cannot be resolved to a type
+13: 
+14: <% 
+15:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database.db");
+16:     RecordManager recman = RecordManagerFactory.createRecordManager(dbPath);
+17: 
+18:     long recid = recman.getNamedObject("PageInfo");
+19:     HTree pageinfo = null;
+
+
+An error occurred at line: [16] in the jsp file: [/apis/getData.jsp]
+RecordManagerFactory cannot be resolved
+13: 
+14: <% 
+15:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database.db");
+16:     RecordManager recman = RecordManagerFactory.createRecordManager(dbPath);
+17: 
+18:     long recid = recman.getNamedObject("PageInfo");
+19:     HTree pageinfo = null;
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+HTree cannot be resolved to a type
+16:     RecordManager recman = RecordManagerFactory.createRecordManager(dbPath);
+17: 
+18:     long recid = recman.getNamedObject("PageInfo");
+19:     HTree pageinfo = null;
+20:     if (recid != 0) {
+21:         pageinfo = HTree.load(recman, recid);
+22:     }
+
+
+An error occurred at line: [21] in the jsp file: [/apis/getData.jsp]
+HTree cannot be resolved
+18:     long recid = recman.getNamedObject("PageInfo");
+19:     HTree pageinfo = null;
+20:     if (recid != 0) {
+21:         pageinfo = HTree.load(recman, recid);
+22:     }
+23:     // get all the data and convert it into JSON format
+24:     StringBuilder json = new StringBuilder();
+
+
+An error occurred at line: [27] in the jsp file: [/apis/getData.jsp]
+FastIterator cannot be resolved to a type
+24:     StringBuilder json = new StringBuilder();
+25:     json.append("{ \"data\": [");
+26:     if (pageinfo != null) {
+27:         FastIterator iter = pageinfo.keys();
+28:         String url;
+29:         while ((url = (String) iter.next()) != null) {
+30:             String[] data = (String[]) pageinfo.get(url);
+
+
+An error occurred at line: [59] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable json
+56:     data.add("Item 3");
+57: 
+58:     // Convert data to JSON format
+59:     StringBuilder json = new StringBuilder();
+60:     json.append("{ \"data\": [");
+61:     for (int i = 0; i < data.size(); i++) {
+62:         json.append("\"").append(data.get(i)).append("\"");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+17-Apr-2024 20:36:14.957 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [16] in the generated java file: [C:\Code\Java\COMP4321\COMP4321-Crawler\src\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. org.apache.jdbm.RecordManagerFactory resolves to a package
+
+An error occurred at line: [17] in the generated java file: [C:\Code\Java\COMP4321\COMP4321-Crawler\src\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. org.apache.jdbm.htree.HTree resolves to a package
+
+An error occurred at line: [18] in the generated java file: [C:\Code\Java\COMP4321\COMP4321-Crawler\src\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. org.apache.jdbm.helper.FastIterator resolves to a package
+
+An error occurred at line: [16] in the jsp file: [/apis/getData.jsp]
+RecordManagerFactory cannot be resolved
+13: 
+14: <% 
+15:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database.db");
+16:     RecordManager recman = RecordManagerFactory.createRecordManager(dbPath);
+17: 
+18:     long recid = recman.getNamedObject("PageInfo");
+19:     HTree pageinfo = null;
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+HTree cannot be resolved to a type
+16:     RecordManager recman = RecordManagerFactory.createRecordManager(dbPath);
+17: 
+18:     long recid = recman.getNamedObject("PageInfo");
+19:     HTree pageinfo = null;
+20:     if (recid != 0) {
+21:         pageinfo = HTree.load(recman, recid);
+22:     }
+
+
+An error occurred at line: [21] in the jsp file: [/apis/getData.jsp]
+HTree cannot be resolved
+18:     long recid = recman.getNamedObject("PageInfo");
+19:     HTree pageinfo = null;
+20:     if (recid != 0) {
+21:         pageinfo = HTree.load(recman, recid);
+22:     }
+23:     // get all the data and convert it into JSON format
+24:     StringBuilder json = new StringBuilder();
+
+
+An error occurred at line: [27] in the jsp file: [/apis/getData.jsp]
+FastIterator cannot be resolved to a type
+24:     StringBuilder json = new StringBuilder();
+25:     json.append("{ \"data\": [");
+26:     if (pageinfo != null) {
+27:         FastIterator iter = pageinfo.keys();
+28:         String url;
+29:         while ((url = (String) iter.next()) != null) {
+30:             String[] data = (String[]) pageinfo.get(url);
+
+
+An error occurred at line: [59] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable json
+56:     data.add("Item 3");
+57: 
+58:     // Convert data to JSON format
+59:     StringBuilder json = new StringBuilder();
+60:     json.append("{ \"data\": [");
+61:     for (int i = 0; i < data.size(); i++) {
+62:         json.append("\"").append(data.get(i)).append("\"");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [16] in the generated java file: [C:\Code\Java\COMP4321\COMP4321-Crawler\src\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. org.apache.jdbm.RecordManagerFactory resolves to a package
+
+An error occurred at line: [17] in the generated java file: [C:\Code\Java\COMP4321\COMP4321-Crawler\src\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. org.apache.jdbm.htree.HTree resolves to a package
+
+An error occurred at line: [18] in the generated java file: [C:\Code\Java\COMP4321\COMP4321-Crawler\src\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. org.apache.jdbm.helper.FastIterator resolves to a package
+
+An error occurred at line: [16] in the jsp file: [/apis/getData.jsp]
+RecordManagerFactory cannot be resolved
+13: 
+14: <% 
+15:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database.db");
+16:     RecordManager recman = RecordManagerFactory.createRecordManager(dbPath);
+17: 
+18:     long recid = recman.getNamedObject("PageInfo");
+19:     HTree pageinfo = null;
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+HTree cannot be resolved to a type
+16:     RecordManager recman = RecordManagerFactory.createRecordManager(dbPath);
+17: 
+18:     long recid = recman.getNamedObject("PageInfo");
+19:     HTree pageinfo = null;
+20:     if (recid != 0) {
+21:         pageinfo = HTree.load(recman, recid);
+22:     }
+
+
+An error occurred at line: [21] in the jsp file: [/apis/getData.jsp]
+HTree cannot be resolved
+18:     long recid = recman.getNamedObject("PageInfo");
+19:     HTree pageinfo = null;
+20:     if (recid != 0) {
+21:         pageinfo = HTree.load(recman, recid);
+22:     }
+23:     // get all the data and convert it into JSON format
+24:     StringBuilder json = new StringBuilder();
+
+
+An error occurred at line: [27] in the jsp file: [/apis/getData.jsp]
+FastIterator cannot be resolved to a type
+24:     StringBuilder json = new StringBuilder();
+25:     json.append("{ \"data\": [");
+26:     if (pageinfo != null) {
+27:         FastIterator iter = pageinfo.keys();
+28:         String url;
+29:         while ((url = (String) iter.next()) != null) {
+30:             String[] data = (String[]) pageinfo.get(url);
+
+
+An error occurred at line: [59] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable json
+56:     data.add("Item 3");
+57: 
+58:     // Convert data to JSON format
+59:     StringBuilder json = new StringBuilder();
+60:     json.append("{ \"data\": [");
+61:     for (int i = 0; i < data.size(); i++) {
+62:         json.append("\"").append(data.get(i)).append("\"");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+17-Apr-2024 20:36:31.591 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [34] in the jsp file: [/apis/getData.jsp]
+The method hasNext() is undefined for the type FastIterator
+31:             json.append("{ \"url\": \"").append(url).append("\", ");
+32:             json.append("\"title\": \"").append(data[0]).append("\", ");
+33:             json.append("\"description\": \"").append(data[1]).append("\" }");
+34:             if (iter.hasNext()) {
+35:                 json.append(",");
+36:             }
+37:         }
+
+
+An error occurred at line: [59] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable json
+56:     data.add("Item 3");
+57: 
+58:     // Convert data to JSON format
+59:     StringBuilder json = new StringBuilder();
+60:     json.append("{ \"data\": [");
+61:     for (int i = 0; i < data.size(); i++) {
+62:         json.append("\"").append(data.get(i)).append("\"");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [34] in the jsp file: [/apis/getData.jsp]
+The method hasNext() is undefined for the type FastIterator
+31:             json.append("{ \"url\": \"").append(url).append("\", ");
+32:             json.append("\"title\": \"").append(data[0]).append("\", ");
+33:             json.append("\"description\": \"").append(data[1]).append("\" }");
+34:             if (iter.hasNext()) {
+35:                 json.append(",");
+36:             }
+37:         }
+
+
+An error occurred at line: [59] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable json
+56:     data.add("Item 3");
+57: 
+58:     // Convert data to JSON format
+59:     StringBuilder json = new StringBuilder();
+60:     json.append("{ \"data\": [");
+61:     for (int i = 0; i < data.size(); i++) {
+62:         json.append("\"").append(data.get(i)).append("\"");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+17-Apr-2024 20:38:01.217 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [29] in the jsp file: [/apis/getData.jsp]
+key cannot be resolved to a variable
+26:     json.append("{ \"data\": [");
+27: 
+28:     FastIterator iter = pageinfo.keys();
+29:     while (key = (String) iter.next() != null) {
+30:         String value = (String) pageinfo.get(key);
+31:         json.append("{ \"url\": \"").append(key).append("\", \"title\": \"").append(value).append("\" },");
+32:     }
+
+
+An error occurred at line: [30] in the jsp file: [/apis/getData.jsp]
+key cannot be resolved to a variable
+27: 
+28:     FastIterator iter = pageinfo.keys();
+29:     while (key = (String) iter.next() != null) {
+30:         String value = (String) pageinfo.get(key);
+31:         json.append("{ \"url\": \"").append(key).append("\", \"title\": \"").append(value).append("\" },");
+32:     }
+33:     json.append("] }");
+
+
+An error occurred at line: [31] in the jsp file: [/apis/getData.jsp]
+key cannot be resolved to a variable
+28:     FastIterator iter = pageinfo.keys();
+29:     while (key = (String) iter.next() != null) {
+30:         String value = (String) pageinfo.get(key);
+31:         json.append("{ \"url\": \"").append(key).append("\", \"title\": \"").append(value).append("\" },");
+32:     }
+33:     json.append("] }");
+34: 
+
+
+An error occurred at line: [53] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable json
+50:     data.add("Item 3");
+51: 
+52:     // Convert data to JSON format
+53:     StringBuilder json = new StringBuilder();
+54:     json.append("{ \"data\": [");
+55:     for (int i = 0; i < data.size(); i++) {
+56:         json.append("\"").append(data.get(i)).append("\"");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [29] in the jsp file: [/apis/getData.jsp]
+key cannot be resolved to a variable
+26:     json.append("{ \"data\": [");
+27: 
+28:     FastIterator iter = pageinfo.keys();
+29:     while (key = (String) iter.next() != null) {
+30:         String value = (String) pageinfo.get(key);
+31:         json.append("{ \"url\": \"").append(key).append("\", \"title\": \"").append(value).append("\" },");
+32:     }
+
+
+An error occurred at line: [30] in the jsp file: [/apis/getData.jsp]
+key cannot be resolved to a variable
+27: 
+28:     FastIterator iter = pageinfo.keys();
+29:     while (key = (String) iter.next() != null) {
+30:         String value = (String) pageinfo.get(key);
+31:         json.append("{ \"url\": \"").append(key).append("\", \"title\": \"").append(value).append("\" },");
+32:     }
+33:     json.append("] }");
+
+
+An error occurred at line: [31] in the jsp file: [/apis/getData.jsp]
+key cannot be resolved to a variable
+28:     FastIterator iter = pageinfo.keys();
+29:     while (key = (String) iter.next() != null) {
+30:         String value = (String) pageinfo.get(key);
+31:         json.append("{ \"url\": \"").append(key).append("\", \"title\": \"").append(value).append("\" },");
+32:     }
+33:     json.append("] }");
+34: 
+
+
+An error occurred at line: [53] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable json
+50:     data.add("Item 3");
+51: 
+52:     // Convert data to JSON format
+53:     StringBuilder json = new StringBuilder();
+54:     json.append("{ \"data\": [");
+55:     for (int i = 0; i < data.size(); i++) {
+56:         json.append("\"").append(data.get(i)).append("\"");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+17-Apr-2024 20:38:21.172 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [30] in the jsp file: [/apis/getData.jsp]
+Type mismatch: cannot convert from String to boolean
+27: 
+28:     FastIterator iter = pageinfo.keys();
+29:     String key;
+30:     while (key = (String) iter.next() != null) {
+31:         String value = (String) pageinfo.get(key);
+32:         json.append("{ \"url\": \"").append(key).append("\", \"title\": \"").append(value).append("\" },");
+33:     }
+
+
+An error occurred at line: [30] in the jsp file: [/apis/getData.jsp]
+Type mismatch: cannot convert from boolean to String
+27: 
+28:     FastIterator iter = pageinfo.keys();
+29:     String key;
+30:     while (key = (String) iter.next() != null) {
+31:         String value = (String) pageinfo.get(key);
+32:         json.append("{ \"url\": \"").append(key).append("\", \"title\": \"").append(value).append("\" },");
+33:     }
+
+
+An error occurred at line: [54] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable json
+51:     data.add("Item 3");
+52: 
+53:     // Convert data to JSON format
+54:     StringBuilder json = new StringBuilder();
+55:     json.append("{ \"data\": [");
+56:     for (int i = 0; i < data.size(); i++) {
+57:         json.append("\"").append(data.get(i)).append("\"");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [30] in the jsp file: [/apis/getData.jsp]
+Type mismatch: cannot convert from String to boolean
+27: 
+28:     FastIterator iter = pageinfo.keys();
+29:     String key;
+30:     while (key = (String) iter.next() != null) {
+31:         String value = (String) pageinfo.get(key);
+32:         json.append("{ \"url\": \"").append(key).append("\", \"title\": \"").append(value).append("\" },");
+33:     }
+
+
+An error occurred at line: [30] in the jsp file: [/apis/getData.jsp]
+Type mismatch: cannot convert from boolean to String
+27: 
+28:     FastIterator iter = pageinfo.keys();
+29:     String key;
+30:     while (key = (String) iter.next() != null) {
+31:         String value = (String) pageinfo.get(key);
+32:         json.append("{ \"url\": \"").append(key).append("\", \"title\": \"").append(value).append("\" },");
+33:     }
+
+
+An error occurred at line: [54] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable json
+51:     data.add("Item 3");
+52: 
+53:     // Convert data to JSON format
+54:     StringBuilder json = new StringBuilder();
+55:     json.append("{ \"data\": [");
+56:     for (int i = 0; i < data.size(); i++) {
+57:         json.append("\"").append(data.get(i)).append("\"");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+17-Apr-2024 20:38:32.631 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [30] in the jsp file: [/apis/getData.jsp]
+Type mismatch: cannot convert from String to boolean
+27: 
+28:     FastIterator iter = pageinfo.keys();
+29:     String key;
+30:     while (key = (String) iter.next() != null) {
+31:         String value = (String) pageinfo.get(key);
+32:         json.append("{ \"url\": \"").append(key).append("\", \"title\": \"").append(value).append("\" },");
+33:     }
+
+
+An error occurred at line: [30] in the jsp file: [/apis/getData.jsp]
+Type mismatch: cannot convert from boolean to String
+27: 
+28:     FastIterator iter = pageinfo.keys();
+29:     String key;
+30:     while (key = (String) iter.next() != null) {
+31:         String value = (String) pageinfo.get(key);
+32:         json.append("{ \"url\": \"").append(key).append("\", \"title\": \"").append(value).append("\" },");
+33:     }
+
+
+An error occurred at line: [54] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable json
+51:     data.add("Item 3");
+52: 
+53:     // Convert data to JSON format
+54:     StringBuilder json = new StringBuilder();
+55:     json.append("{ \"data\": [");
+56:     for (int i = 0; i < data.size(); i++) {
+57:         json.append("\"").append(data.get(i)).append("\"");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [30] in the jsp file: [/apis/getData.jsp]
+Type mismatch: cannot convert from String to boolean
+27: 
+28:     FastIterator iter = pageinfo.keys();
+29:     String key;
+30:     while (key = (String) iter.next() != null) {
+31:         String value = (String) pageinfo.get(key);
+32:         json.append("{ \"url\": \"").append(key).append("\", \"title\": \"").append(value).append("\" },");
+33:     }
+
+
+An error occurred at line: [30] in the jsp file: [/apis/getData.jsp]
+Type mismatch: cannot convert from boolean to String
+27: 
+28:     FastIterator iter = pageinfo.keys();
+29:     String key;
+30:     while (key = (String) iter.next() != null) {
+31:         String value = (String) pageinfo.get(key);
+32:         json.append("{ \"url\": \"").append(key).append("\", \"title\": \"").append(value).append("\" },");
+33:     }
+
+
+An error occurred at line: [54] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable json
+51:     data.add("Item 3");
+52: 
+53:     // Convert data to JSON format
+54:     StringBuilder json = new StringBuilder();
+55:     json.append("{ \"data\": [");
+56:     for (int i = 0; i < data.size(); i++) {
+57:         json.append("\"").append(data.get(i)).append("\"");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+17-Apr-2024 20:39:00.688 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [54] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable json
+51:     data.add("Item 3");
+52: 
+53:     // Convert data to JSON format
+54:     StringBuilder json = new StringBuilder();
+55:     json.append("{ \"data\": [");
+56:     for (int i = 0; i < data.size(); i++) {
+57:         json.append("\"").append(data.get(i)).append("\"");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [54] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable json
+51:     data.add("Item 3");
+52: 
+53:     // Convert data to JSON format
+54:     StringBuilder json = new StringBuilder();
+55:     json.append("{ \"data\": [");
+56:     for (int i = 0; i < data.size(); i++) {
+57:         json.append("\"").append(data.get(i)).append("\"");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+17-Apr-2024 20:39:29.606 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [An exception occurred processing [/apis/getData.jsp] at line [28]
+
+25:     StringBuilder json = new StringBuilder();
+26:     json.append("{ \"data\": [");
+27: 
+28:     FastIterator iter = pageinfo.keys();
+29:     String key;
+30:     while ((key = (String) iter.next()) != null) {
+31:         String value = (String) pageinfo.get(key);
+
+
+Stacktrace:] with root cause
+	java.lang.NullPointerException: Cannot invoke "jdbm.htree.HTree.keys()" because "pageinfo" is null
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:157)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+17-Apr-2024 20:41:17.440 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [An exception occurred processing [/apis/getData.jsp] at line [28]
+
+25:     StringBuilder json = new StringBuilder();
+26:     json.append("{ \"data\": [");
+27: 
+28:     FastIterator iter = pageinfo.keys();
+29:     String key;
+30:     while ((key = (String) iter.next()) != null) {
+31:         String value = (String) pageinfo.get(key);
+
+
+Stacktrace:] with root cause
+	java.lang.NullPointerException: Cannot invoke "jdbm.htree.HTree.keys()" because "pageinfo" is null
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:157)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+17-Apr-2024 20:47:32.452 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+17-Apr-2024 20:47:32.452 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+17-Apr-2024 20:47:53.666 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+17-Apr-2024 20:47:53.666 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+17-Apr-2024 20:47:53.670 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1db0ec27')
+17-Apr-2024 20:52:15.983 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [16] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+13: 
+14: <%
+15:     
+16:     String dbPath = "../database/database"
+17: 
+18:     RecordManager recman = RecordManagerFactory.createRecordManager(dbPath);
+19: 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [16] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+13: 
+14: <%
+15:     
+16:     String dbPath = "../database/database"
+17: 
+18:     RecordManager recman = RecordManagerFactory.createRecordManager(dbPath);
+19: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+17-Apr-2024 20:52:43.502 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception
+	java.io.IOException: An exception occurred processing [/apis/getData.jsp] at line [18]
+
+15:     
+16:     String dbPath = "../database/database";
+17: 
+18:     RecordManager recman = RecordManagerFactory.createRecordManager(dbPath);
+19: 
+20:     long recid = recman.getNamedObject("PageInfo");
+21:     HTree pageinfo = null;
+
+
+Stacktrace:
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:483)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+	Caused by: java.io.FileNotFoundException: ..\database\database.db (The system cannot find the path specified)
+		at java.base/java.io.RandomAccessFile.open0(Native Method)
+		at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:356)
+		at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:273)
+		at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:223)
+		at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:137)
+		at jdbm.recman.RecordFile.<init>(RecordFile.java:98)
+		at jdbm.recman.BaseRecordManager.<init>(BaseRecordManager.java:140)
+		at jdbm.recman.Provider.createRecordManager(Provider.java:89)
+		at jdbm.RecordManagerFactory.createRecordManager(RecordManagerFactory.java:114)
+		at jdbm.RecordManagerFactory.createRecordManager(RecordManagerFactory.java:78)
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:147)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		... 25 more
+17-Apr-2024 20:56:06.494 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception
+	java.io.IOException: An exception occurred processing [/apis/getData.jsp] at line [18]
+
+15:     
+16:     String dbPath = "../database/database";
+17: 
+18:     RecordManager recman = RecordManagerFactory.createRecordManager(dbPath);
+19: 
+20:     long recid = recman.getNamedObject("PageInfo");
+21:     HTree pageinfo = null;
+
+
+Stacktrace:
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:483)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+	Caused by: java.io.FileNotFoundException: ..\database\database.db (The system cannot find the path specified)
+		at java.base/java.io.RandomAccessFile.open0(Native Method)
+		at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:356)
+		at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:273)
+		at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:223)
+		at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:137)
+		at jdbm.recman.RecordFile.<init>(RecordFile.java:98)
+		at jdbm.recman.BaseRecordManager.<init>(BaseRecordManager.java:140)
+		at jdbm.recman.Provider.createRecordManager(Provider.java:89)
+		at jdbm.RecordManagerFactory.createRecordManager(RecordManagerFactory.java:114)
+		at jdbm.RecordManagerFactory.createRecordManager(RecordManagerFactory.java:78)
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:147)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		... 25 more
+17-Apr-2024 20:57:17.407 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+Unreachable code
+19:     out.print(dbPath);
+20:     return;
+21: 
+22:     RecordManager recman = RecordManagerFactory.createRecordManager(dbPath);
+23: 
+24:     long recid = recman.getNamedObject("PageInfo");
+25:     HTree pageinfo = null;
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+Unreachable code
+19:     out.print(dbPath);
+20:     return;
+21: 
+22:     RecordManager recman = RecordManagerFactory.createRecordManager(dbPath);
+23: 
+24:     long recid = recman.getNamedObject("PageInfo");
+25:     HTree pageinfo = null;
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+17-Apr-2024 20:57:51.520 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+Unreachable code
+19:     out.print(dbPath);
+20:     return;
+21: 
+22: %>
+23: 
+24: 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+Unreachable code
+19:     out.print(dbPath);
+20:     return;
+21: 
+22: %>
+23: 
+24: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+17-Apr-2024 20:58:02.361 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+17-Apr-2024 20:58:02.361 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+17-Apr-2024 20:58:10.519 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+17-Apr-2024 20:58:10.519 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+17-Apr-2024 20:58:10.519 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@71652c98')
+17-Apr-2024 20:58:13.203 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+Unreachable code
+19:     out.print(dbPath);
+20:     return;
+21: 
+22: %>
+23: 
+24: 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+Unreachable code
+19:     out.print(dbPath);
+20:     return;
+21: 
+22: %>
+23: 
+24: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+17-Apr-2024 21:02:27.787 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception
+	java.io.IOException: An exception occurred processing [/apis/getData.jsp] at line [14]
+
+11:     
+12:     String dbPath = "/database/database";
+13: 
+14:     RecordManager recman = RecordManagerFactory.createRecordManager(dbPath);
+15: 
+16:     long recid = recman.getNamedObject("PageInfo");
+17:     HTree pageinfo = null;
+
+
+Stacktrace:
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:483)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+	Caused by: java.io.FileNotFoundException: \database\database.db (The system cannot find the path specified)
+		at java.base/java.io.RandomAccessFile.open0(Native Method)
+		at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:356)
+		at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:273)
+		at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:223)
+		at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:137)
+		at jdbm.recman.RecordFile.<init>(RecordFile.java:98)
+		at jdbm.recman.BaseRecordManager.<init>(BaseRecordManager.java:140)
+		at jdbm.recman.Provider.createRecordManager(Provider.java:89)
+		at jdbm.RecordManagerFactory.createRecordManager(RecordManagerFactory.java:114)
+		at jdbm.RecordManagerFactory.createRecordManager(RecordManagerFactory.java:78)
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:143)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		... 25 more
+17-Apr-2024 21:03:44.619 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Void methods cannot return a value
+12:     String dbPath = "/database/database";
+13: 
+14:     out.println(dbPath);
+15:     return
+16: %>
+17: 
+18: 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Void methods cannot return a value
+12:     String dbPath = "/database/database";
+13: 
+14:     out.println(dbPath);
+15:     return
+16: %>
+17: 
+18: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+17-Apr-2024 21:03:55.206 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [16] in the jsp file: [/apis/getData.jsp]
+Unreachable code
+13: 
+14:     out.println(dbPath);
+15:     return;
+16: %>
+17: 
+18: 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [16] in the jsp file: [/apis/getData.jsp]
+Unreachable code
+13: 
+14:     out.println(dbPath);
+15:     return;
+16: %>
+17: 
+18: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+17-Apr-2024 21:05:10.515 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception
+	java.io.IOException: An exception occurred processing [/apis/getData.jsp] at line [18]
+
+15:     out.print("{\"dbPath\": \"" + dbPath + "\"}");
+16: 
+17:     
+18:     RecordManager recman = RecordManagerFactory.createRecordManager(dbPath);
+19: 
+20:     long recid = recman.getNamedObject("PageInfo");
+21:     HTree pageinfo = null;
+
+
+Stacktrace:
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:483)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+	Caused by: java.io.FileNotFoundException: ..\database\database.db (The system cannot find the path specified)
+		at java.base/java.io.RandomAccessFile.open0(Native Method)
+		at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:356)
+		at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:273)
+		at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:223)
+		at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:137)
+		at jdbm.recman.RecordFile.<init>(RecordFile.java:98)
+		at jdbm.recman.BaseRecordManager.<init>(BaseRecordManager.java:140)
+		at jdbm.recman.Provider.createRecordManager(Provider.java:89)
+		at jdbm.RecordManagerFactory.createRecordManager(RecordManagerFactory.java:114)
+		at jdbm.RecordManagerFactory.createRecordManager(RecordManagerFactory.java:78)
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:147)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		... 25 more
+17-Apr-2024 21:05:26.750 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception
+	java.io.IOException: An exception occurred processing [/apis/getData.jsp] at line [18]
+
+15:     out.print("{\"dbPath\": \"" + dbPath + "\"}");
+16: 
+17:     
+18:     RecordManager recman = RecordManagerFactory.createRecordManager(dbPath);
+19: 
+20:     long recid = recman.getNamedObject("PageInfo");
+21:     HTree pageinfo = null;
+
+
+Stacktrace:
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:483)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+	Caused by: java.io.FileNotFoundException: ..\database\database.db (The system cannot find the path specified)
+		at java.base/java.io.RandomAccessFile.open0(Native Method)
+		at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:356)
+		at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:273)
+		at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:223)
+		at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:137)
+		at jdbm.recman.RecordFile.<init>(RecordFile.java:98)
+		at jdbm.recman.BaseRecordManager.<init>(BaseRecordManager.java:140)
+		at jdbm.recman.Provider.createRecordManager(Provider.java:89)
+		at jdbm.RecordManagerFactory.createRecordManager(RecordManagerFactory.java:114)
+		at jdbm.RecordManagerFactory.createRecordManager(RecordManagerFactory.java:78)
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:147)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		... 25 more
+17-Apr-2024 21:05:51.910 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [18] in the jsp file: [/apis/getData.jsp]
+Unreachable code
+15:     out.print("{\"dbPath\": \"" + dbPath + "\"}");
+16:     return;
+17:     
+18:     RecordManager recman = RecordManagerFactory.createRecordManager(dbPath);
+19: 
+20:     long recid = recman.getNamedObject("PageInfo");
+21:     HTree pageinfo = null;
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [18] in the jsp file: [/apis/getData.jsp]
+Unreachable code
+15:     out.print("{\"dbPath\": \"" + dbPath + "\"}");
+16:     return;
+17:     
+18:     RecordManager recman = RecordManagerFactory.createRecordManager(dbPath);
+19: 
+20:     long recid = recman.getNamedObject("PageInfo");
+21:     HTree pageinfo = null;
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+17-Apr-2024 21:06:18.424 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception
+	java.io.IOException: An exception occurred processing [/apis/getData.jsp] at line [18]
+
+15:     out.print("{\"dbPath\": \"" + dbPath + "\"}");
+16: 
+17:     
+18:     RecordManager recman = RecordManagerFactory.createRecordManager(dbPath);
+19: 
+20:     long recid = recman.getNamedObject("PageInfo");
+21:     HTree pageinfo = null;
+
+
+Stacktrace:
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:483)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+	Caused by: java.io.FileNotFoundException: ..\database\database.db (The system cannot find the path specified)
+		at java.base/java.io.RandomAccessFile.open0(Native Method)
+		at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:356)
+		at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:273)
+		at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:223)
+		at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:137)
+		at jdbm.recman.RecordFile.<init>(RecordFile.java:98)
+		at jdbm.recman.BaseRecordManager.<init>(BaseRecordManager.java:140)
+		at jdbm.recman.Provider.createRecordManager(Provider.java:89)
+		at jdbm.RecordManagerFactory.createRecordManager(RecordManagerFactory.java:114)
+		at jdbm.RecordManagerFactory.createRecordManager(RecordManagerFactory.java:78)
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:147)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		... 25 more
+17-Apr-2024 21:10:08.496 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [21] in the jsp file: [/apis/getData.jsp]
+recman cannot be resolved
+18:         return;
+19:     }
+20: 
+21:     long recid = recman.getNamedObject("PageInfo");
+22:     HTree pageinfo = null;
+23:     if (recid != 0) {
+24:         pageinfo = HTree.load(recman, recid);
+
+
+An error occurred at line: [24] in the jsp file: [/apis/getData.jsp]
+recman cannot be resolved to a variable
+21:     long recid = recman.getNamedObject("PageInfo");
+22:     HTree pageinfo = null;
+23:     if (recid != 0) {
+24:         pageinfo = HTree.load(recman, recid);
+25:     }
+26:     
+27:     // if pageinfo is null, return error msg (dbPath)
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [21] in the jsp file: [/apis/getData.jsp]
+recman cannot be resolved
+18:         return;
+19:     }
+20: 
+21:     long recid = recman.getNamedObject("PageInfo");
+22:     HTree pageinfo = null;
+23:     if (recid != 0) {
+24:         pageinfo = HTree.load(recman, recid);
+
+
+An error occurred at line: [24] in the jsp file: [/apis/getData.jsp]
+recman cannot be resolved to a variable
+21:     long recid = recman.getNamedObject("PageInfo");
+22:     HTree pageinfo = null;
+23:     if (recid != 0) {
+24:         pageinfo = HTree.load(recman, recid);
+25:     }
+26:     
+27:     // if pageinfo is null, return error msg (dbPath)
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+17-Apr-2024 22:37:49.209 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+17-Apr-2024 22:37:49.209 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
