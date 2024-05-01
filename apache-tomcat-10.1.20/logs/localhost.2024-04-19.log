@@ -1,0 +1,1610 @@
+19-Apr-2024 11:25:44.396 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+19-Apr-2024 11:25:44.396 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+19-Apr-2024 11:25:44.399 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@aa5455e')
+19-Apr-2024 11:38:43.841 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+19-Apr-2024 11:38:43.841 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+19-Apr-2024 11:38:48.018 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+19-Apr-2024 11:38:48.018 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+19-Apr-2024 11:38:48.021 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@492fc69e')
+19-Apr-2024 11:52:18.637 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+19-Apr-2024 11:52:18.637 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+19-Apr-2024 11:52:25.726 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+19-Apr-2024 11:52:25.726 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+19-Apr-2024 11:52:25.728 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@60b85ba1')
+19-Apr-2024 11:53:23.404 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+19-Apr-2024 11:53:23.404 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+19-Apr-2024 11:53:36.566 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+19-Apr-2024 11:53:36.567 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+19-Apr-2024 11:53:36.569 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@3b4ef7')
+19-Apr-2024 13:45:29.906 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the generated java file: [C:\Code\Java\COMP4321\COMP4321-Crawler\src\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+The import Indexer cannot be resolved
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "<", assert expected
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete AssertStatement
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+RecordManager cannot be resolved to a variable
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+recman cannot be resolved to a variable
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ">", @ expected
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Syntax error, type annotations are illegal here
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [17] in the jsp file: [/apis/getData.jsp]
+indexer cannot be resolved to a variable
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+
+
+An error occurred at line: [17] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "=", ; expected
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+
+
+An error occurred at line: [17] in the jsp file: [/apis/getData.jsp]
+Indexer cannot be resolved to a type
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "<", assert expected
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+The operator ! is undefined for the argument type(s) Class<Long>
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ". class" to complete Expression
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete AssertStatement
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+recid cannot be resolved to a variable
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+recman cannot be resolved
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+recman cannot be resolved to a variable
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+recid cannot be resolved to a variable
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+Type mismatch: cannot convert from HTree to int
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ">", @ expected
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+Syntax error, type annotations are illegal here
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "=", ; expected
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+24: 
+25:     // get all the data and convert it into JSON format
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+indexer cannot be resolved
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+24: 
+25:     // get all the data and convert it into JSON format
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the generated java file: [C:\Code\Java\COMP4321\COMP4321-Crawler\src\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+The import Indexer cannot be resolved
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "<", assert expected
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete AssertStatement
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+RecordManager cannot be resolved to a variable
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+recman cannot be resolved to a variable
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ">", @ expected
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Syntax error, type annotations are illegal here
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [17] in the jsp file: [/apis/getData.jsp]
+indexer cannot be resolved to a variable
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+
+
+An error occurred at line: [17] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "=", ; expected
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+
+
+An error occurred at line: [17] in the jsp file: [/apis/getData.jsp]
+Indexer cannot be resolved to a type
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "<", assert expected
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+The operator ! is undefined for the argument type(s) Class<Long>
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ". class" to complete Expression
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete AssertStatement
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+recid cannot be resolved to a variable
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+recman cannot be resolved
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+recman cannot be resolved to a variable
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+recid cannot be resolved to a variable
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+Type mismatch: cannot convert from HTree to int
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ">", @ expected
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+Syntax error, type annotations are illegal here
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "=", ; expected
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+24: 
+25:     // get all the data and convert it into JSON format
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+indexer cannot be resolved
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+24: 
+25:     // get all the data and convert it into JSON format
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+19-Apr-2024 13:52:47.224 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the generated java file: [C:\Code\Java\COMP4321\COMP4321-Crawler\src\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. project.Indexer resolves to a package
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "<", assert expected
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete AssertStatement
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+RecordManager cannot be resolved to a variable
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+recman cannot be resolved to a variable
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ">", @ expected
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Syntax error, type annotations are illegal here
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [17] in the jsp file: [/apis/getData.jsp]
+indexer cannot be resolved to a variable
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+
+
+An error occurred at line: [17] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "=", ; expected
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+
+
+An error occurred at line: [17] in the jsp file: [/apis/getData.jsp]
+Indexer cannot be resolved to a type
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "<", assert expected
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+The operator ! is undefined for the argument type(s) Class<Long>
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ". class" to complete Expression
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete AssertStatement
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+recid cannot be resolved to a variable
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+recman cannot be resolved
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+recman cannot be resolved to a variable
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+recid cannot be resolved to a variable
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+Type mismatch: cannot convert from HTree to int
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ">", @ expected
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+Syntax error, type annotations are illegal here
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "=", ; expected
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+24: 
+25:     // get all the data and convert it into JSON format
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+indexer cannot be resolved
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+24: 
+25:     // get all the data and convert it into JSON format
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the generated java file: [C:\Code\Java\COMP4321\COMP4321-Crawler\src\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. project.Indexer resolves to a package
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "<", assert expected
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete AssertStatement
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+RecordManager cannot be resolved to a variable
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+recman cannot be resolved to a variable
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ">", @ expected
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Syntax error, type annotations are illegal here
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [17] in the jsp file: [/apis/getData.jsp]
+indexer cannot be resolved to a variable
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+
+
+An error occurred at line: [17] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "=", ; expected
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+
+
+An error occurred at line: [17] in the jsp file: [/apis/getData.jsp]
+Indexer cannot be resolved to a type
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "<", assert expected
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+The operator ! is undefined for the argument type(s) Class<Long>
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ". class" to complete Expression
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete AssertStatement
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+recid cannot be resolved to a variable
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+recman cannot be resolved
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+recman cannot be resolved to a variable
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+recid cannot be resolved to a variable
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+Type mismatch: cannot convert from HTree to int
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ">", @ expected
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+Syntax error, type annotations are illegal here
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "=", ; expected
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+24: 
+25:     // get all the data and convert it into JSON format
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+indexer cannot be resolved
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+24: 
+25:     // get all the data and convert it into JSON format
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+19-Apr-2024 13:52:52.033 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+19-Apr-2024 13:52:52.033 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+19-Apr-2024 13:52:57.018 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+19-Apr-2024 13:52:57.018 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+19-Apr-2024 13:52:57.021 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@5d332969')
+19-Apr-2024 13:53:01.469 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the generated java file: [C:\Code\Java\COMP4321\COMP4321-Crawler\src\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. project.Indexer resolves to a package
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "<", assert expected
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete AssertStatement
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+RecordManager cannot be resolved to a variable
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+recman cannot be resolved to a variable
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ">", @ expected
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Syntax error, type annotations are illegal here
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [17] in the jsp file: [/apis/getData.jsp]
+indexer cannot be resolved to a variable
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+
+
+An error occurred at line: [17] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "=", ; expected
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+
+
+An error occurred at line: [17] in the jsp file: [/apis/getData.jsp]
+Indexer cannot be resolved to a type
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "<", assert expected
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+The operator ! is undefined for the argument type(s) Class<Long>
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ". class" to complete Expression
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete AssertStatement
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+recid cannot be resolved to a variable
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+recman cannot be resolved
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+recman cannot be resolved to a variable
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+recid cannot be resolved to a variable
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+Type mismatch: cannot convert from HTree to int
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ">", @ expected
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+Syntax error, type annotations are illegal here
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "=", ; expected
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+24: 
+25:     // get all the data and convert it into JSON format
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+indexer cannot be resolved
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+24: 
+25:     // get all the data and convert it into JSON format
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the generated java file: [C:\Code\Java\COMP4321\COMP4321-Crawler\src\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. project.Indexer resolves to a package
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "<", assert expected
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete AssertStatement
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+RecordManager cannot be resolved to a variable
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+recman cannot be resolved to a variable
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ">", @ expected
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [15] in the jsp file: [/apis/getData.jsp]
+Syntax error, type annotations are illegal here
+12:     
+13:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+
+
+An error occurred at line: [17] in the jsp file: [/apis/getData.jsp]
+indexer cannot be resolved to a variable
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+
+
+An error occurred at line: [17] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "=", ; expected
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+
+
+An error occurred at line: [17] in the jsp file: [/apis/getData.jsp]
+Indexer cannot be resolved to a type
+14: 
+15:     <!-- RecordManager recman = RecordManagerFactory.createRecordManager(dbPath); -->
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "<", assert expected
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+The operator ! is undefined for the argument type(s) Class<Long>
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ". class" to complete Expression
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete AssertStatement
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+recid cannot be resolved to a variable
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+recman cannot be resolved
+16: 
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+recman cannot be resolved to a variable
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+recid cannot be resolved to a variable
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+Type mismatch: cannot convert from HTree to int
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ">", @ expected
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [20] in the jsp file: [/apis/getData.jsp]
+Syntax error, type annotations are illegal here
+17:     Indexer indexer = new Indexer(dbPath);
+18: 
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "=", ; expected
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+24: 
+25:     // get all the data and convert it into JSON format
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+indexer cannot be resolved
+19:     <!-- long recid = recman.getNamedObject("PageInfo");
+20:     HTree pageinfo = HTree.load(recman, recid); -->
+21: 
+22:     HTree pageinfo = indexer.getOrCreateHTree("PageInfo");
+23: 
+24: 
+25:     // get all the data and convert it into JSON format
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)

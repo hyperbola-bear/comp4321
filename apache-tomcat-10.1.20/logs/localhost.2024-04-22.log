@@ -1,0 +1,603 @@
+22-Apr-2024 10:07:29.755 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+22-Apr-2024 10:07:29.755 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+22-Apr-2024 16:08:23.225 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+22-Apr-2024 16:08:23.225 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+22-Apr-2024 16:08:23.227 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@10027fc9')
+22-Apr-2024 17:18:26.360 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [An exception occurred processing [/apis/getData.jsp] at line [115]
+
+112:     HTree BodyWordMapping = HTree.load(recman, BodyWordMappingID);
+113: 
+114:     long PageParentID = recman.getNamedObject("PageParent");
+115:     HTree PageParent = HTree.load(recman, PageParentID);
+116: 
+117: //    long TitleWordMappingID = recman.getNamedObject("TitleWordMapping");
+118: //    HTree TitleWordMapping = HTree.load(recman, TitleWordMappingID);
+
+
+Stacktrace:] with root cause
+	java.lang.IllegalArgumentException: Argument 'recid' is invalid: 0
+		at jdbm.recman.BaseRecordManager.fetch(BaseRecordManager.java:334)
+		at jdbm.recman.CacheRecordManager.fetch(CacheRecordManager.java:263)
+		at jdbm.recman.CacheRecordManager.fetch(CacheRecordManager.java:242)
+		at jdbm.htree.HTree.load(HTree.java:113)
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:248)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+22-Apr-2024 17:18:31.787 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+22-Apr-2024 17:18:31.788 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+22-Apr-2024 17:20:25.552 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+22-Apr-2024 17:20:25.552 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+22-Apr-2024 17:20:25.554 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@54afd745')
+22-Apr-2024 17:20:29.305 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception
+	java.io.IOException: An exception occurred processing [apis/getData.jsp] at line [94]
+
+91:     // here is the part for database
+92:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+93: 
+94:     RecordManager recman = RecordManagerFactory.createRecordManager(dbPath);
+95: 
+96:     long PageInfoID = recman.getNamedObject("PageInfo");
+97:     HTree PageInfo = HTree.load(recman, PageInfoID);
+
+
+Stacktrace:
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:483)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+	Caused by: java.io.FileNotFoundException: C:\Code\Java\COMP4321\COMP4321-Crawler\src\apache-tomcat-10.1.20\webapps\comp4321\WEB-INF\database\database.db (The system cannot find the path specified)
+		at java.base/java.io.RandomAccessFile.open0(Native Method)
+		at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:356)
+		at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:273)
+		at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:223)
+		at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:137)
+		at jdbm.recman.RecordFile.<init>(RecordFile.java:98)
+		at jdbm.recman.BaseRecordManager.<init>(BaseRecordManager.java:140)
+		at jdbm.recman.Provider.createRecordManager(Provider.java:89)
+		at jdbm.RecordManagerFactory.createRecordManager(RecordManagerFactory.java:114)
+		at jdbm.RecordManagerFactory.createRecordManager(RecordManagerFactory.java:78)
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:227)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		... 25 more
+22-Apr-2024 17:20:37.622 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception
+	java.io.IOException: An exception occurred processing [apis/getData.jsp] at line [94]
+
+91:     // here is the part for database
+92:     String dbPath = getServletContext().getRealPath("/WEB-INF/database/database");
+93: 
+94:     RecordManager recman = RecordManagerFactory.createRecordManager(dbPath);
+95: 
+96:     long PageInfoID = recman.getNamedObject("PageInfo");
+97:     HTree PageInfo = HTree.load(recman, PageInfoID);
+
+
+Stacktrace:
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:483)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+	Caused by: java.io.FileNotFoundException: C:\Code\Java\COMP4321\COMP4321-Crawler\src\apache-tomcat-10.1.20\webapps\comp4321\WEB-INF\database\database.db (The system cannot find the path specified)
+		at java.base/java.io.RandomAccessFile.open0(Native Method)
+		at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:356)
+		at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:273)
+		at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:223)
+		at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:137)
+		at jdbm.recman.RecordFile.<init>(RecordFile.java:98)
+		at jdbm.recman.BaseRecordManager.<init>(BaseRecordManager.java:140)
+		at jdbm.recman.Provider.createRecordManager(Provider.java:89)
+		at jdbm.RecordManagerFactory.createRecordManager(RecordManagerFactory.java:114)
+		at jdbm.RecordManagerFactory.createRecordManager(RecordManagerFactory.java:78)
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:227)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		... 25 more
+22-Apr-2024 17:21:09.383 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+22-Apr-2024 17:21:09.383 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+22-Apr-2024 17:21:13.621 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+22-Apr-2024 17:21:13.622 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+22-Apr-2024 17:21:13.624 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@52350abb')
+22-Apr-2024 18:02:45.271 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+22-Apr-2024 18:02:45.271 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+22-Apr-2024 18:03:00.710 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+22-Apr-2024 18:03:00.710 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+22-Apr-2024 18:03:00.715 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@54afd745')
+22-Apr-2024 18:03:10.667 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [218] in the jsp file: [/apis/getData.jsp]
+Type mismatch: cannot convert from double to int
+215: 
+216:     // combine the cosine similarity of the body and title by adding them together with a weighting of 0.7 for body and 0.3 for title
+217:     Map<Integer, Double> cosineSimilarity = new HashMap<>();
+218:     int bodyPara = 0.7;
+219:     int titlePara = 0.3;
+220:     for (Map.Entry<Integer, Double> entry : cosineSimilarityBody.entrySet()) {
+221:         int pageID = entry.getKey();
+
+
+An error occurred at line: [219] in the jsp file: [/apis/getData.jsp]
+Type mismatch: cannot convert from double to int
+216:     // combine the cosine similarity of the body and title by adding them together with a weighting of 0.7 for body and 0.3 for title
+217:     Map<Integer, Double> cosineSimilarity = new HashMap<>();
+218:     int bodyPara = 0.7;
+219:     int titlePara = 0.3;
+220:     for (Map.Entry<Integer, Double> entry : cosineSimilarityBody.entrySet()) {
+221:         int pageID = entry.getKey();
+222:         double bodySimilarity = entry.getValue();
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [218] in the jsp file: [/apis/getData.jsp]
+Type mismatch: cannot convert from double to int
+215: 
+216:     // combine the cosine similarity of the body and title by adding them together with a weighting of 0.7 for body and 0.3 for title
+217:     Map<Integer, Double> cosineSimilarity = new HashMap<>();
+218:     int bodyPara = 0.7;
+219:     int titlePara = 0.3;
+220:     for (Map.Entry<Integer, Double> entry : cosineSimilarityBody.entrySet()) {
+221:         int pageID = entry.getKey();
+
+
+An error occurred at line: [219] in the jsp file: [/apis/getData.jsp]
+Type mismatch: cannot convert from double to int
+216:     // combine the cosine similarity of the body and title by adding them together with a weighting of 0.7 for body and 0.3 for title
+217:     Map<Integer, Double> cosineSimilarity = new HashMap<>();
+218:     int bodyPara = 0.7;
+219:     int titlePara = 0.3;
+220:     for (Map.Entry<Integer, Double> entry : cosineSimilarityBody.entrySet()) {
+221:         int pageID = entry.getKey();
+222:         double bodySimilarity = entry.getValue();
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+22-Apr-2024 19:10:46.602 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [An exception occurred processing [/apis/getData.jsp] at line [47]
+
+44:                 ngram = "";
+45:                 break;
+46:             }
+47:             ngram += porter.stripAffixes(word) + " ";
+48:         }
+49:         if (ngram != ""){
+50:             one_gram.add(ngram.trim());
+
+
+Stacktrace:] with root cause
+	java.lang.StringIndexOutOfBoundsException: Index 0 out of bounds for length 0
+		at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)
+		at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)
+		at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)
+		at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210)
+		at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98)
+		at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+		at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+		at java.base/java.lang.String.checkIndex(String.java:4832)
+		at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:46)
+		at java.base/java.lang.String.charAt(String.java:1555)
+		at IRUtilities.Porter.Clean(Porter.java:28)
+		at IRUtilities.Porter.stripAffixes(Porter.java:389)
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:180)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+22-Apr-2024 19:10:50.902 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [An exception occurred processing [/apis/getData.jsp] at line [47]
+
+44:                 ngram = "";
+45:                 break;
+46:             }
+47:             ngram += porter.stripAffixes(word) + " ";
+48:         }
+49:         if (ngram != ""){
+50:             one_gram.add(ngram.trim());
+
+
+Stacktrace:] with root cause
+	java.lang.StringIndexOutOfBoundsException: Index 0 out of bounds for length 0
+		at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)
+		at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)
+		at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)
+		at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210)
+		at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98)
+		at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+		at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+		at java.base/java.lang.String.checkIndex(String.java:4832)
+		at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:46)
+		at java.base/java.lang.String.charAt(String.java:1555)
+		at IRUtilities.Porter.Clean(Porter.java:28)
+		at IRUtilities.Porter.stripAffixes(Porter.java:389)
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:180)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+22-Apr-2024 22:25:54.503 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [352] in the jsp file: [/apis/getData.jsp]
+The method size() is undefined for the type HTree
+349:         json.append("\"similarity\": " + cosineSimilarity.get(Integer.parseInt(pageID)) + ",");
+350: 
+351:         // add the total number of pages in the PageInfo database
+352:         json.append("\"totalPages\": " + PageInfo.size() + ",");
+353: 
+354:         // output the top 5 key words (words and their frequency)
+355:         json.append("\"keyWords\": {");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [352] in the jsp file: [/apis/getData.jsp]
+The method size() is undefined for the type HTree
+349:         json.append("\"similarity\": " + cosineSimilarity.get(Integer.parseInt(pageID)) + ",");
+350: 
+351:         // add the total number of pages in the PageInfo database
+352:         json.append("\"totalPages\": " + PageInfo.size() + ",");
+353: 
+354:         // output the top 5 key words (words and their frequency)
+355:         json.append("\"keyWords\": {");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+22-Apr-2024 22:27:40.902 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [An exception occurred processing [/apis/getData.jsp] at line [355]
+
+352:         var totalPage = 0;
+353:         FastIterator iter = PageInfo.keys();
+354:         Integer key;
+355:         while ((key = (Integer) iter.next()) != null) {
+356:             totalPage++;
+357:         }
+358:         json.append("\"totalPage\": " + totalPage + ",");
+
+
+Stacktrace:] with root cause
+	java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Integer (java.lang.String and java.lang.Integer are in module java.base of loader 'bootstrap')
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:488)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+22-Apr-2024 22:27:42.071 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [An exception occurred processing [/apis/getData.jsp] at line [355]
+
+352:         var totalPage = 0;
+353:         FastIterator iter = PageInfo.keys();
+354:         Integer key;
+355:         while ((key = (Integer) iter.next()) != null) {
+356:             totalPage++;
+357:         }
+358:         json.append("\"totalPage\": " + totalPage + ",");
+
+
+Stacktrace:] with root cause
+	java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Integer (java.lang.String and java.lang.Integer are in module java.base of loader 'bootstrap')
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:488)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+22-Apr-2024 22:27:46.698 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [An exception occurred processing [/apis/getData.jsp] at line [355]
+
+352:         var totalPage = 0;
+353:         FastIterator iter = PageInfo.keys();
+354:         Integer key;
+355:         while ((key = (Integer) iter.next()) != null) {
+356:             totalPage++;
+357:         }
+358:         json.append("\"totalPage\": " + totalPage + ",");
+
+
+Stacktrace:] with root cause
+	java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Integer (java.lang.String and java.lang.Integer are in module java.base of loader 'bootstrap')
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:488)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+22-Apr-2024 22:28:21.683 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [An exception occurred processing [/apis/getData.jsp] at line [355]
+
+352:         Integer totalPage = 0;
+353:         FastIterator iter = PageInfo.keys();
+354:         Integer key;
+355:         while ((key = (Integer) iter.next()) != null) {
+356:             totalPage++;
+357:         }
+358:         json.append("\"totalPage\": " + totalPage + ",");
+
+
+Stacktrace:] with root cause
+	java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Integer (java.lang.String and java.lang.Integer are in module java.base of loader 'bootstrap')
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:488)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+22-Apr-2024 22:51:19.375 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+22-Apr-2024 22:51:19.375 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+22-Apr-2024 22:52:01.684 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+22-Apr-2024 22:52:01.684 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+22-Apr-2024 22:52:01.686 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@54afd745')
+22-Apr-2024 22:55:02.460 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+22-Apr-2024 22:55:02.461 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
