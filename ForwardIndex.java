@@ -13,8 +13,8 @@ public class ForwardIndex {
     public HTree hashtable; 
 
     
-    public ForwardIndex() throws IOException {
-        recman = RecordManagerFactory.createRecordManager("Database");
+    public ForwardIndex(RecordManager recman) throws IOException {
+        this.recman = recman;
         long recid = recman.getNamedObject("forwardindex"); 
 
 
@@ -29,10 +29,10 @@ public class ForwardIndex {
         
     }
 
-    public void finalize() throws IOException {
-        recman.commit();
-        recman.close(); 
-    }
+//    public void finalize() throws IOException {
+//        recman.commit();
+//        recman.close();
+//    }
 
     public void addEntry(int docId, int wordId, int freq) throws IOException {
         try {

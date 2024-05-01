@@ -15,8 +15,8 @@ public class NgramIndex {
     public HTree bigram;
     public HTree trigram; 
 
-    public NgramIndex() throws IOException {
-        recman = RecordManagerFactory.createRecordManager("Database");
+    public NgramIndex(RecordManager recman) throws IOException {
+        this.recman = recman;
         long bigram_recid = recman.getNamedObject("bigram"); 
         long trigram_recid = recman.getNamedObject("trigram");
         
@@ -35,10 +35,10 @@ public class NgramIndex {
         }
     }
 
-    public void finalize() throws IOException {
-        recman.commit();
-        recman.close();
-    }
+//    public void finalize() throws IOException {
+//        recman.commit();
+//        recman.close();
+//    }
 
     public void addBigramEntry(String key,int docId) throws IOException {
         try {

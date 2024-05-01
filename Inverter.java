@@ -22,6 +22,8 @@ import java.util.StringTokenizer;
 import org.htmlparser.beans.LinkBean;
 import java.net.URL;
 import java.net.URLConnection;
+import jdbm.RecordManager;
+import jdbm.RecordManagerFactory;
 
 //hashmap for counting frequencies
 import java.util.HashMap;
@@ -32,7 +34,9 @@ import java.util.Map;
 public class Inverter {
 
     private static Porter porter;
-    private static HashSet<String> stopWords; 
+    private static HashSet<String> stopWords;
+
+    private RecordManager recman;
     public static boolean isStopWord(String str) {
         return stopWords.contains(str); 
     }
@@ -68,16 +72,16 @@ public class Inverter {
             word = bs.readLine();
         }
 
-        this.docMap = new DocMapping();
-        this.wordMap = new WordMapping(); 
-        this.forwardindex = new ForwardIndex(); 
-        this.invertedindex = new InvertedIndex();
-		this.titleforwardindex = new TitleForwardIndex();
-		this.titleinvertedindex = new TitleInvertedIndex(); 
-        this.metadata = new Metadata();
-        this.searchEngine = new SearchEngine();
-        this.ngramindex = new NgramIndex(); 
+        this.recman = RecordManagerFactory.createRecordManager("Database");
 
+        this.docMap = new DocMapping(recman);
+        this.wordMap = new WordMapping(recman);
+        this.forwardindex = new ForwardIndex(recman);
+        this.invertedindex = new InvertedIndex(recman);
+		this.titleforwardindex = new TitleForwardIndex(recman);
+		this.titleinvertedindex = new TitleInvertedIndex(recman);
+        this.metadata = new Metadata(recman);
+        this.ngramindex = new NgramIndex(recman);
     }
 
     public static Vector<String> removeStopwords(Vector<String> words) {
@@ -122,6 +126,11 @@ public class Inverter {
             }
         }
         return ngrams; 
+    }
+
+    public void finalize() throws IOException {
+        recman.commit();
+        recman.close();
     }
     
     public static void main(String[] args) throws IOException,ParserException {
@@ -229,15 +238,6 @@ public class Inverter {
             }
         }
 
-        inverter.forwardindex.finalize();
-        inverter.invertedindex.finalize();
-        inverter.titleforwardindex.finalize();
-        inverter.titleinvertedindex.finalize();
-        inverter.wordMap.finalize();
-        inverter.docMap.finalize();
-        inverter.metadata.finalize();
-        inverter.ngramindex.finalize();
-
-
+        inverter.finalize();
     }
 }

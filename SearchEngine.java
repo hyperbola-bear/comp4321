@@ -151,7 +151,7 @@ public class SearchEngine
 		return search(parsed_query, phrase);
 	}
 
-	private String findPhrase(String query) throws IOException {
+	private String getPhrase(String query) throws IOException {
 		query = " " + query + " ";
 
 		String[] tokens = query.split("\"");
@@ -175,7 +175,7 @@ public class SearchEngine
 		return phrase;
 	}
 
-	private Vector<Integer> findWords(String query) throws IOException {
+	private Vector<Integer> getWords(String query) throws IOException {
 		query = " " + query + " ";
 		String[] tokens = query.split("\"");
 
@@ -188,13 +188,9 @@ public class SearchEngine
 		query = query.stripLeading().stripTrailing();
 
 		String[] wordTokens = query.split(" ");
-
-		System.out.println(query);
-		System.out.println(wordTokens.length);
 		
 		for(String wordToken : wordTokens) {
 			if(!stopWords.contains(wordToken)) {
-				System.out.println(wordToken);
 				String stem = porter.stripAffixes(wordToken);
 				wordIds.add((Integer) wordToId.get(stem));
 			}
@@ -316,8 +312,8 @@ public class SearchEngine
 		try {
 			SearchEngine searchEngine = new SearchEngine();
 
-			String phrase = searchEngine.findPhrase(testInput);
-			Vector<Integer> test = searchEngine.findWords(testInput);
+			String phrase = searchEngine.getPhrase(testInput);
+			Vector<Integer> test = searchEngine.getWords(testInput);
 
 			System.out.println(phrase);
 

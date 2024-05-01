@@ -14,9 +14,9 @@ public class DocMapping {
 	public HTree urlToId;
 	public HTree idToUrl;
 
-	public DocMapping() throws IOException{
+	public DocMapping(RecordManager recman) throws IOException{
 		try {
-			recman = RecordManagerFactory.createRecordManager("Database");
+			this.recman = recman;
 			long ID_urlToId = recman.getNamedObject("urlToId");
 			long ID_idToUrl = recman.getNamedObject("idToUrl");
 
@@ -41,10 +41,10 @@ public class DocMapping {
 	}
 
 
-	public void finalize() throws IOException {
-		recman.commit();
-		recman.close();
-	}
+//	public void finalize() throws IOException {
+//		recman.commit();
+//		recman.close();
+//	}
 
 	public void addMapping(int docID, String url) throws IOException {
 		try {
@@ -129,28 +129,28 @@ public class DocMapping {
 			System.err.println(ex);
 		}
 	}
-	public static void main(String[] args)
-	{
-		try
-		{
-			DocMapping docMapping = new DocMapping();
-			docMapping.addMapping(0, "google.com");
-			docMapping.addMapping(1, "facebook.com");
-			docMapping.addMapping(2, "yahoo.com");
-
-			System.out.println("First print:");
-			docMapping.printAll();
-
-			docMapping.removeMapping(0);
-
-			System.out.println("Second print:");
-			docMapping.printAll();
-			docMapping.finalize();
-		}
-		catch(IOException ex)
-		{
-			System.err.println(ex.toString());
-		}
-
-	}
+//	public static void main(String[] args)
+//	{
+//		try
+//		{
+//			DocMapping docMapping = new DocMapping();
+//			docMapping.addMapping(0, "google.com");
+//			docMapping.addMapping(1, "facebook.com");
+//			docMapping.addMapping(2, "yahoo.com");
+//
+//			System.out.println("First print:");
+//			docMapping.printAll();
+//
+//			docMapping.removeMapping(0);
+//
+//			System.out.println("Second print:");
+//			docMapping.printAll();
+//			docMapping.finalize();
+//		}
+//		catch(IOException ex)
+//		{
+//			System.err.println(ex.toString());
+//		}
+//
+//	}
 }
