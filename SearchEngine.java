@@ -19,6 +19,9 @@ import jdbm.helper.FastIterator;
 
 public class SearchEngine
 {
+	private Porter porter;
+
+	private static HashSet<String> stopWords;
 	private Vector<String> searchTerms;
 	private HTree urlToId;
 	private HTree idToUrl;
@@ -28,15 +31,26 @@ public class SearchEngine
 	private HTree docForwardIndex;
 	private HTree titleInvertedIndex;
 	private HTree docInvertedIndex;
-
 	private RecordManager recman;
 	long recid;
 
 	public SearchEngine() throws IOException
 	{
 		try {
+			// Create stemmer and stop words
+			porter = new Porter();
+
+			stopWords = new HashSet<String>();
+			FileReader fs = new FileReader("stopwords.txt");
+			BufferedReader bs = new BufferedReader(fs);
+			String word = bs.readLine();
+			while(word != null){
+				stopWords.add(word);
+				word = bs.readLine();
+			}
+
 			// Load invertedIndexDoc
-			recman = RecordManagerFactory.createRecordManager("invertedIndexrecman");
+			recman = RecordManagerFactory.createRecordManager("Database");
 			recid = recman.getNamedObject("invertedindex");
 
 			if(recid == 0) {
@@ -46,7 +60,6 @@ public class SearchEngine
 			}
 
 			// Load forwardIndexDoc
-			recman = RecordManagerFactory.createRecordManager("forwardIndexRecMan");
 			long recid = recman.getNamedObject("forwardindex");
 
 			if(recid == 0) {
@@ -56,7 +69,6 @@ public class SearchEngine
 			}
 
 			// Load invertedIndexTitle
-			recman = RecordManagerFactory.createRecordManager("titleInvertedIndexrecman");
 			recid = recman.getNamedObject("titleInvertedindex");
 
 			if(recid == 0) {
@@ -66,7 +78,6 @@ public class SearchEngine
 			}
 
 			// Load forwardIndexTitle
-			recman = RecordManagerFactory.createRecordManager("titleForwardIndexRecMan");
 			recid = recman.getNamedObject("titleForwardindex");
 
 			if(recid == 0) {
@@ -76,7 +87,6 @@ public class SearchEngine
 			}
 
 			// Load docMappings
-			recman = RecordManagerFactory.createRecordManager("docMap");
 			recid = recman.getNamedObject("urlToId");
 
 			if(recid == 0) {
@@ -92,9 +102,8 @@ public class SearchEngine
 			} else {
 				idToUrl = HTree.load(recman, recid);
 			}
-
+//
 			// Load wordMappings
-			recman = RecordManagerFactory.createRecordManager("wordMap");
 			recid = recman.getNamedObject("wordToId");
 
 			if(recid == 0) {
@@ -140,6 +149,58 @@ public class SearchEngine
 		}
 
 		return search(parsed_query, phrase);
+	}
+
+	private String findPhrase(String query) throws IOException {
+		query = " " + query + " ";
+
+		String[] tokens = query.split("\"");
+		String phrase = "";
+
+		if(tokens.length == 3) {
+			String[] phraseTokens = tokens[1].split(" ");
+
+			for(String phraseToken : phraseTokens) {
+				phrase += porter.stripAffixes(phraseToken);
+				phrase += " ";
+
+				if(stopWords.contains(phraseToken)) {
+					System.out.println(phraseToken);
+					phrase = "";
+					break;
+				}
+			}
+		}
+
+		return phrase;
+	}
+
+	private Vector<Integer> findWords(String query) throws IOException {
+		query = " " + query + " ";
+		String[] tokens = query.split("\"");
+
+		Vector<Integer> wordIds = new Vector<Integer> ();
+
+		if(tokens.length == 3) {
+			query = tokens[0] + tokens[2];
+		}
+
+		query = query.stripLeading().stripTrailing();
+
+		String[] wordTokens = query.split(" ");
+
+		System.out.println(query);
+		System.out.println(wordTokens.length);
+		
+		for(String wordToken : wordTokens) {
+			if(!stopWords.contains(wordToken)) {
+				System.out.println(wordToken);
+				String stem = porter.stripAffixes(wordToken);
+				wordIds.add((Integer) wordToId.get(stem));
+			}
+		}
+
+		return wordIds;
 	}
 
 	private Vector<Integer> search(Vector<Integer> query, String phrase) throws IOException {
@@ -246,6 +307,25 @@ public class SearchEngine
 			return docIds;
 		} else {
 			return new Vector<Integer>(docIds.subList(0, 50));
+		}
+	}
+
+	public static void main(String[] args) {
+		String testInput = "My favourite movie is \"terminator returns\"";
+
+		try {
+			SearchEngine searchEngine = new SearchEngine();
+
+			String phrase = searchEngine.findPhrase(testInput);
+			Vector<Integer> test = searchEngine.findWords(testInput);
+
+			System.out.println(phrase);
+
+			for(Integer wordId : test) {
+				System.out.println(wordId);
+			}
+		} catch (IOException ex) {
+			System.out.println(ex);
 		}
 	}
 }

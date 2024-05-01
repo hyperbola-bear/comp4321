@@ -14,7 +14,7 @@ public class TitleForwardIndex {
 
     
     public TitleForwardIndex() throws IOException {
-        recman = RecordManagerFactory.createRecordManager("titleForwardIndexRecMan"); 
+        recman = RecordManagerFactory.createRecordManager("Database");
         long recid = recman.getNamedObject("titleForwardindex"); 
 
 

@@ -14,7 +14,7 @@ public class TitleInvertedIndex
 
 	public TitleInvertedIndex() throws IOException
 	{
-		recman = RecordManagerFactory.createRecordManager("titleInvertedIndexrecman");
+		recman = RecordManagerFactory.createRecordManager("Database");
 		long recid = recman.getNamedObject("titleInvertedindex");
 			
 		if (recid != 0)

@@ -14,7 +14,7 @@ public class ForwardIndex {
 
     
     public ForwardIndex() throws IOException {
-        recman = RecordManagerFactory.createRecordManager("forwardIndexRecMan"); 
+        recman = RecordManagerFactory.createRecordManager("Database");
         long recid = recman.getNamedObject("forwardindex"); 
 
 

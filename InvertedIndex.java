@@ -14,7 +14,7 @@ public class InvertedIndex
 
 	public InvertedIndex() throws IOException
 	{
-		recman = RecordManagerFactory.createRecordManager("invertedIndexrecman");
+		recman = RecordManagerFactory.createRecordManager("Database");
 		long recid = recman.getNamedObject("invertedindex");
 			
 		if (recid != 0)

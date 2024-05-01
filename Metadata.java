@@ -14,7 +14,7 @@ public class Metadata {
     public HTree hashtable; 
 
     public Metadata() throws IOException { 
-        recman = RecordManagerFactory.createRecordManager("metadataRecMan");
+        recman = RecordManagerFactory.createRecordManager("Database");
         long recid = recman.getNamedObject("metadata");
 
         if (recid!=0 ) {
