@@ -137,7 +137,7 @@ public class Crawler
 	}
 
     public Vector<String> getThreeHundredLinks(String url) throws ParserException{
-        int limit = 300; // Specify the number of links to retrieve
+        int limit = 10; // Specify the number of links to retrieve
         Vector<String> bfsLinks = breadthFirstSearch(limit,url);
         System.out.println("BFS Links in " + url + " (limit = " + limit + "):");
         for (String bfsLink : bfsLinks) {

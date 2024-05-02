@@ -110,18 +110,23 @@ public class Inverter {
     }
 
     public static Vector<String> extractNgrams (Vector<String> words, int n) {
-        Vector<String> ngrams = new Vector<String>(); 
+        Vector<String> ngrams = new Vector<String>();
+        if (words.size() < n) {
+            return ngrams;
+        }
         for (int i=0; i< words.size() - n +1; i++) {
-            String ngram = "";
+            StringBuilder ngramBuilder = new StringBuilder();
+            boolean isStopWordEncountered = false; 
             for (int j=0; j<n; j++) {
                 String word = words.get(i+j).toLowerCase();
                 if (isStopWord(word)) {
-                    ngram = "";
+                    isStopWordEncountered = true;
                     break;
                 }
-                ngram += stem(word) + " ";
+                ngramBuilder.append(stem(word)).append(" ");
             }
-            if (ngram!= ""){
+            if (!isStopWordEncountered){
+                String ngram = ngramBuilder.toString().trim();
                 ngrams.add(ngram);
             }
         }
