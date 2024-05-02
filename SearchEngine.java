@@ -9,6 +9,9 @@ import java.io.IOException;
 import java.util.HashSet;
 import java.util.Vector;
 import java.util.HashMap;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Set;
 import java.lang.Math;
 import jdbm.htree.HTree;
 import java.io.Serializable;
@@ -31,6 +34,10 @@ public class SearchEngine
 	private HTree docForwardIndex;
 	private HTree titleInvertedIndex;
 	private HTree docInvertedIndex;
+
+	private HTree bigram;
+
+	private HTree trigram;
 	private RecordManager recman;
 	long recid;
 
@@ -102,7 +109,7 @@ public class SearchEngine
 			} else {
 				idToUrl = HTree.load(recman, recid);
 			}
-//
+
 			// Load wordMappings
 			recid = recman.getNamedObject("wordToId");
 
@@ -119,38 +126,29 @@ public class SearchEngine
 			} else {
 				idToWord = HTree.load(recman, recid);
 			}
+
+			// Load ngrams
+			recid = recman.getNamedObject("bigram");
+
+			if(recid == 0) {
+				throw new IOException ("bigram does not exist");
+			} else {
+				bigram = HTree.load(recman, recid);
+			}
+
+			recid = recman.getNamedObject("trigram");
+
+			if(recid == 0) {
+				throw new IOException ("trigram does not exist");
+			} else {
+				trigram = HTree.load(recman, recid);
+			}
+
 		} catch (IOException e) {
 			System.out.println(e);
 			System.out.println("Error: A JDBM Database required for search funciton is missing");
 		}
 	}
-
-	public Vector<Integer> parse(String query) throws IOException {
-		// Check for phrases
-		String[] tokens = query.split("\"");
-		String phrase = "";
-
-		if(tokens.length == 3) {
-			phrase = tokens[1];
-			query = tokens[0] + tokens[2]; // Remove phrase from query
-		}
-
-		Vector<Integer> parsed_query = new Vector<>();
-
-		tokens = query.split(" ");
-
-		for (String token : tokens) {
-			try {
-				int id = (int)wordToId.get(token);
-				parsed_query.add(id);
-			} catch (IOException ex) {
-				System.err.println(ex);
-			}
-		}
-
-		return search(parsed_query, phrase);
-	}
-
 	private String getPhrase(String query) throws IOException {
 		query = " " + query + " ";
 
@@ -165,7 +163,6 @@ public class SearchEngine
 				phrase += " ";
 
 				if(stopWords.contains(phraseToken)) {
-					System.out.println(phraseToken);
 					phrase = "";
 					break;
 				}
@@ -199,127 +196,259 @@ public class SearchEngine
 		return wordIds;
 	}
 
-	private Vector<Integer> search(Vector<Integer> query, String phrase) throws IOException {
-		HashMap<Integer, Double> consolidatedScores = new HashMap<>();
+	private int getMaxTfDoc(int wordId, int docId) throws IOException {
+		Vector<Posting> wordPostingVector = (Vector<Posting>) docForwardIndex.get(docId);
 
-		// Title Constant for prioritizing title matches
-		int TITLE_CONSTANT = 4;
+		int result = 1;
 
-		// Find the total number of terms
-		int N_doc = 0;
-		int N_title = 0;
-
-		FastIterator iterTerms = docInvertedIndex.keys();
-		Integer tempId;
-		while ((tempId = (Integer) iterTerms.next()) != null) {
-			N_doc++;
-		}
-
-		iterTerms = titleInvertedIndex.keys();
-		while ((tempId = (Integer) iterTerms.next()) != null) {
-			N_title++;
-		}
-
-		try {
-			for (int wordId : query) {
-				Vector<Posting> docPostingList = (Vector<Posting>) docInvertedIndex.get(wordId);
-				Vector<Posting> titlePostingList = (Vector<Posting>) titleInvertedIndex.get(wordId);
-
-				int DF_doc = docPostingList.size();
-				int DF_title = titlePostingList.size();
-
-				for (Posting docPosting : docPostingList) {
-					int docId = docPosting.id;
-					int TF = docPosting.freq;
-					double IDF = Math.log(N_doc / DF_doc) / Math.log(2);
-
-					// Finding doc max term frequency
-
-					int MAX_TF = 1;
-
-					Vector<Posting> postingList = (Vector<Posting>) docForwardIndex.get(docId);
-
-					for (Posting wordPosting : postingList) {
-						if (wordPosting.freq > MAX_TF) {
-							MAX_TF = wordPosting.freq;
-						}
-					}
-
-					// Score is derived from (Term Frequency * IDF) / (Doc Max Term Frequency)
-					double score = (TF * IDF) / MAX_TF;
-
-					if (consolidatedScores.containsKey(docId)) {
-						double currentScore = consolidatedScores.get(docId);
-						consolidatedScores.put(wordId, currentScore + score);
-					} else {
-						consolidatedScores.put(docId, score);
-					}
-				}
-
-				for (Posting titlePosting : titlePostingList) {
-					int docId = titlePosting.id;
-					int TF = titlePosting.freq;
-					double IDF = Math.log(N_title / DF_title) / Math.log(2);
-
-					// Finding title max term frequency
-
-					int MAX_TF = 1;
-
-					Vector<Posting> postingList = (Vector<Posting>) titleForwardIndex.get(docId);
-
-					for (Posting wordPosting : postingList) {
-						if (wordPosting.freq > MAX_TF) {
-							MAX_TF = wordPosting.freq;
-						}
-					}
-
-					// Score is derived from (Term Frequency * IDF) / (Doc Max Term Frequency)
-					double score = TITLE_CONSTANT * (TF * IDF) / MAX_TF;
-
-					if (consolidatedScores.containsKey(docId)) {
-						double currentScore = consolidatedScores.get(docId);
-						consolidatedScores.put(wordId, currentScore + score);
-					} else {
-						consolidatedScores.put(docId, score);
-					}
-				}
+		for(Posting wordPosting : wordPostingVector) {
+			if(wordPosting.freq > result) {
+				result = wordPosting.freq;
 			}
-		} catch (IOException ex) {
-			System.err.println(ex);
 		}
 
-		Vector<Integer> docIds = new Vector<>();
-		Vector<Double> scores = new Vector<>();
+		return result;
+	}
 
-		// Sort docIds in ascending order by scores
-		for (HashMap.Entry<Integer, Double> entry : consolidatedScores.entrySet()) {
-			docIds.add(entry.getKey());
-			scores.add(entry.getValue());
+	private int getMaxTfTitle(int wordId, int docId) throws IOException {
+		Vector<Posting> wordPostingVector = (Vector<Posting>) titleForwardIndex.get(docId);
+
+		int result = 1;
+
+		for(Posting wordPosting : wordPostingVector) {
+			if(wordPosting.freq > result) {
+				result = wordPosting.freq;
+			}
 		}
 
-		docIds.sort((id1, id2) -> scores.get(id1).compareTo(scores.get(id2)));
+		return result;
+	}
 
-		if (docIds.size() <= 50) {
-			return docIds;
+	private double getTermWeightDoc(int wordId, int docId, int TF, int N) throws IOException {
+		Vector<Posting> docPostingList = (Vector<Posting>) docInvertedIndex.get(wordId);
+		Vector<Posting> wordPostingList = (Vector<Posting>) docForwardIndex.get(wordId);
+
+		// Score is derived from (Term Frequency * IDF) / (Doc Max Term Frequency)
+		int N_hasTerm = docPostingList.size();
+		double IDF = Math.log(N/N_hasTerm) / Math.log(2);
+		int TF_max = getMaxTfDoc(wordId, docId);
+
+		double score = (TF * IDF) / (TF_max);
+
+		return score;
+	}
+
+	private double getTermWeightTitle(int wordId, int docId, int TF, int N) throws IOException {
+		Vector<Posting> docPostingList = (Vector<Posting>) titleInvertedIndex.get(wordId);
+		Vector<Posting> wordPostingList = (Vector<Posting>) titleForwardIndex.get(wordId);
+
+		// Score is derived from (Term Frequency * IDF) / (Doc Max Term Frequency)
+		int N_hasTerm = docPostingList.size();
+		double IDF = Math.log(N/N_hasTerm) / Math.log(2);
+		int TF_max = getMaxTfTitle(wordId, docId);
+
+		double score = (TF * IDF) / (TF_max);
+
+		return score;
+	}
+
+	private double getDocMagnitude(int docId, int N) throws IOException {
+		Vector<Posting> wordPostingVector = (Vector<Posting>) docForwardIndex.get(docId);
+
+		double magnitude = 0;
+
+		for(Posting wordPosting : wordPostingVector) {
+			magnitude += getTermWeightDoc(wordPosting.id, docId, wordPosting.freq, N);
+		}
+
+		magnitude = Math.sqrt(magnitude);
+
+		return magnitude;
+	}
+
+	private double getTitleMagnitude(int docId, int N) throws IOException {
+		Vector<Posting> wordPostingVector = (Vector<Posting>) titleForwardIndex.get(docId);
+
+		double magnitude = 0;
+
+		for(Posting wordPosting : wordPostingVector) {
+			magnitude += getTermWeightTitle(wordPosting.id, docId, wordPosting.freq, N);
+		}
+
+		magnitude = Math.sqrt(magnitude);
+
+		return magnitude;
+	}
+
+	private Vector<Pair> search(Vector<Integer> query, String phrase) throws IOException {
+		if(phrase != "") {
+			String[] tokens = phrase.split(" ");
+			int phraseLength = tokens.length;
+			HashSet<Integer> matchingDocs;
+
+			if(phraseLength == 2) {
+				matchingDocs = (HashSet<Integer>) bigram.get(phrase);
+			} else if(phraseLength == 3) {
+				matchingDocs = (HashSet<Integer>) trigram.get(phrase);
+			} else {
+				throw new IOException("Invalid query length");
+			}
+
+			// Find number of unique terms in matching title and docs
 		} else {
-			return new Vector<Integer>(docIds.subList(0, 50));
+			HashMap<Integer, Double> consolidatedScores = new HashMap<>();
+
+			// Title Constant for prioritizing title matches
+			int TITLE_CONSTANT = 4;
+
+			// Find the total number of terms
+			int N_doc = 0;
+			int N_title = 0;
+
+			FastIterator iterTerms = docInvertedIndex.keys();
+			Integer tempId;
+			while ((tempId = (Integer) iterTerms.next()) != null) {
+				N_doc++;
+			}
+
+			iterTerms = titleInvertedIndex.keys();
+			while ((tempId = (Integer) iterTerms.next()) != null) {
+				N_title++;
+			}
+
+			try {
+				for(Integer wordId : query) {
+					if(wordId == null) {
+						continue;
+					}
+
+					Vector<Posting> docPostingVector = (Vector<Posting>) docInvertedIndex.get(wordId);
+					Vector<Posting> titlePostingVector = (Vector<Posting>) titleInvertedIndex.get(wordId);
+
+					if(docPostingVector != null) {
+						for (Posting docPosting : docPostingVector) {
+							int docId = docPosting.id;
+							int freq = docPosting.freq;
+							double termWeight = getTermWeightDoc(wordId, docId, freq, N_doc);
+							double docMagnitude = getDocMagnitude(docId, N_doc);
+
+							termWeight = termWeight / docMagnitude;
+
+							// DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG
+
+							if(termWeight > 0) {
+								System.out.println("MATCH FOUND IN DOC");
+								System.out.println("URL: " + idToUrl.get(docId));
+								System.out.println("TERM: " + idToWord.get(wordId));
+							}
+
+							// DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG
+
+							if (consolidatedScores.containsKey(docId)) {
+								double currentScore = consolidatedScores.get(docId);
+								consolidatedScores.put(docId, currentScore + termWeight);
+							} else {
+								consolidatedScores.put(docId, termWeight);
+							}
+						}
+					}
+
+					if(titlePostingVector != null) {
+						for (Posting titlePosting : titlePostingVector) {
+							int docId = titlePosting.id;
+							int freq = titlePosting.freq;
+							double termWeight = getTermWeightTitle(wordId, docId, freq, N_doc);
+							double titleMagnitude = getTitleMagnitude(docId, N_doc);
+
+							termWeight = TITLE_CONSTANT * termWeight / titleMagnitude;
+
+							// DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG
+
+							if(termWeight > 0) {
+								System.out.println("MATCH FOUND IN TITLE");
+								System.out.println("URL: " + idToUrl.get(docId));
+								System.out.println("TERM: " + idToWord.get(wordId));
+							}
+
+							// DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG
+
+							if (consolidatedScores.containsKey(docId)) {
+								double currentScore = consolidatedScores.get(docId);
+								consolidatedScores.put(docId, currentScore + termWeight);
+							} else {
+								consolidatedScores.put(docId, termWeight);
+							}
+						}
+					}
+				}
+			} catch (IOException ex) {
+				System.err.println(ex);
+			}
+
+			Set<Integer> keys = consolidatedScores.keySet();
+
+			Vector<Pair> results = new Vector<>();
+
+			for(Integer key : keys) {
+				Pair pair = new Pair(key, consolidatedScores.get(key));
+				results.add(pair);
+			}
+
+			System.out.println(results.size());
+
+			Collections.sort(results, new Comparator<Pair>() {
+				@Override
+				public int compare(Pair p1, Pair p2) {
+					double diff = p1.score - p2.score;
+					if (diff < 0) {
+						return 1;
+					} else if (diff > 0) {
+						return -1;
+					} else {
+						return 0;
+					}
+				}
+			});
+
+			return results;
 		}
+
+		Vector<Pair> results = new Vector<>();
+		return results;
+	}
+
+	public Vector<Pair> query(String query) throws IOException {
+		// Check for phrases
+		query = " " + query + " ";
+		String[] tokens = query.split("\"");
+		String phrase = "";
+
+		if(tokens.length == 3) {
+			phrase = tokens[1];
+			query = tokens[0] + tokens[2]; // Remove phrase from query
+		}
+		
+		Vector<Integer> parsed_query = getWords(query);
+
+		return search(parsed_query, phrase);
 	}
 
 	public static void main(String[] args) {
-		String testInput = "My favourite movie is \"terminator returns\"";
+		String testInputPhrase = "My favourite movie is \"terminator returns\"";
+		String testInput = "introducing a report on global warming and the polar bears as well as movies";
 
 		try {
 			SearchEngine searchEngine = new SearchEngine();
 
-			String phrase = searchEngine.getPhrase(testInput);
-			Vector<Integer> test = searchEngine.getWords(testInput);
+			Vector<Pair> results = searchEngine.query(testInput);
+			System.out.println("Query: " + testInput);
 
-			System.out.println(phrase);
-
-			for(Integer wordId : test) {
-				System.out.println(wordId);
+			for(Pair pair : results) {
+				System.out.println("Doc ID: " + String.valueOf(pair.docId));
+				System.out.println("URL: " + searchEngine.idToUrl.get(pair.docId));
+				System.out.println("Doc Score: " + String.valueOf(pair.score));
 			}
+			
 		} catch (IOException ex) {
 			System.out.println(ex);
 		}
