@@ -12,9 +12,9 @@ public class TitleInvertedIndex
 	public RecordManager recman;
     public HTree hashtable;
 
-	public TitleInvertedIndex() throws IOException
+	public TitleInvertedIndex(RecordManager recman) throws IOException
 	{
-		recman = RecordManagerFactory.createRecordManager("Database");
+		this.recman = recman;
 		long recid = recman.getNamedObject("titleInvertedindex");
 			
 		if (recid != 0)
@@ -27,11 +27,11 @@ public class TitleInvertedIndex
 	}
 
 
-	public void finalize() throws IOException
-	{
-		recman.commit();
-		recman.close();				
-	} 
+//	public void finalize() throws IOException
+//	{
+//		recman.commit();
+//		recman.close();
+//	}
 
 	public void addEntry(int docID, int wordID, int freq) throws IOException
 	{
@@ -114,47 +114,46 @@ public class TitleInvertedIndex
 		}
 	}	
 	
-	public static void main(String[] args)
-	{
-		try
-		{
-			InvertedIndex index = new InvertedIndex();
-
-			// Adding entries for doc0
-			index.addEntry(0, 0, 30);
-			index.addEntry(0, 1, 20);
-			index.addEntry(0, 2, 40);
-
-			// Adding entries for doc1
-			index.addEntry(1, 0, 35);
-			index.addEntry(1, 1, 23);
-			index.addEntry(1, 4, 40);
-
-			// Adding entries for doc2
-			index.addEntry(2, 2, 30);
-			index.addEntry(2, 4, 20);
-			index.addEntry(2, 3, 40);
-	
-			System.out.println("First Print:");
-			index.printAll();
-
-			// Deletion test for doc0
-			Vector<Integer> wordList = new Vector<>();
-			wordList.add(0);
-			wordList.add(1);
-			wordList.add(2);
-
-			index.delEntry(wordList, 0);
-
-			System.out.println("Second Print:");
-			index.printAll();
-
-			index.finalize();
-		}
-		catch(IOException ex)
-		{
-			System.err.println(ex.toString());
-		}
-
-	}
+//	public static void main(String[] args)
+//	{
+//		try
+//		{
+//			InvertedIndex index = new InvertedIndex();
+//
+//			// Adding entries for doc0
+//			index.addEntry(0, 0, 30);
+//			index.addEntry(0, 1, 20);
+//			index.addEntry(0, 2, 40);
+//
+//			// Adding entries for doc1
+//			index.addEntry(1, 0, 35);
+//			index.addEntry(1, 1, 23);
+//			index.addEntry(1, 4, 40);
+//
+//			// Adding entries for doc2
+//			index.addEntry(2, 2, 30);
+//			index.addEntry(2, 4, 20);
+//			index.addEntry(2, 3, 40);
+//
+//			System.out.println("First Print:");
+//			index.printAll();
+//
+//			// Deletion test for doc0
+//			Vector<Integer> wordList = new Vector<>();
+//			wordList.add(0);
+//			wordList.add(1);
+//			wordList.add(2);
+//
+//			index.delEntry(wordList, 0);
+//
+//			System.out.println("Second Print:");
+//			index.printAll();
+//
+//			index.finalize();
+//		}
+//		catch(IOException ex)
+//		{
+//			System.err.println(ex.toString());
+//		}
+//	}
 }

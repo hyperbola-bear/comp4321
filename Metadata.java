@@ -13,8 +13,8 @@ public class Metadata {
     public RecordManager recman; 
     public HTree hashtable; 
 
-    public Metadata() throws IOException { 
-        recman = RecordManagerFactory.createRecordManager("Database");
+    public Metadata(RecordManager recman) throws IOException {
+        this.recman = recman;
         long recid = recman.getNamedObject("metadata");
 
         if (recid!=0 ) {
@@ -25,10 +25,10 @@ public class Metadata {
         }
     }
 
-    public void finalize() throws IOException {
-        recman.commit();
-        recman.close(); 
-    }
+//    public void finalize() throws IOException {
+//        recman.commit();
+//        recman.close();
+//    }
     
     public void addEntry(String url, Vector<String> childLinks, int pageSize, long lastModificationDate, Vector<String> title) throws IOException { 
         Container container = new Container(childLinks,pageSize,lastModificationDate,title);

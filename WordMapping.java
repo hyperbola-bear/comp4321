@@ -14,9 +14,9 @@ public class WordMapping {
 	public HTree wordToId;
 	public HTree idToWord;
 
-    public WordMapping() throws IOException{
+    public WordMapping(RecordManager recman) throws IOException{
 		try {
-			recman = RecordManagerFactory.createRecordManager("Database");
+			this.recman = recman;
 			long ID_wordToId = recman.getNamedObject("wordToId");
 			long ID_idToWord = recman.getNamedObject("idToWord");
 
@@ -41,10 +41,10 @@ public class WordMapping {
 	}
 
 
-	public void finalize() throws IOException {
-		recman.commit();
-		recman.close();
-	}
+//	public void finalize() throws IOException {
+//		recman.commit();
+//		recman.close();
+//	}
 
 	public void addMapping(int wordID, String word) throws IOException {
 		try {
@@ -129,28 +129,27 @@ public class WordMapping {
 			System.err.println(ex);
 		}
 	}
-	public static void main(String[] args)
-	{
-		try
-		{
-			WordMapping wordMapping = new WordMapping();
-			wordMapping.addMapping(0, "apple");
-			wordMapping.addMapping(1, "chocolate");
-			wordMapping.addMapping(2, "hamster");
-
-			System.out.println("First print:");
-			wordMapping.printAll();
-
-			wordMapping.removeMapping(0);
-
-			System.out.println("Second print:");
-			wordMapping.printAll();
-			wordMapping.finalize();
-		}
-		catch(IOException ex)
-		{
-			System.err.println(ex.toString());
-		}
-
-	}
+//	public static void main(String[] args)
+//	{
+//		try
+//		{
+//			WordMapping wordMapping = new WordMapping();
+//			wordMapping.addMapping(0, "apple");
+//			wordMapping.addMapping(1, "chocolate");
+//			wordMapping.addMapping(2, "hamster");
+//
+//			System.out.println("First print:");
+//			wordMapping.printAll();
+//
+//			wordMapping.removeMapping(0);
+//
+//			System.out.println("Second print:");
+//			wordMapping.printAll();
+//			wordMapping.finalize();
+//		}
+//		catch(IOException ex)
+//		{
+//			System.err.println(ex.toString());
+//		}
+//	}
 }
