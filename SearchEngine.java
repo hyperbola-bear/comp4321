@@ -185,12 +185,19 @@ public class SearchEngine
 		query = query.stripLeading().stripTrailing();
 
 		String[] wordTokens = query.split(" ");
+
+		Set<Integer> tempSet = new HashSet<>();
 		
 		for(String wordToken : wordTokens) {
 			if(!stopWords.contains(wordToken)) {
 				String stem = porter.stripAffixes(wordToken);
-				wordIds.add((Integer) wordToId.get(stem));
+				tempSet.add((Integer) wordToId.get(stem));
 			}
+		}
+
+		// Remove repeat ID values
+		for(Integer id : tempSet) {
+			wordIds.add(id);
 		}
 
 		return wordIds;
@@ -258,7 +265,7 @@ public class SearchEngine
 		double magnitude = 0;
 
 		for(Posting wordPosting : wordPostingVector) {
-			magnitude += getTermWeightDoc(wordPosting.id, docId, wordPosting.freq, N);
+			magnitude += Math.pow(getTermWeightDoc(wordPosting.id, docId, wordPosting.freq, N), 2);
 		}
 
 		magnitude = Math.sqrt(magnitude);
@@ -272,7 +279,7 @@ public class SearchEngine
 		double magnitude = 0;
 
 		for(Posting wordPosting : wordPostingVector) {
-			magnitude += getTermWeightTitle(wordPosting.id, docId, wordPosting.freq, N);
+			magnitude += Math.pow(getTermWeightTitle(wordPosting.id, docId, wordPosting.freq, N), 2);
 		}
 
 		magnitude = Math.sqrt(magnitude);
@@ -281,6 +288,20 @@ public class SearchEngine
 	}
 
 	private Vector<Pair> search(Vector<Integer> query, String phrase) throws IOException {
+		// DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG
+		System.out.println("Query is: ");
+
+		for(Integer id : query) {
+			if(id == null) {
+				continue;
+			}
+			System.out.print(idToWord.get(id) + "\t");
+		}
+
+		System.out.println("\nPhrase is:");
+		System.out.println(phrase);
+		// DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG
+
 		if(phrase != "") {
 			String[] tokens = phrase.split(" ");
 			int phraseLength = tokens.length;
@@ -336,11 +357,11 @@ public class SearchEngine
 
 							// DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG
 
-							if(termWeight > 0) {
-								System.out.println("MATCH FOUND IN DOC");
-								System.out.println("URL: " + idToUrl.get(docId));
-								System.out.println("TERM: " + idToWord.get(wordId));
-							}
+//							if(termWeight > 0) {
+//								System.out.println("MATCH FOUND IN DOC");
+//								System.out.println("URL: " + idToUrl.get(docId));
+//								System.out.println("TERM: " + idToWord.get(wordId));
+//							}
 
 							// DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG
 
@@ -364,11 +385,11 @@ public class SearchEngine
 
 							// DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG
 
-							if(termWeight > 0) {
-								System.out.println("MATCH FOUND IN TITLE");
-								System.out.println("URL: " + idToUrl.get(docId));
-								System.out.println("TERM: " + idToWord.get(wordId));
-							}
+//							if(termWeight > 0) {
+//								System.out.println("MATCH FOUND IN TITLE");
+//								System.out.println("URL: " + idToUrl.get(docId));
+//								System.out.println("TERM: " + idToWord.get(wordId));
+//							}
 
 							// DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG
 
@@ -389,8 +410,10 @@ public class SearchEngine
 
 			Vector<Pair> results = new Vector<>();
 
+			double queryMagnitude = Math.sqrt(query.size()); // Required for calculating cosine similarity
+
 			for(Integer key : keys) {
-				Pair pair = new Pair(key, consolidatedScores.get(key));
+				Pair pair = new Pair(key, consolidatedScores.get(key) / queryMagnitude);
 				results.add(pair);
 			}
 
@@ -435,7 +458,7 @@ public class SearchEngine
 
 	public static void main(String[] args) {
 		String testInputPhrase = "My favourite movie is \"terminator returns\"";
-		String testInput = "introducing a report on global warming and the polar bears as well as movies";
+		String testInput = "information retrieval techniques CNN News";
 
 		try {
 			SearchEngine searchEngine = new SearchEngine();
