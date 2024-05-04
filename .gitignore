@@ -3,9 +3,9 @@
 
 # Ignore spider_result.txt
 spider_result.txt
+*.txt
 
 #ignore database fikes 
 *.db 
 *.lg
-.log
-.txt
+*.log
