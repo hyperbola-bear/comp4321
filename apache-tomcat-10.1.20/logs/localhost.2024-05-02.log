@@ -1,0 +1,2473 @@
+02-May-2024 15:24:33.730 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+02-May-2024 15:24:33.731 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+02-May-2024 15:24:33.732 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@7180e701')
+02-May-2024 15:25:05.920 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the jsp file: [/apis/getData.jsp]
+The method prinf(String) is undefined for the type getData_jsp
+11: 
+12: <%
+13:     String input = request.getParameter("input").trim();
+14:     prinf("input: " + input);
+15:     
+16:     // case to handle null or empty input
+17:     if (input == null || input.isEmpty()) {
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the jsp file: [/apis/getData.jsp]
+The method prinf(String) is undefined for the type getData_jsp
+11: 
+12: <%
+13:     String input = request.getParameter("input").trim();
+14:     prinf("input: " + input);
+15:     
+16:     // case to handle null or empty input
+17:     if (input == null || input.isEmpty()) {
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+02-May-2024 15:30:14.451 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the jsp file: [/apis/getData.jsp]
+The method prinf(String) is undefined for the type getData_jsp
+11: 
+12: <%
+13:     String input = request.getParameter("input").trim();
+14:     prinf("input: " + input);
+15:     
+16:     // case to handle null or empty input
+17:     if (input == null || input.isEmpty()) {
+
+
+An error occurred at line: [33] in the jsp file: [/apis/getData.jsp]
+The left-hand side of an assignment must be a variable
+30:         stopWords.add(line);
+31:     }
+32:     in.close();
+33:     out.print(input)
+34: 
+35:     <!-- // Extract n-grams from the list of words
+36:     List<String> words = Arrays.asList(input.split("\\s+"));
+
+
+An error occurred at line: [35] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "<", invalid AssignmentOperator
+32:     in.close();
+33:     out.print(input)
+34: 
+35:     <!-- // Extract n-grams from the list of words
+36:     List<String> words = Arrays.asList(input.split("\\s+"));
+37:     List<String> one_gram = new ArrayList<String>();
+38:     List<String> two_gram = new ArrayList<String>();
+
+
+An error occurred at line: [36] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "=", <= expected
+33:     out.print(input)
+34: 
+35:     <!-- // Extract n-grams from the list of words
+36:     List<String> words = Arrays.asList(input.split("\\s+"));
+37:     List<String> one_gram = new ArrayList<String>();
+38:     List<String> two_gram = new ArrayList<String>();
+39:     List<String> three_gram = new ArrayList<String>();
+
+
+An error occurred at line: [41] in the jsp file: [/apis/getData.jsp]
+words cannot be resolved
+38:     List<String> two_gram = new ArrayList<String>();
+39:     List<String> three_gram = new ArrayList<String>();
+40: 
+41:     for (int i=0; i < words.size(); i++) {
+42:         String ngram = "";
+43:         // 1-gram
+44:         for (int j=0; j<1; j++) {
+
+
+An error occurred at line: [45] in the jsp file: [/apis/getData.jsp]
+words cannot be resolved
+42:         String ngram = "";
+43:         // 1-gram
+44:         for (int j=0; j<1; j++) {
+45:             String word = words.get(i+j).toLowerCase();
+46:             if (stopWords.contains(word)) {
+47:                 ngram = "";
+48:                 break;
+
+
+An error occurred at line: [57] in the jsp file: [/apis/getData.jsp]
+words cannot be resolved
+54:         }
+55:         // 2-gram
+56:         ngram = "";
+57:         if (i < words.size()-1){
+58:             for (int j=0; j<2; j++) {
+59:                 String word = words.get(i+j).toLowerCase();
+60:                 if (stopWords.contains(word)) {
+
+
+An error occurred at line: [59] in the jsp file: [/apis/getData.jsp]
+words cannot be resolved
+56:         ngram = "";
+57:         if (i < words.size()-1){
+58:             for (int j=0; j<2; j++) {
+59:                 String word = words.get(i+j).toLowerCase();
+60:                 if (stopWords.contains(word)) {
+61:                     ngram = "";
+62:                     break;
+
+
+An error occurred at line: [72] in the jsp file: [/apis/getData.jsp]
+words cannot be resolved
+69:         }
+70:         // 3-gram
+71:         ngram = "";
+72:         if (i < words.size()-2){
+73:             for (int j=0; j<3; j++) {
+74:                 String word = words.get(i+j).toLowerCase();
+75:                 if (stopWords.contains(word)) {
+
+
+An error occurred at line: [74] in the jsp file: [/apis/getData.jsp]
+words cannot be resolved
+71:         ngram = "";
+72:         if (i < words.size()-2){
+73:             for (int j=0; j<3; j++) {
+74:                 String word = words.get(i+j).toLowerCase();
+75:                 if (stopWords.contains(word)) {
+76:                     ngram = "";
+77:                     break;
+
+
+An error occurred at line: [428] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ">", delete this token
+425:     response.setCharacterEncoding("UTF-8");
+426: 
+427:     // Write JSON data to response
+428:     out.print(json.toString()); -->
+429: %>
+430: 
+431: 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the jsp file: [/apis/getData.jsp]
+The method prinf(String) is undefined for the type getData_jsp
+11: 
+12: <%
+13:     String input = request.getParameter("input").trim();
+14:     prinf("input: " + input);
+15:     
+16:     // case to handle null or empty input
+17:     if (input == null || input.isEmpty()) {
+
+
+An error occurred at line: [33] in the jsp file: [/apis/getData.jsp]
+The left-hand side of an assignment must be a variable
+30:         stopWords.add(line);
+31:     }
+32:     in.close();
+33:     out.print(input)
+34: 
+35:     <!-- // Extract n-grams from the list of words
+36:     List<String> words = Arrays.asList(input.split("\\s+"));
+
+
+An error occurred at line: [35] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "<", invalid AssignmentOperator
+32:     in.close();
+33:     out.print(input)
+34: 
+35:     <!-- // Extract n-grams from the list of words
+36:     List<String> words = Arrays.asList(input.split("\\s+"));
+37:     List<String> one_gram = new ArrayList<String>();
+38:     List<String> two_gram = new ArrayList<String>();
+
+
+An error occurred at line: [36] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "=", <= expected
+33:     out.print(input)
+34: 
+35:     <!-- // Extract n-grams from the list of words
+36:     List<String> words = Arrays.asList(input.split("\\s+"));
+37:     List<String> one_gram = new ArrayList<String>();
+38:     List<String> two_gram = new ArrayList<String>();
+39:     List<String> three_gram = new ArrayList<String>();
+
+
+An error occurred at line: [41] in the jsp file: [/apis/getData.jsp]
+words cannot be resolved
+38:     List<String> two_gram = new ArrayList<String>();
+39:     List<String> three_gram = new ArrayList<String>();
+40: 
+41:     for (int i=0; i < words.size(); i++) {
+42:         String ngram = "";
+43:         // 1-gram
+44:         for (int j=0; j<1; j++) {
+
+
+An error occurred at line: [45] in the jsp file: [/apis/getData.jsp]
+words cannot be resolved
+42:         String ngram = "";
+43:         // 1-gram
+44:         for (int j=0; j<1; j++) {
+45:             String word = words.get(i+j).toLowerCase();
+46:             if (stopWords.contains(word)) {
+47:                 ngram = "";
+48:                 break;
+
+
+An error occurred at line: [57] in the jsp file: [/apis/getData.jsp]
+words cannot be resolved
+54:         }
+55:         // 2-gram
+56:         ngram = "";
+57:         if (i < words.size()-1){
+58:             for (int j=0; j<2; j++) {
+59:                 String word = words.get(i+j).toLowerCase();
+60:                 if (stopWords.contains(word)) {
+
+
+An error occurred at line: [59] in the jsp file: [/apis/getData.jsp]
+words cannot be resolved
+56:         ngram = "";
+57:         if (i < words.size()-1){
+58:             for (int j=0; j<2; j++) {
+59:                 String word = words.get(i+j).toLowerCase();
+60:                 if (stopWords.contains(word)) {
+61:                     ngram = "";
+62:                     break;
+
+
+An error occurred at line: [72] in the jsp file: [/apis/getData.jsp]
+words cannot be resolved
+69:         }
+70:         // 3-gram
+71:         ngram = "";
+72:         if (i < words.size()-2){
+73:             for (int j=0; j<3; j++) {
+74:                 String word = words.get(i+j).toLowerCase();
+75:                 if (stopWords.contains(word)) {
+
+
+An error occurred at line: [74] in the jsp file: [/apis/getData.jsp]
+words cannot be resolved
+71:         ngram = "";
+72:         if (i < words.size()-2){
+73:             for (int j=0; j<3; j++) {
+74:                 String word = words.get(i+j).toLowerCase();
+75:                 if (stopWords.contains(word)) {
+76:                     ngram = "";
+77:                     break;
+
+
+An error occurred at line: [428] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ">", delete this token
+425:     response.setCharacterEncoding("UTF-8");
+426: 
+427:     // Write JSON data to response
+428:     out.print(json.toString()); -->
+429: %>
+430: 
+431: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+02-May-2024 15:31:17.736 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the jsp file: [/apis/getData.jsp]
+The method printf(String) is undefined for the type getData_jsp
+11: 
+12: <%
+13:     String input = request.getParameter("input").trim();
+14:     printf("input: " + input);
+15:     
+16:     // case to handle null or empty input
+17:     if (input == null || input.isEmpty()) {
+
+
+An error occurred at line: [33] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete Statement
+30:         stopWords.add(line);
+31:     }
+32:     in.close();
+33:     out.print(input)
+34:     %>
+35: 
+36:     <!-- // Extract n-grams from the list of words
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the jsp file: [/apis/getData.jsp]
+The method printf(String) is undefined for the type getData_jsp
+11: 
+12: <%
+13:     String input = request.getParameter("input").trim();
+14:     printf("input: " + input);
+15:     
+16:     // case to handle null or empty input
+17:     if (input == null || input.isEmpty()) {
+
+
+An error occurred at line: [33] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete Statement
+30:         stopWords.add(line);
+31:     }
+32:     in.close();
+33:     out.print(input)
+34:     %>
+35: 
+36:     <!-- // Extract n-grams from the list of words
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+02-May-2024 15:31:36.495 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [32] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete Statement
+29:         stopWords.add(line);
+30:     }
+31:     in.close();
+32:     out.print(input)
+33:     %>
+34: 
+35:     <!-- // Extract n-grams from the list of words
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [32] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete Statement
+29:         stopWords.add(line);
+30:     }
+31:     in.close();
+32:     out.print(input)
+33:     %>
+34: 
+35:     <!-- // Extract n-grams from the list of words
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+02-May-2024 15:32:22.673 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [An exception occurred processing [/apis/getData.jsp] at line [25]
+
+22:     //Here is the part used for StopStem
+23:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+24:     HashSet<String> stopWords = new HashSet<String>();
+25:     Porter porter = new Porter();
+26:     BufferedReader in = new BufferedReader(new FileReader(stopWord));
+27:     String line;
+28:     while ((line = in.readLine()) != null) {
+
+
+Stacktrace:] with root cause
+	java.lang.UnsupportedClassVersionError: IRUtilities/Porter has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 55.0 (unable to load class [IRUtilities.Porter])
+		at org.apache.catalina.loader.WebappClassLoaderBase.findClassInternal(WebappClassLoaderBase.java:2356)
+		at org.apache.catalina.loader.WebappClassLoaderBase.findClass(WebappClassLoaderBase.java:800)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1317)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:122)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:158)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+02-May-2024 15:33:15.175 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "<", assert expected
+19:         return;
+20:     }
+21: 
+22:     <!-- //Here is the part used for StopStem
+23:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+24:     HashSet<String> stopWords = new HashSet<String>();
+25:     Porter porter = new Porter();
+
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete AssertStatement
+20:     }
+21: 
+22:     <!-- //Here is the part used for StopStem
+23:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+24:     HashSet<String> stopWords = new HashSet<String>();
+25:     Porter porter = new Porter();
+26:     BufferedReader in = new BufferedReader(new FileReader(stopWord));
+
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+String cannot be resolved to a variable
+20:     }
+21: 
+22:     <!-- //Here is the part used for StopStem
+23:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+24:     HashSet<String> stopWords = new HashSet<String>();
+25:     Porter porter = new Porter();
+26:     BufferedReader in = new BufferedReader(new FileReader(stopWord));
+
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+stopWord cannot be resolved to a variable
+20:     }
+21: 
+22:     <!-- //Here is the part used for StopStem
+23:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+24:     HashSet<String> stopWords = new HashSet<String>();
+25:     Porter porter = new Porter();
+26:     BufferedReader in = new BufferedReader(new FileReader(stopWord));
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+stopWord cannot be resolved to a variable
+23:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+24:     HashSet<String> stopWords = new HashSet<String>();
+25:     Porter porter = new Porter();
+26:     BufferedReader in = new BufferedReader(new FileReader(stopWord));
+27:     String line;
+28:     while ((line = in.readLine()) != null) {
+29:         stopWords.add(line);
+
+
+An error occurred at line: [31] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ">", delete this token
+28:     while ((line = in.readLine()) != null) {
+29:         stopWords.add(line);
+30:     }
+31:     in.close(); -->
+32:     out.print(input);
+33:     %>
+34: 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "<", assert expected
+19:         return;
+20:     }
+21: 
+22:     <!-- //Here is the part used for StopStem
+23:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+24:     HashSet<String> stopWords = new HashSet<String>();
+25:     Porter porter = new Porter();
+
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete AssertStatement
+20:     }
+21: 
+22:     <!-- //Here is the part used for StopStem
+23:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+24:     HashSet<String> stopWords = new HashSet<String>();
+25:     Porter porter = new Porter();
+26:     BufferedReader in = new BufferedReader(new FileReader(stopWord));
+
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+String cannot be resolved to a variable
+20:     }
+21: 
+22:     <!-- //Here is the part used for StopStem
+23:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+24:     HashSet<String> stopWords = new HashSet<String>();
+25:     Porter porter = new Porter();
+26:     BufferedReader in = new BufferedReader(new FileReader(stopWord));
+
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+stopWord cannot be resolved to a variable
+20:     }
+21: 
+22:     <!-- //Here is the part used for StopStem
+23:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+24:     HashSet<String> stopWords = new HashSet<String>();
+25:     Porter porter = new Porter();
+26:     BufferedReader in = new BufferedReader(new FileReader(stopWord));
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+stopWord cannot be resolved to a variable
+23:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+24:     HashSet<String> stopWords = new HashSet<String>();
+25:     Porter porter = new Porter();
+26:     BufferedReader in = new BufferedReader(new FileReader(stopWord));
+27:     String line;
+28:     while ((line = in.readLine()) != null) {
+29:         stopWords.add(line);
+
+
+An error occurred at line: [31] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ">", delete this token
+28:     while ((line = in.readLine()) != null) {
+29:         stopWords.add(line);
+30:     }
+31:     in.close(); -->
+32:     out.print(input);
+33:     %>
+34: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+02-May-2024 15:37:41.328 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [21] in the jsp file: [/apis/getData.jsp]
+json cannot be resolved
+18:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+19:         return;
+20:     }
+21:     out.print(json.toString(input));
+22: %>
+23: 
+24:     <%-- //Here is the part used for StopStem
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [21] in the jsp file: [/apis/getData.jsp]
+json cannot be resolved
+18:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+19:         return;
+20:     }
+21:     out.print(json.toString(input));
+22: %>
+23: 
+24:     <%-- //Here is the part used for StopStem
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+02-May-2024 15:41:20.633 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+The left-hand side of an assignment must be a variable
+19:         return;
+20:     }
+21:     StringBuilder jsonResponse = new StringBuilder();
+22:     jsonResponse.append("{"sortedPages":");
+23:     jsonResponse.append(input);
+24:     jsonResponse.append("}");
+25:     out.print(json.toString(jsonResponse));
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "sortedPages", invalid AssignmentOperator
+19:         return;
+20:     }
+21:     StringBuilder jsonResponse = new StringBuilder();
+22:     jsonResponse.append("{"sortedPages":");
+23:     jsonResponse.append(input);
+24:     jsonResponse.append("}");
+25:     out.print(json.toString(jsonResponse));
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+json cannot be resolved
+22:     jsonResponse.append("{"sortedPages":");
+23:     jsonResponse.append(input);
+24:     jsonResponse.append("}");
+25:     out.print(json.toString(jsonResponse));
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+The left-hand side of an assignment must be a variable
+19:         return;
+20:     }
+21:     StringBuilder jsonResponse = new StringBuilder();
+22:     jsonResponse.append("{"sortedPages":");
+23:     jsonResponse.append(input);
+24:     jsonResponse.append("}");
+25:     out.print(json.toString(jsonResponse));
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "sortedPages", invalid AssignmentOperator
+19:         return;
+20:     }
+21:     StringBuilder jsonResponse = new StringBuilder();
+22:     jsonResponse.append("{"sortedPages":");
+23:     jsonResponse.append(input);
+24:     jsonResponse.append("}");
+25:     out.print(json.toString(jsonResponse));
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+json cannot be resolved
+22:     jsonResponse.append("{"sortedPages":");
+23:     jsonResponse.append(input);
+24:     jsonResponse.append("}");
+25:     out.print(json.toString(jsonResponse));
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+02-May-2024 16:04:01.482 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+23:     jsonString.append("input: ");
+24:     jsonString.append(input);
+25:     jsonString.append("}");
+26:     JSONObject jsonObj = new JSONObject(jsonString)
+27:     out.print(json.toString(jsonResponse));
+28: %>
+29: 
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+23:     jsonString.append("input: ");
+24:     jsonString.append(input);
+25:     jsonString.append("}");
+26:     JSONObject jsonObj = new JSONObject(jsonString)
+27:     out.print(json.toString(jsonResponse));
+28: %>
+29: 
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+23:     jsonString.append("input: ");
+24:     jsonString.append(input);
+25:     jsonString.append("}");
+26:     JSONObject jsonObj = new JSONObject(jsonString)
+27:     out.print(json.toString(jsonResponse));
+28: %>
+29: 
+
+
+An error occurred at line: [27] in the jsp file: [/apis/getData.jsp]
+json cannot be resolved
+24:     jsonString.append(input);
+25:     jsonString.append("}");
+26:     JSONObject jsonObj = new JSONObject(jsonString)
+27:     out.print(json.toString(jsonResponse));
+28: %>
+29: 
+30:     <%-- //Here is the part used for StopStem
+
+
+An error occurred at line: [27] in the jsp file: [/apis/getData.jsp]
+jsonResponse cannot be resolved to a variable
+24:     jsonString.append(input);
+25:     jsonString.append("}");
+26:     JSONObject jsonObj = new JSONObject(jsonString)
+27:     out.print(json.toString(jsonResponse));
+28: %>
+29: 
+30:     <%-- //Here is the part used for StopStem
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+23:     jsonString.append("input: ");
+24:     jsonString.append(input);
+25:     jsonString.append("}");
+26:     JSONObject jsonObj = new JSONObject(jsonString)
+27:     out.print(json.toString(jsonResponse));
+28: %>
+29: 
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+23:     jsonString.append("input: ");
+24:     jsonString.append(input);
+25:     jsonString.append("}");
+26:     JSONObject jsonObj = new JSONObject(jsonString)
+27:     out.print(json.toString(jsonResponse));
+28: %>
+29: 
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+23:     jsonString.append("input: ");
+24:     jsonString.append(input);
+25:     jsonString.append("}");
+26:     JSONObject jsonObj = new JSONObject(jsonString)
+27:     out.print(json.toString(jsonResponse));
+28: %>
+29: 
+
+
+An error occurred at line: [27] in the jsp file: [/apis/getData.jsp]
+json cannot be resolved
+24:     jsonString.append(input);
+25:     jsonString.append("}");
+26:     JSONObject jsonObj = new JSONObject(jsonString)
+27:     out.print(json.toString(jsonResponse));
+28: %>
+29: 
+30:     <%-- //Here is the part used for StopStem
+
+
+An error occurred at line: [27] in the jsp file: [/apis/getData.jsp]
+jsonResponse cannot be resolved to a variable
+24:     jsonString.append(input);
+25:     jsonString.append("}");
+26:     JSONObject jsonObj = new JSONObject(jsonString)
+27:     out.print(json.toString(jsonResponse));
+28: %>
+29: 
+30:     <%-- //Here is the part used for StopStem
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+02-May-2024 16:04:06.179 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+23:     jsonString.append("input: ");
+24:     jsonString.append(input);
+25:     jsonString.append("}");
+26:     JSONObject jsonObj = new JSONObject(jsonString)
+27:     out.print(json.toString(jsonResponse));
+28: %>
+29: 
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+23:     jsonString.append("input: ");
+24:     jsonString.append(input);
+25:     jsonString.append("}");
+26:     JSONObject jsonObj = new JSONObject(jsonString)
+27:     out.print(json.toString(jsonResponse));
+28: %>
+29: 
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+23:     jsonString.append("input: ");
+24:     jsonString.append(input);
+25:     jsonString.append("}");
+26:     JSONObject jsonObj = new JSONObject(jsonString)
+27:     out.print(json.toString(jsonResponse));
+28: %>
+29: 
+
+
+An error occurred at line: [27] in the jsp file: [/apis/getData.jsp]
+json cannot be resolved
+24:     jsonString.append(input);
+25:     jsonString.append("}");
+26:     JSONObject jsonObj = new JSONObject(jsonString)
+27:     out.print(json.toString(jsonResponse));
+28: %>
+29: 
+30:     <%-- //Here is the part used for StopStem
+
+
+An error occurred at line: [27] in the jsp file: [/apis/getData.jsp]
+jsonResponse cannot be resolved to a variable
+24:     jsonString.append(input);
+25:     jsonString.append("}");
+26:     JSONObject jsonObj = new JSONObject(jsonString)
+27:     out.print(json.toString(jsonResponse));
+28: %>
+29: 
+30:     <%-- //Here is the part used for StopStem
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+23:     jsonString.append("input: ");
+24:     jsonString.append(input);
+25:     jsonString.append("}");
+26:     JSONObject jsonObj = new JSONObject(jsonString)
+27:     out.print(json.toString(jsonResponse));
+28: %>
+29: 
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+23:     jsonString.append("input: ");
+24:     jsonString.append(input);
+25:     jsonString.append("}");
+26:     JSONObject jsonObj = new JSONObject(jsonString)
+27:     out.print(json.toString(jsonResponse));
+28: %>
+29: 
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+23:     jsonString.append("input: ");
+24:     jsonString.append(input);
+25:     jsonString.append("}");
+26:     JSONObject jsonObj = new JSONObject(jsonString)
+27:     out.print(json.toString(jsonResponse));
+28: %>
+29: 
+
+
+An error occurred at line: [27] in the jsp file: [/apis/getData.jsp]
+json cannot be resolved
+24:     jsonString.append(input);
+25:     jsonString.append("}");
+26:     JSONObject jsonObj = new JSONObject(jsonString)
+27:     out.print(json.toString(jsonResponse));
+28: %>
+29: 
+30:     <%-- //Here is the part used for StopStem
+
+
+An error occurred at line: [27] in the jsp file: [/apis/getData.jsp]
+jsonResponse cannot be resolved to a variable
+24:     jsonString.append(input);
+25:     jsonString.append("}");
+26:     JSONObject jsonObj = new JSONObject(jsonString)
+27:     out.print(json.toString(jsonResponse));
+28: %>
+29: 
+30:     <%-- //Here is the part used for StopStem
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+02-May-2024 16:06:29.953 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [21] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+18:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+19:         return;
+20:     }
+21:     JSONObject json = new JSONObject();
+22:     json.put("input", input);
+23:     out.print(json);
+24:     out.flush();x
+
+
+An error occurred at line: [21] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+18:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+19:         return;
+20:     }
+21:     JSONObject json = new JSONObject();
+22:     json.put("input", input);
+23:     out.print(json);
+24:     out.flush();x
+
+
+An error occurred at line: [24] in the jsp file: [/apis/getData.jsp]
+x cannot be resolved to a type
+21:     JSONObject json = new JSONObject();
+22:     json.put("input", input);
+23:     out.print(json);
+24:     out.flush();x
+25: %>
+26: 
+27:     <%-- //Here is the part used for StopStem
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable out
+22:     json.put("input", input);
+23:     out.print(json);
+24:     out.flush();x
+25: %>
+26: 
+27:     <%-- //Here is the part used for StopStem
+28:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ".", ; expected
+22:     json.put("input", input);
+23:     out.print(json);
+24:     out.flush();x
+25: %>
+26: 
+27:     <%-- //Here is the part used for StopStem
+28:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+The method write(String) is undefined for the type getData_jsp
+22:     json.put("input", input);
+23:     out.print(json);
+24:     out.flush();x
+25: %>
+26: 
+27:     <%-- //Here is the part used for StopStem
+28:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [21] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+18:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+19:         return;
+20:     }
+21:     JSONObject json = new JSONObject();
+22:     json.put("input", input);
+23:     out.print(json);
+24:     out.flush();x
+
+
+An error occurred at line: [21] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+18:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+19:         return;
+20:     }
+21:     JSONObject json = new JSONObject();
+22:     json.put("input", input);
+23:     out.print(json);
+24:     out.flush();x
+
+
+An error occurred at line: [24] in the jsp file: [/apis/getData.jsp]
+x cannot be resolved to a type
+21:     JSONObject json = new JSONObject();
+22:     json.put("input", input);
+23:     out.print(json);
+24:     out.flush();x
+25: %>
+26: 
+27:     <%-- //Here is the part used for StopStem
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable out
+22:     json.put("input", input);
+23:     out.print(json);
+24:     out.flush();x
+25: %>
+26: 
+27:     <%-- //Here is the part used for StopStem
+28:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ".", ; expected
+22:     json.put("input", input);
+23:     out.print(json);
+24:     out.flush();x
+25: %>
+26: 
+27:     <%-- //Here is the part used for StopStem
+28:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+The method write(String) is undefined for the type getData_jsp
+22:     json.put("input", input);
+23:     out.print(json);
+24:     out.flush();x
+25: %>
+26: 
+27:     <%-- //Here is the part used for StopStem
+28:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+02-May-2024 16:07:23.883 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+x cannot be resolved to a type
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable out
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ".", ; expected
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+The method write(String) is undefined for the type getData_jsp
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+x cannot be resolved to a type
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable out
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ".", ; expected
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+The method write(String) is undefined for the type getData_jsp
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+02-May-2024 16:07:44.916 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [21] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. org.json.simple.JSONObject resolves to a package
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+x cannot be resolved to a type
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable out
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ".", ; expected
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+The method write(String) is undefined for the type getData_jsp
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [21] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. org.json.simple.JSONObject resolves to a package
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+x cannot be resolved to a type
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable out
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ".", ; expected
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+The method write(String) is undefined for the type getData_jsp
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+02-May-2024 16:12:03.704 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [21] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. org.json.simple.JSONObject resolves to a package
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+x cannot be resolved to a type
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable out
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ".", ; expected
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+The method write(String) is undefined for the type getData_jsp
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [21] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. org.json.simple.JSONObject resolves to a package
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+x cannot be resolved to a type
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable out
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ".", ; expected
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+The method write(String) is undefined for the type getData_jsp
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+02-May-2024 16:12:10.620 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [21] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. org.json.simple.JSONObject resolves to a package
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+x cannot be resolved to a type
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable out
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ".", ; expected
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+The method write(String) is undefined for the type getData_jsp
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [21] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Only a type can be imported. org.json.simple.JSONObject resolves to a package
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+x cannot be resolved to a type
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable out
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ".", ; expected
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+The method write(String) is undefined for the type getData_jsp
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+02-May-2024 16:12:58.372 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+x cannot be resolved to a type
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable out
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ".", ; expected
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+The method write(String) is undefined for the type getData_jsp
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+x cannot be resolved to a type
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable out
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ".", ; expected
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+The method write(String) is undefined for the type getData_jsp
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+02-May-2024 16:15:37.059 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+02-May-2024 16:15:37.059 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+02-May-2024 16:15:37.061 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@5ec77191')
+02-May-2024 16:16:07.309 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+x cannot be resolved to a type
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable out
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ".", ; expected
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+The method write(String) is undefined for the type getData_jsp
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+x cannot be resolved to a type
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Duplicate local variable out
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ".", ; expected
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+The method write(String) is undefined for the type getData_jsp
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();x
+26: %>
+27: 
+28:     <%-- //Here is the part used for StopStem
+29:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+02-May-2024 16:17:39.038 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+JSONObject cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     JSONObject json = new JSONObject();
+23:     json.put("input", input);
+24:     out.print(json);
+25:     out.flush();
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
