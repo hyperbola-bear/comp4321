@@ -11,6 +11,7 @@ import java.util.Vector;
 import java.util.HashMap;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Iterator;
 import java.util.Set;
 import java.lang.Math;
 import jdbm.htree.HTree;
@@ -23,7 +24,6 @@ import jdbm.helper.FastIterator;
 public class SearchEngine
 {
 	private Porter porter;
-
 	private static HashSet<String> stopWords;
 	private Vector<String> searchTerms;
 	private HTree urlToId;
@@ -169,6 +169,8 @@ public class SearchEngine
 			}
 		}
 
+		phrase = phrase.stripTrailing();
+
 		return phrase;
 	}
 
@@ -302,21 +304,7 @@ public class SearchEngine
 		System.out.println(phrase);
 		// DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG
 
-		if(phrase != "") {
-			String[] tokens = phrase.split(" ");
-			int phraseLength = tokens.length;
-			HashSet<Integer> matchingDocs;
-
-			if(phraseLength == 2) {
-				matchingDocs = (HashSet<Integer>) bigram.get(phrase);
-			} else if(phraseLength == 3) {
-				matchingDocs = (HashSet<Integer>) trigram.get(phrase);
-			} else {
-				throw new IOException("Invalid query length");
-			}
-
-			// Find number of unique terms in matching title and docs
-		} else {
+		if(phrase == "") {
 			HashMap<Integer, Double> consolidatedScores = new HashMap<>();
 
 			// Title Constant for prioritizing title matches
@@ -434,21 +422,81 @@ public class SearchEngine
 			});
 
 			return results;
-		}
+		} else {
+			String[] tokens = phrase.split(" ");
 
-		Vector<Pair> results = new Vector<>();
-		return results;
+			HashSet<Integer> docList = new HashSet<>();
+
+			RecordManager recman = RecordManagerFactory.createRecordManager("Database");
+			HTree ngram;
+			long recid;
+
+			if(tokens.length == 2) {
+				recid = recman.getNamedObject("bigram");
+				ngram = HTree.load(recman, recid);
+				docList = (HashSet<Integer>) ngram.get(phrase);
+			} else if(tokens.length == 3) {
+				recid = recman.getNamedObject("trigram");
+				ngram = HTree.load(recman, recid);
+				docList = (HashSet<Integer>) ngram.get(phrase);
+			}
+
+			if(docList == null) {
+				Vector<Pair> results = new Vector<>();
+				return results;
+			}
+
+//			Vector<Pair> results = search(query, "");
+//
+//			for(Pair pair : results) {
+//				if(!docList.contains(pair)) {
+//					results.remove(pair);
+//				}
+//			}
+
+			Vector<Pair> results = search(query, "");
+
+			Iterator<Pair> iterator = results.iterator();
+			while (iterator.hasNext()) {
+				Pair pair = iterator.next();
+				if (!docList.contains(pair.docId)) {
+					iterator.remove();
+				}
+			}
+
+			for(Integer docId : docList) {
+				int EXISTS = 0;
+
+				for(Pair pair : results) {
+					if(pair.docId == docId) {
+						EXISTS = 1;
+						break;
+					}
+				}
+
+				if(EXISTS == 1) {
+					continue; // If entry is already in results, skip adding it
+				}
+
+				Pair tempPair = new Pair(docId, 0);
+
+				results.add(tempPair);
+			}
+
+			return results;
+		}
 	}
 
 	public Vector<Pair> query(String query) throws IOException {
 		// Check for phrases
 		query = " " + query + " ";
 		String[] tokens = query.split("\"");
-		String phrase = "";
-
+		String phrase;
 		if(tokens.length == 3) {
-			phrase = tokens[1];
+			phrase = getPhrase(query);
 			query = tokens[0] + tokens[2]; // Remove phrase from query
+		} else {
+			phrase = "";
 		}
 		
 		Vector<Integer> parsed_query = getWords(query);
@@ -458,7 +506,7 @@ public class SearchEngine
 
 	public static void main(String[] args) {
 		String testInputPhrase = "My favourite movie is \"terminator returns\"";
-		String testInput = "information retrieval techniques CNN News";
+		String testInput = "information retrieval techniques CNN News \"information retrieval\"";
 
 		try {
 			SearchEngine searchEngine = new SearchEngine();
