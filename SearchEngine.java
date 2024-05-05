@@ -18,6 +18,7 @@ import java.io.Serializable;
 import jdbm.RecordManager;
 import jdbm.RecordManagerFactory;
 import jdbm.helper.FastIterator;
+import org.Pair;
 
 
 public class SearchEngine

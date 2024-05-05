@@ -1000,3 +1000,1894 @@ Stacktrace:
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:834)
+05-May-2024 02:18:51.584 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+05-May-2024 02:18:51.584 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+05-May-2024 02:18:51.584 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@34237b90')
+05-May-2024 02:18:58.779 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+SearchEngine cannot be resolved to a type
+20:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+21:         return;
+22:     }
+23:     SearchEngine se = new SearchEngine();
+24:     Vector<Pair> result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.get)
+
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+SearchEngine cannot be resolved to a type
+20:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+21:         return;
+22:     }
+23:     SearchEngine se = new SearchEngine();
+24:     Vector<Pair> result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.get)
+
+
+An error occurred at line: [24] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+21:         return;
+22:     }
+23:     SearchEngine se = new SearchEngine();
+24:     Vector<Pair> result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.get)
+27:         
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+22:     }
+23:     SearchEngine se = new SearchEngine();
+24:     Vector<Pair> result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.get)
+27:         
+28:     }
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete BlockStatements
+23:     SearchEngine se = new SearchEngine();
+24:     Vector<Pair> result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.get)
+27:         
+28:     }
+29: %>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+SearchEngine cannot be resolved to a type
+20:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+21:         return;
+22:     }
+23:     SearchEngine se = new SearchEngine();
+24:     Vector<Pair> result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.get)
+
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+SearchEngine cannot be resolved to a type
+20:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+21:         return;
+22:     }
+23:     SearchEngine se = new SearchEngine();
+24:     Vector<Pair> result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.get)
+
+
+An error occurred at line: [24] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+21:         return;
+22:     }
+23:     SearchEngine se = new SearchEngine();
+24:     Vector<Pair> result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.get)
+27:         
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+22:     }
+23:     SearchEngine se = new SearchEngine();
+24:     Vector<Pair> result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.get)
+27:         
+28:     }
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete BlockStatements
+23:     SearchEngine se = new SearchEngine();
+24:     Vector<Pair> result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.get)
+27:         
+28:     }
+29: %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+05-May-2024 08:57:09.619 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+05-May-2024 08:57:09.622 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+05-May-2024 08:57:09.625 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@7a26928a')
+05-May-2024 09:02:13.175 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+get cannot be resolved or is not a field
+23:     SearchEngine se = new SearchEngine();
+24:     Vector<Pair> result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.get)
+27:         
+28:     }
+29: %>
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete BlockStatements
+23:     SearchEngine se = new SearchEngine();
+24:     Vector<Pair> result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.get)
+27:         
+28:     }
+29: %>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+get cannot be resolved or is not a field
+23:     SearchEngine se = new SearchEngine();
+24:     Vector<Pair> result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.get)
+27:         
+28:     }
+29: %>
+
+
+An error occurred at line: [26] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete BlockStatements
+23:     SearchEngine se = new SearchEngine();
+24:     Vector<Pair> result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.get)
+27:         
+28:     }
+29: %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+05-May-2024 09:03:31.290 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [An exception occurred processing [/apis/getData.jsp] at line [23]
+
+20:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+21:         return;
+22:     }
+23:     SearchEngine se = new SearchEngine();
+24:     Vector<Pair> result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+
+
+Stacktrace:] with root cause
+	java.lang.UnsupportedClassVersionError: IRUtilities/Porter has been compiled by a more recent version of the Java Runtime (class file version 62.0), this version of the Java Runtime only recognizes class file versions up to 55.0 (unable to load class [IRUtilities.Porter])
+		at org.apache.catalina.loader.WebappClassLoaderBase.findClassInternal(WebappClassLoaderBase.java:2356)
+		at org.apache.catalina.loader.WebappClassLoaderBase.findClass(WebappClassLoaderBase.java:800)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1317)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165)
+		at CodeFiles.SearchEngine.<init>(SearchEngine.java:47)
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:158)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+05-May-2024 09:03:46.876 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [An exception occurred processing [/apis/getData.jsp] at line [23]
+
+20:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+21:         return;
+22:     }
+23:     SearchEngine se = new SearchEngine();
+24:     Vector<Pair> result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+
+
+Stacktrace:] with root cause
+	java.lang.UnsupportedClassVersionError: IRUtilities/Porter has been compiled by a more recent version of the Java Runtime (class file version 62.0), this version of the Java Runtime only recognizes class file versions up to 55.0 (unable to load class [IRUtilities.Porter])
+		at CodeFiles.SearchEngine.<init>(SearchEngine.java:47)
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:158)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+05-May-2024 09:04:18.353 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+05-May-2024 09:04:18.353 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+05-May-2024 09:04:18.355 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@4cee7fa0')
+05-May-2024 09:04:25.309 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [An exception occurred processing [apis/getData.jsp] at line [23]
+
+20:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+21:         return;
+22:     }
+23:     SearchEngine se = new SearchEngine();
+24:     Vector<Pair> result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+
+
+Stacktrace:] with root cause
+	java.lang.UnsupportedClassVersionError: IRUtilities/Porter has been compiled by a more recent version of the Java Runtime (class file version 62.0), this version of the Java Runtime only recognizes class file versions up to 55.0 (unable to load class [IRUtilities.Porter])
+		at org.apache.catalina.loader.WebappClassLoaderBase.findClassInternal(WebappClassLoaderBase.java:2356)
+		at org.apache.catalina.loader.WebappClassLoaderBase.findClass(WebappClassLoaderBase.java:800)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1317)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165)
+		at CodeFiles.SearchEngine.<init>(SearchEngine.java:47)
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:158)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+05-May-2024 09:06:17.095 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [An exception occurred processing [apis/getData.jsp] at line [23]
+
+20:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+21:         return;
+22:     }
+23:     SearchEngine se = new SearchEngine();
+24:     Vector<Pair> result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+
+
+Stacktrace:] with root cause
+	java.lang.UnsupportedClassVersionError: IRUtilities/Porter has been compiled by a more recent version of the Java Runtime (class file version 62.0), this version of the Java Runtime only recognizes class file versions up to 55.0 (unable to load class [IRUtilities.Porter])
+		at CodeFiles.SearchEngine.<init>(SearchEngine.java:47)
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:158)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+05-May-2024 09:17:04.327 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+SearchEngine cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+SearchEngine cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+26:         
+
+
+An error occurred at line: [24] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+26:         
+27:     }
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+SearchEngine cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+SearchEngine cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+26:         
+
+
+An error occurred at line: [24] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+26:         
+27:     }
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+05-May-2024 09:17:19.493 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+SearchEngine cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+SearchEngine cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+26:         
+
+
+An error occurred at line: [24] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+26:         
+27:     }
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+SearchEngine cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+SearchEngine cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+26:         
+
+
+An error occurred at line: [24] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+26:         
+27:     }
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+05-May-2024 09:22:55.835 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+05-May-2024 09:22:55.836 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+05-May-2024 09:22:55.844 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@2caf6912')
+05-May-2024 09:23:08.777 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+SearchEngine cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+SearchEngine cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+26:         
+
+
+An error occurred at line: [24] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+26:         
+27:     }
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+SearchEngine cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+
+
+An error occurred at line: [22] in the jsp file: [/apis/getData.jsp]
+SearchEngine cannot be resolved to a type
+19:         out.print("{\"sortedPages\":[],\"pages\":{}}");
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+26:         
+
+
+An error occurred at line: [24] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+26:         
+27:     }
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+05-May-2024 13:39:31.559 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+05-May-2024 13:39:31.559 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+05-May-2024 13:39:31.562 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@4cee7fa0')
+05-May-2024 13:39:47.534 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+The type Pair cannot be resolved. It is indirectly referenced from required type SearchEngine.SearchEngine
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+26:         
+
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+The method query(String) from the type SearchEngine refers to the missing type Pair
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+26:         
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+The type Pair cannot be resolved. It is indirectly referenced from required type SearchEngine.SearchEngine
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+26:         
+
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+The method query(String) from the type SearchEngine refers to the missing type Pair
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+26:         
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+05-May-2024 13:43:05.002 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+The type Pair cannot be resolved. It is indirectly referenced from required type SearchEngine.SearchEngine
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+26:         
+
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+The method query(String) from the type SearchEngine refers to the missing type Pair
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+26:         
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+The type Pair cannot be resolved. It is indirectly referenced from required type SearchEngine.SearchEngine
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+26:         
+
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+The method query(String) from the type SearchEngine refers to the missing type Pair
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = se.query(input);
+24:     for (Pair p : result) {
+25:         out.println(p.docId + " " + p.score);
+26:         
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+05-May-2024 17:00:49.627 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+05-May-2024 17:00:49.627 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+05-May-2024 17:00:49.627 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@2caf6912')
+05-May-2024 17:01:02.767 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [24] in the jsp file: [/apis/getData.jsp]
+The type Pair cannot be resolved. It is indirectly referenced from required type SearchEngine.SearchEngine
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+27:         
+
+
+An error occurred at line: [24] in the jsp file: [/apis/getData.jsp]
+The method query(String) from the type SearchEngine refers to the missing type Pair
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+27:         
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [24] in the jsp file: [/apis/getData.jsp]
+The type Pair cannot be resolved. It is indirectly referenced from required type SearchEngine.SearchEngine
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+27:         
+
+
+An error occurred at line: [24] in the jsp file: [/apis/getData.jsp]
+The method query(String) from the type SearchEngine refers to the missing type Pair
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+27:         
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+05-May-2024 17:15:16.594 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+05-May-2024 17:15:16.595 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+05-May-2024 17:15:16.595 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@2caf6912')
+05-May-2024 17:15:27.783 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+
+
+An error occurred at line: [24] in the jsp file: [/apis/getData.jsp]
+The type Pair cannot be resolved. It is indirectly referenced from required type SearchEngine.SearchEngine
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+27:         
+
+
+An error occurred at line: [24] in the jsp file: [/apis/getData.jsp]
+The method query(String) from the type SearchEngine refers to the missing type Pair
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+27:         
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+27:         
+28:     }
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+
+
+An error occurred at line: [24] in the jsp file: [/apis/getData.jsp]
+The type Pair cannot be resolved. It is indirectly referenced from required type SearchEngine.SearchEngine
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+27:         
+
+
+An error occurred at line: [24] in the jsp file: [/apis/getData.jsp]
+The method query(String) from the type SearchEngine refers to the missing type Pair
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+27:         
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+27:         
+28:     }
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+05-May-2024 17:16:43.746 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [24] in the jsp file: [/apis/getData.jsp]
+The type Pair cannot be resolved. It is indirectly referenced from required type SearchEngine.SearchEngine
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+27:         
+
+
+An error occurred at line: [24] in the jsp file: [/apis/getData.jsp]
+The method query(String) from the type SearchEngine refers to the missing type Pair
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+27:         
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [24] in the jsp file: [/apis/getData.jsp]
+The type Pair cannot be resolved. It is indirectly referenced from required type SearchEngine.SearchEngine
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+27:         
+
+
+An error occurred at line: [24] in the jsp file: [/apis/getData.jsp]
+The method query(String) from the type SearchEngine refers to the missing type Pair
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+27:         
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+05-May-2024 17:16:58.862 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+05-May-2024 17:16:58.862 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+05-May-2024 17:16:58.862 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@267bbe1a')
+05-May-2024 17:17:19.113 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [16] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+The import Pair cannot be resolved
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+27:         
+28:     }
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [16] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+The import Pair cannot be resolved
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+27:         
+28:     }
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+05-May-2024 17:18:45.217 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+27:         
+28:     }
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+27:         
+28:     }
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+05-May-2024 17:26:25.127 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+05-May-2024 17:26:25.127 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+05-May-2024 17:26:25.129 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@757194dc')
+05-May-2024 17:26:25.299 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+05-May-2024 17:26:25.299 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+05-May-2024 17:26:33.969 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [16] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+The import Pair cannot be resolved
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+27:         
+28:     }
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [16] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+The import Pair cannot be resolved
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+27:         
+28:     }
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+05-May-2024 17:28:22.599 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [org.apache.jasper.JasperException: Unable to compile class for JSP] with root cause
+	java.nio.file.NoSuchFileException: C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321\WEB-INF\lib\myPair.jar
+		at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+		at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+		at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+		at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+		at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+		at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:198)
+		at java.base/java.nio.file.Files.readAttributes(Files.java:1764)
+		at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1250)
+		at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:733)
+		at java.base/java.util.zip.ZipFile$CleanableResource.get(ZipFile.java:842)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:248)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:177)
+		at java.base/java.util.jar.JarFile.<init>(JarFile.java:350)
+		at org.apache.catalina.webresources.AbstractArchiveResourceSet.openJarFile(AbstractArchiveResourceSet.java:299)
+		at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.getArchiveEntry(AbstractSingleArchiveResourceSet.java:96)
+		at org.apache.catalina.webresources.AbstractArchiveResourceSet.getResource(AbstractArchiveResourceSet.java:249)
+		at org.apache.catalina.webresources.StandardRoot.getResourceInternal(StandardRoot.java:272)
+		at org.apache.catalina.webresources.Cache.getResource(Cache.java:64)
+		at org.apache.catalina.webresources.StandardRoot.getResource(StandardRoot.java:211)
+		at org.apache.catalina.webresources.StandardRoot.getClassLoaderResource(StandardRoot.java:220)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResourceAsStream(WebappClassLoaderBase.java:1077)
+		at org.apache.jasper.servlet.JasperLoader.getResourceAsStream(JasperLoader.java:140)
+		at org.apache.jasper.compiler.JDTCompiler$1.findType(JDTCompiler.java:192)
+		at org.apache.jasper.compiler.JDTCompiler$1.findType(JDTCompiler.java:180)
+		at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.createPlainPackage(LookupEnvironment.java:1142)
+		at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.buildTypeBindings(CompilationUnitScope.java:136)
+		at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:478)
+		at org.eclipse.jdt.internal.compiler.Compiler.internalBeginToCompile(Compiler.java:856)
+		at org.eclipse.jdt.internal.compiler.Compiler.beginToCompile(Compiler.java:394)
+		at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:444)
+		at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:426)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:511)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+05-May-2024 17:32:21.650 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+05-May-2024 17:32:21.650 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+05-May-2024 17:32:21.655 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@291120f4')
+05-May-2024 17:32:21.832 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+05-May-2024 17:32:21.832 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+05-May-2024 17:32:23.009 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [org.apache.jasper.JasperException: Unable to compile class for JSP] with root cause
+	java.nio.file.NoSuchFileException: C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321\WEB-INF\lib\myPair.jar
+		at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+		at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+		at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+		at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+		at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+		at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:198)
+		at java.base/java.nio.file.Files.readAttributes(Files.java:1764)
+		at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1250)
+		at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:733)
+		at java.base/java.util.zip.ZipFile$CleanableResource.get(ZipFile.java:842)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:248)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:177)
+		at java.base/java.util.jar.JarFile.<init>(JarFile.java:350)
+		at org.apache.catalina.webresources.AbstractArchiveResourceSet.openJarFile(AbstractArchiveResourceSet.java:299)
+		at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.getArchiveEntry(AbstractSingleArchiveResourceSet.java:96)
+		at org.apache.catalina.webresources.AbstractArchiveResourceSet.getResource(AbstractArchiveResourceSet.java:249)
+		at org.apache.catalina.webresources.StandardRoot.getResourceInternal(StandardRoot.java:272)
+		at org.apache.catalina.webresources.Cache.getResource(Cache.java:64)
+		at org.apache.catalina.webresources.StandardRoot.getResource(StandardRoot.java:211)
+		at org.apache.catalina.webresources.StandardRoot.getClassLoaderResource(StandardRoot.java:220)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResourceAsStream(WebappClassLoaderBase.java:1077)
+		at org.apache.jasper.servlet.JasperLoader.getResourceAsStream(JasperLoader.java:140)
+		at org.apache.jasper.compiler.JDTCompiler$1.findType(JDTCompiler.java:192)
+		at org.apache.jasper.compiler.JDTCompiler$1.findType(JDTCompiler.java:180)
+		at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.createPlainPackage(LookupEnvironment.java:1142)
+		at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.buildTypeBindings(CompilationUnitScope.java:136)
+		at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:478)
+		at org.eclipse.jdt.internal.compiler.Compiler.internalBeginToCompile(Compiler.java:856)
+		at org.eclipse.jdt.internal.compiler.Compiler.beginToCompile(Compiler.java:394)
+		at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:444)
+		at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:426)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:511)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+05-May-2024 17:32:34.224 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [org.apache.jasper.JasperException: Unable to compile class for JSP] with root cause
+	java.nio.file.NoSuchFileException: C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321\WEB-INF\lib\myPair.jar
+		at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+		at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+		at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+		at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+		at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+		at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:198)
+		at java.base/java.nio.file.Files.readAttributes(Files.java:1764)
+		at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1250)
+		at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:733)
+		at java.base/java.util.zip.ZipFile$CleanableResource.get(ZipFile.java:842)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:248)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:177)
+		at java.base/java.util.jar.JarFile.<init>(JarFile.java:350)
+		at org.apache.catalina.webresources.AbstractArchiveResourceSet.openJarFile(AbstractArchiveResourceSet.java:299)
+		at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.getArchiveEntry(AbstractSingleArchiveResourceSet.java:96)
+		at org.apache.catalina.webresources.AbstractArchiveResourceSet.getResource(AbstractArchiveResourceSet.java:249)
+		at org.apache.catalina.webresources.StandardRoot.getResourceInternal(StandardRoot.java:272)
+		at org.apache.catalina.webresources.Cache.getResource(Cache.java:64)
+		at org.apache.catalina.webresources.StandardRoot.getResource(StandardRoot.java:211)
+		at org.apache.catalina.webresources.StandardRoot.getClassLoaderResource(StandardRoot.java:220)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResourceAsStream(WebappClassLoaderBase.java:1077)
+		at org.apache.jasper.servlet.JasperLoader.getResourceAsStream(JasperLoader.java:140)
+		at org.apache.jasper.compiler.JDTCompiler$1.findType(JDTCompiler.java:192)
+		at org.apache.jasper.compiler.JDTCompiler$1.findType(JDTCompiler.java:180)
+		at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.createPlainPackage(LookupEnvironment.java:1142)
+		at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.buildTypeBindings(CompilationUnitScope.java:136)
+		at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:478)
+		at org.eclipse.jdt.internal.compiler.Compiler.internalBeginToCompile(Compiler.java:856)
+		at org.eclipse.jdt.internal.compiler.Compiler.beginToCompile(Compiler.java:394)
+		at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:444)
+		at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:426)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:511)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+05-May-2024 17:33:38.415 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [org.apache.jasper.JasperException: Unable to compile class for JSP] with root cause
+	java.nio.file.NoSuchFileException: C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321\WEB-INF\lib\myPair.jar
+		at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+		at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+		at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+		at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+		at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+		at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:198)
+		at java.base/java.nio.file.Files.readAttributes(Files.java:1764)
+		at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1250)
+		at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:733)
+		at java.base/java.util.zip.ZipFile$CleanableResource.get(ZipFile.java:842)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:248)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:177)
+		at java.base/java.util.jar.JarFile.<init>(JarFile.java:350)
+		at org.apache.catalina.webresources.AbstractArchiveResourceSet.openJarFile(AbstractArchiveResourceSet.java:299)
+		at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.getArchiveEntry(AbstractSingleArchiveResourceSet.java:96)
+		at org.apache.catalina.webresources.AbstractArchiveResourceSet.getResource(AbstractArchiveResourceSet.java:249)
+		at org.apache.catalina.webresources.StandardRoot.getResourceInternal(StandardRoot.java:272)
+		at org.apache.catalina.webresources.Cache.getResource(Cache.java:64)
+		at org.apache.catalina.webresources.StandardRoot.getResource(StandardRoot.java:211)
+		at org.apache.catalina.webresources.StandardRoot.getClassLoaderResource(StandardRoot.java:220)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResourceAsStream(WebappClassLoaderBase.java:1077)
+		at org.apache.jasper.servlet.JasperLoader.getResourceAsStream(JasperLoader.java:140)
+		at org.apache.jasper.compiler.JDTCompiler$1.findType(JDTCompiler.java:192)
+		at org.apache.jasper.compiler.JDTCompiler$1.findType(JDTCompiler.java:180)
+		at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.createPlainPackage(LookupEnvironment.java:1142)
+		at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.buildTypeBindings(CompilationUnitScope.java:136)
+		at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:478)
+		at org.eclipse.jdt.internal.compiler.Compiler.internalBeginToCompile(Compiler.java:856)
+		at org.eclipse.jdt.internal.compiler.Compiler.beginToCompile(Compiler.java:394)
+		at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:444)
+		at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:426)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:511)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+05-May-2024 17:34:27.174 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+05-May-2024 17:34:27.174 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+05-May-2024 17:34:27.183 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@d0ec63')
+05-May-2024 17:34:27.372 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+05-May-2024 17:34:27.372 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+05-May-2024 17:34:29.163 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+27:         
+28:     }
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [23] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+20:         return;
+21:     }
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+
+
+An error occurred at line: [25] in the jsp file: [/apis/getData.jsp]
+Pair cannot be resolved to a type
+22:     SearchEngine se = new SearchEngine();
+23:     Vector<Pair> result = new Vector();
+24:     result = se.query(input);
+25:     for (Pair p : result) {
+26:         out.println(p.docId + " " + p.score);
+27:         
+28:     }
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)

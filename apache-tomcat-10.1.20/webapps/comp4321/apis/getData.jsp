@@ -1,15 +1,14 @@
 <%@ page language="java" contentType="application/json; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
-<%@ page import="IRUtilities.*" %>
+<%@ page import="IRUtilities.*, SearchEngine.*" %>
 <%@ page import="jdbm.RecordManager" %>
 <%@ page import="jdbm.RecordManagerFactory" %>
 <%@ page import="jdbm.htree.HTree" %>
 <%@ page import="jdbm.helper.FastIterator" %>
 <%@ page import="java.io.*" %>
 <%@ page import="java.util.*" %>
-<%@ page import="classes.*" %>
-<%@ page import="comp4321.*" %>
+
 
 <%
     String input = request.getParameter("input").trim();
@@ -21,9 +20,10 @@
         return;
     }
     SearchEngine se = new SearchEngine();
-    Vector<Pair> result = se.query(input);
+    Vector<Pair> result = new Vector();
+    result = se.query(input);
     for (Pair p : result) {
-        out.println(p.get)
+        out.println(p.docId + " " + p.score);
         
     }
 %>
