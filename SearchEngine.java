@@ -289,7 +289,7 @@ public class SearchEngine
 		return magnitude;
 	}
 
-	private Vector<Pair> search(Vector<Integer> query, String phrase) throws IOException {
+	private Vector<Vector<Object>> search(Vector<Integer> query, String phrase) throws IOException {
 		// DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG
 		System.out.println("Query is: ");
 
@@ -396,21 +396,23 @@ public class SearchEngine
 
 			Set<Integer> keys = consolidatedScores.keySet();
 
-			Vector<Pair> results = new Vector<>();
+			Vector<Vector<Object>> results = new Vector<Vector<Object>>();
 
 			double queryMagnitude = Math.sqrt(query.size()); // Required for calculating cosine similarity
 
 			for(Integer key : keys) {
-				Pair pair = new Pair(key, consolidatedScores.get(key) / queryMagnitude);
+				Vector pair = new Vector<>();
+				pair.add(key);
+				pair.add(consolidatedScores.get(key) / queryMagnitude);
 				results.add(pair);
 			}
 
 			System.out.println(results.size());
 
-			Collections.sort(results, new Comparator<Pair>() {
+			Collections.sort(results, new Comparator<Vector<Object>>() {
 				@Override
-				public int compare(Pair p1, Pair p2) {
-					double diff = p1.score - p2.score;
+				public int compare(Vector<Object> p1, Vector<Object> p2) {
+					double diff = (double) p1.get(1) - (double) p2.get(1);
 					if (diff < 0) {
 						return 1;
 					} else if (diff > 0) {
@@ -442,7 +444,7 @@ public class SearchEngine
 			}
 
 			if(docList == null) {
-				Vector<Pair> results = new Vector<>();
+				Vector<Vector<Object>> results = new Vector<Vector<Object>>();
 				return results;
 			}
 
@@ -454,12 +456,12 @@ public class SearchEngine
 //				}
 //			}
 
-			Vector<Pair> results = search(query, "");
+			Vector<Vector<Object>> results = search(query, "");
 
-			Iterator<Pair> iterator = results.iterator();
+			Iterator<Vector<Object>> iterator = results.iterator();
 			while (iterator.hasNext()) {
-				Pair pair = iterator.next();
-				if (!docList.contains(pair.docId)) {
+				Vector<Object> pair = iterator.next();
+				if (!docList.contains((Integer) pair.get(0))) {
 					iterator.remove();
 				}
 			}
@@ -467,8 +469,8 @@ public class SearchEngine
 			for(Integer docId : docList) {
 				int EXISTS = 0;
 
-				for(Pair pair : results) {
-					if(pair.docId == docId) {
+				for(Vector<Object> pair : results) {
+					if(((int) pair.get(0)) == docId) {
 						EXISTS = 1;
 						break;
 					}
@@ -478,7 +480,9 @@ public class SearchEngine
 					continue; // If entry is already in results, skip adding it
 				}
 
-				Pair tempPair = new Pair(docId, 0);
+				Vector<Object> tempPair = new Vector<>();
+				tempPair.add(docId);
+				tempPair.add(0);
 
 				results.add(tempPair);
 			}
@@ -487,7 +491,7 @@ public class SearchEngine
 		}
 	}
 
-	public Vector<Pair> query(String query) throws IOException {
+	public Vector<Vector<Object>> query(String query) throws IOException {
 		// Check for phrases
 		query = " " + query + " ";
 		String[] tokens = query.split("\"");
@@ -507,17 +511,18 @@ public class SearchEngine
 	public static void main(String[] args) {
 		String testInputPhrase = "My favourite movie is \"terminator returns\"";
 		String testInput = "information retrieval techniques CNN News \"information retrieval\"";
+		String testInput2 = "information retrieval techniques CNN News ";
 
 		try {
 			SearchEngine searchEngine = new SearchEngine();
 
-			Vector<Pair> results = searchEngine.query(testInput);
+			Vector<Vector<Object>> results = searchEngine.query(testInput2);
 			System.out.println("Query: " + testInput);
 
-			for(Pair pair : results) {
-				System.out.println("Doc ID: " + String.valueOf(pair.docId));
-				System.out.println("URL: " + searchEngine.idToUrl.get(pair.docId));
-				System.out.println("Doc Score: " + String.valueOf(pair.score));
+			for(Vector<Object> pair : results) {
+				System.out.println("Doc ID: " + String.valueOf(pair.get(0)));
+				System.out.println("URL: " + searchEngine.idToUrl.get(pair.get(0)));
+				System.out.println("Doc Score: " + String.valueOf(pair.get(1)));
 			}
 			
 		} catch (IOException ex) {
