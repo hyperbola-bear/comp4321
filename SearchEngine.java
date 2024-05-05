@@ -11,6 +11,7 @@ import java.util.Vector;
 import java.util.HashMap;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Iterator;
 import java.util.Set;
 import java.lang.Math;
 import jdbm.htree.HTree;
@@ -23,7 +24,6 @@ import jdbm.helper.FastIterator;
 public class SearchEngine
 {
 	private Porter porter;
-
 	private static HashSet<String> stopWords;
 	private Vector<String> searchTerms;
 	private HTree urlToId;
@@ -169,6 +169,8 @@ public class SearchEngine
 			}
 		}
 
+		phrase = phrase.stripTrailing();
+
 		return phrase;
 	}
 
@@ -287,7 +289,7 @@ public class SearchEngine
 		return magnitude;
 	}
 
-	private Vector<Pair> search(Vector<Integer> query, String phrase) throws IOException {
+	private Vector<Vector<Object>> search(Vector<Integer> query, String phrase) throws IOException {
 		// DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG
 		System.out.println("Query is: ");
 
@@ -302,21 +304,7 @@ public class SearchEngine
 		System.out.println(phrase);
 		// DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG
 
-		if(phrase != "") {
-			String[] tokens = phrase.split(" ");
-			int phraseLength = tokens.length;
-			HashSet<Integer> matchingDocs;
-
-			if(phraseLength == 2) {
-				matchingDocs = (HashSet<Integer>) bigram.get(phrase);
-			} else if(phraseLength == 3) {
-				matchingDocs = (HashSet<Integer>) trigram.get(phrase);
-			} else {
-				throw new IOException("Invalid query length");
-			}
-
-			// Find number of unique terms in matching title and docs
-		} else {
+		if(phrase == "") {
 			HashMap<Integer, Double> consolidatedScores = new HashMap<>();
 
 			// Title Constant for prioritizing title matches
@@ -408,21 +396,23 @@ public class SearchEngine
 
 			Set<Integer> keys = consolidatedScores.keySet();
 
-			Vector<Pair> results = new Vector<>();
+			Vector<Vector<Object>> results = new Vector<Vector<Object>>();
 
 			double queryMagnitude = Math.sqrt(query.size()); // Required for calculating cosine similarity
 
 			for(Integer key : keys) {
-				Pair pair = new Pair(key, consolidatedScores.get(key) / queryMagnitude);
+				Vector pair = new Vector<>();
+				pair.add(key);
+				pair.add(consolidatedScores.get(key) / queryMagnitude);
 				results.add(pair);
 			}
 
 			System.out.println(results.size());
 
-			Collections.sort(results, new Comparator<Pair>() {
+			Collections.sort(results, new Comparator<Vector<Object>>() {
 				@Override
-				public int compare(Pair p1, Pair p2) {
-					double diff = p1.score - p2.score;
+				public int compare(Vector<Object> p1, Vector<Object> p2) {
+					double diff = (double) p1.get(1) - (double) p2.get(1);
 					if (diff < 0) {
 						return 1;
 					} else if (diff > 0) {
@@ -434,21 +424,83 @@ public class SearchEngine
 			});
 
 			return results;
-		}
+		} else {
+			String[] tokens = phrase.split(" ");
 
-		Vector<Pair> results = new Vector<>();
-		return results;
+			HashSet<Integer> docList = new HashSet<>();
+
+			RecordManager recman = RecordManagerFactory.createRecordManager("Database");
+			HTree ngram;
+			long recid;
+
+			if(tokens.length == 2) {
+				recid = recman.getNamedObject("bigram");
+				ngram = HTree.load(recman, recid);
+				docList = (HashSet<Integer>) ngram.get(phrase);
+			} else if(tokens.length == 3) {
+				recid = recman.getNamedObject("trigram");
+				ngram = HTree.load(recman, recid);
+				docList = (HashSet<Integer>) ngram.get(phrase);
+			}
+
+			if(docList == null) {
+				Vector<Vector<Object>> results = new Vector<Vector<Object>>();
+				return results;
+			}
+
+//			Vector<Pair> results = search(query, "");
+//
+//			for(Pair pair : results) {
+//				if(!docList.contains(pair)) {
+//					results.remove(pair);
+//				}
+//			}
+
+			Vector<Vector<Object>> results = search(query, "");
+
+			Iterator<Vector<Object>> iterator = results.iterator();
+			while (iterator.hasNext()) {
+				Vector<Object> pair = iterator.next();
+				if (!docList.contains((Integer) pair.get(0))) {
+					iterator.remove();
+				}
+			}
+
+			for(Integer docId : docList) {
+				int EXISTS = 0;
+
+				for(Vector<Object> pair : results) {
+					if(((int) pair.get(0)) == docId) {
+						EXISTS = 1;
+						break;
+					}
+				}
+
+				if(EXISTS == 1) {
+					continue; // If entry is already in results, skip adding it
+				}
+
+				Vector<Object> tempPair = new Vector<>();
+				tempPair.add(docId);
+				tempPair.add(0);
+
+				results.add(tempPair);
+			}
+
+			return results;
+		}
 	}
 
-	public Vector<Pair> query(String query) throws IOException {
+	public Vector<Vector<Object>> query(String query) throws IOException {
 		// Check for phrases
 		query = " " + query + " ";
 		String[] tokens = query.split("\"");
-		String phrase = "";
-
+		String phrase;
 		if(tokens.length == 3) {
-			phrase = tokens[1];
+			phrase = getPhrase(query);
 			query = tokens[0] + tokens[2]; // Remove phrase from query
+		} else {
+			phrase = "";
 		}
 		
 		Vector<Integer> parsed_query = getWords(query);
@@ -458,18 +510,19 @@ public class SearchEngine
 
 	public static void main(String[] args) {
 		String testInputPhrase = "My favourite movie is \"terminator returns\"";
-		String testInput = "information retrieval techniques CNN News";
+		String testInput = "information retrieval techniques CNN News \"information retrieval\"";
+		String testInput2 = "information retrieval techniques CNN News ";
 
 		try {
 			SearchEngine searchEngine = new SearchEngine();
 
-			Vector<Pair> results = searchEngine.query(testInput);
+			Vector<Vector<Object>> results = searchEngine.query(testInput2);
 			System.out.println("Query: " + testInput);
 
-			for(Pair pair : results) {
-				System.out.println("Doc ID: " + String.valueOf(pair.docId));
-				System.out.println("URL: " + searchEngine.idToUrl.get(pair.docId));
-				System.out.println("Doc Score: " + String.valueOf(pair.score));
+			for(Vector<Object> pair : results) {
+				System.out.println("Doc ID: " + String.valueOf(pair.get(0)));
+				System.out.println("URL: " + searchEngine.idToUrl.get(pair.get(0)));
+				System.out.println("Doc Score: " + String.valueOf(pair.get(1)));
 			}
 			
 		} catch (IOException ex) {
