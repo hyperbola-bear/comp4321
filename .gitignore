@@ -9,3 +9,6 @@ spider_result.txt
 *.db 
 *.lg
 *.log
+
+# apache temp files
+apache-tomcat-7.0.42/temp/*
