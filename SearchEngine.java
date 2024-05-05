@@ -505,7 +505,13 @@ public class SearchEngine
 		
 		Vector<Integer> parsed_query = getWords(query);
 
-		return search(parsed_query, phrase);
+		Vector<Vector<Object>> results = search(parsed_query, phrase);
+
+		if(results.size() > 50) {
+			results = results.subList(0, 50);
+		}
+
+		return results;
 	}
 
 	public static void main(String[] args) {
