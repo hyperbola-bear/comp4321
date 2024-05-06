@@ -20,7 +20,6 @@ import jdbm.RecordManagerFactory;
 import jdbm.helper.FastIterator;
 
 
-
 public class SearchEngine
 {
 	private Porter porter;

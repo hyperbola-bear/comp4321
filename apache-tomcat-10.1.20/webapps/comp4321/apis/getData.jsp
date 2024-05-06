@@ -20,14 +20,15 @@
         return;
     }
     SearchEngine se = new SearchEngine();
+    out.println(input);
+    %>
+    <!--%
     Vector<Pair> result = new Vector();
     result = se.query(input);
     for (Pair p : result) {
         out.println(p.docId + " " + p.score);
         
     }
-%>
-<!--%
     //Here is the part used for StopStem
     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
     HashSet<String> stopWords = new HashSet<String>();
