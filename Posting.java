@@ -1,3 +1,4 @@
+package PROJECT;
 import java.io.Serializable;
 
 public class Posting implements Serializable {

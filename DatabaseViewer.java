@@ -1,3 +1,4 @@
+package PROJECT;
 import java.util.*;
 import IRUtilities.*;
 import java.io.*;
@@ -20,21 +21,21 @@ import jdbm.helper.Tuple;
 import jdbm.helper.TupleBrowser;
 
 public class DatabaseViewer {
-	private Porter porter;
+	private static Porter porter;
 	private static HashSet<String> stopWords;
-	private Vector<String> searchTerms;
-	private HTree urlToId;
-	private HTree idToUrl;
-	private HTree wordToId;
-	private HTree idToWord;
-	private HTree titleForwardIndex;
-	private HTree docForwardIndex;
-	private HTree titleInvertedIndex;
-	private HTree docInvertedIndex;
-	private RecordManager recman;
-    private HTree bigram;
-    private HTree trigram;
-	long recid;
+	private static Vector<String> searchTerms;
+	private static HTree urlToId;
+	private static HTree idToUrl;
+	private static HTree wordToId;
+	private static HTree idToWord;
+	private static HTree titleForwardIndex;
+	private static HTree docForwardIndex;
+	private static HTree titleInvertedIndex;
+	private static HTree docInvertedIndex;
+	private static RecordManager recman;
+    private static HTree bigram;
+    private static HTree trigram;
+	private static long recid;
 
     public DatabaseViewer() throws IOException {
     
@@ -171,11 +172,23 @@ public class DatabaseViewer {
             }
         }
     }
+
+    public static void view(HTree tree) throws IOException {
+        System.out.println("Viewing entries"); 
+        FastIterator iter = tree.keys(); 
+        Object key; 
+        while ((key = iter.next())!=null) {
+            Object value = tree.get(key);
+            System.out.println("Key: " + key + ", Value: " + value);
+
+        }
+    }
+
     public static void main(String[] args) throws IOException {
         DatabaseViewer dbv = new DatabaseViewer(); 
-        dbv.viewBigrams();
-        dbv.viewTrigrams();
-
+        //dbv.viewBigrams();
+        //dbv.viewTrigrams();
+        dbv.view(trigram);
     }
 
 
