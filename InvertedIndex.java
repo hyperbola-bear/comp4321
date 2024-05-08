@@ -61,6 +61,9 @@ public class InvertedIndex
 
 				// Otherwise add new posting to Vector
 				curPostingList.add(newPosting);
+
+				// Update posting
+				hashtable.put(wordID, curPostingList);
 			} else {
 				// Initialize Vector with new posting and add to hashtable
 				Vector<Posting> postingList = new Vector<Posting>();

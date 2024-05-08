@@ -506,6 +506,23 @@ public class SearchEngine
 		}
 		
 		Vector<Integer> parsed_query = getWords(query);
+<<<<<<< HEAD
+=======
+
+		Vector<Vector<Object>> results = search(parsed_query, phrase);
+
+		if(results.size() > 50) {
+			results = results.subList(0, 50);
+		}
+
+		return results;
+	}
+
+	public static void main(String[] args) {
+		String testInputPhrase = "My favourite movie is \"terminator returns\"";
+		String testInput = "information retrieval techniques CNN News \"information retrieval\"";
+		String testInput2 = "information retrieval techniques CNN News ";
+>>>>>>> 49aaa0b4d344ea20ba1fc43f469af3967dc8cc75
 
 		Vector<Vector<Object>> results = search(parsed_query, phrase);
 
@@ -522,6 +539,7 @@ public class SearchEngine
 		try {
 			SearchEngine searchEngine = new SearchEngine();
 
+<<<<<<< HEAD
             //check for phrase
             String inputString = String.join(" ",args);
 
@@ -530,6 +548,16 @@ public class SearchEngine
             boolean hasPhraseSearch = inputString.contains("\"") || inputString.contains("\'");
             System.out.println("Query is: " + inputString);
             System.out.println("Has phrase search? : " + hasPhraseSearch);
+=======
+			Vector<Vector<Object>> results = searchEngine.query(testInput2);
+			System.out.println("Query: " + testInput);
+
+			for(Vector<Object> pair : results) {
+				System.out.println("Doc ID: " + String.valueOf(pair.get(0)));
+				System.out.println("URL: " + searchEngine.idToUrl.get(pair.get(0)));
+				System.out.println("Doc Score: " + String.valueOf(pair.get(1)));
+			}
+>>>>>>> 49aaa0b4d344ea20ba1fc43f469af3967dc8cc75
 			
 		} catch (IOException ex) {
 			System.out.println(ex);
