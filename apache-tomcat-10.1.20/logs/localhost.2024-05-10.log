@@ -1055,3 +1055,2273 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:834)
+10-May-2024 02:48:05.604 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+10-May-2024 02:48:05.604 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+10-May-2024 02:48:05.617 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@73a00e09')
+10-May-2024 02:48:09.537 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [An exception occurred processing [apis/getData.jsp] at line [38]
+
+35:     //Here is the part used for StopStem
+36:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+37:     HashSet<String> stopWords = new HashSet<String>();
+38:     Porter porter = new Porter();
+39:     BufferedReader in = new BufferedReader(new FileReader(stopWord));
+40:     String line;
+41:     while ((line = in.readLine()) != null) {
+
+
+Stacktrace:] with root cause
+	java.lang.UnsupportedClassVersionError: IRUtilities/Porter has been compiled by a more recent version of the Java Runtime (class file version 62.0), this version of the Java Runtime only recognizes class file versions up to 55.0 (unable to load class [IRUtilities.Porter])
+		at org.apache.catalina.loader.WebappClassLoaderBase.findClassInternal(WebappClassLoaderBase.java:2356)
+		at org.apache.catalina.loader.WebappClassLoaderBase.findClass(WebappClassLoaderBase.java:800)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1317)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:122)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:178)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-May-2024 02:53:04.389 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [An exception occurred processing [apis/getData.jsp] at line [38]
+
+35:     //Here is the part used for StopStem
+36:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+37:     HashSet<String> stopWords = new HashSet<String>();
+38:     Porter porter = new Porter();
+39:     BufferedReader in = new BufferedReader(new FileReader(stopWord));
+40:     String line;
+41:     while ((line = in.readLine()) != null) {
+
+
+Stacktrace:] with root cause
+	java.lang.UnsupportedClassVersionError: IRUtilities/Porter has been compiled by a more recent version of the Java Runtime (class file version 62.0), this version of the Java Runtime only recognizes class file versions up to 55.0 (unable to load class [IRUtilities.Porter])
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:178)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-May-2024 02:53:09.397 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [An exception occurred processing [apis/getData.jsp] at line [38]
+
+35:     //Here is the part used for StopStem
+36:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+37:     HashSet<String> stopWords = new HashSet<String>();
+38:     Porter porter = new Porter();
+39:     BufferedReader in = new BufferedReader(new FileReader(stopWord));
+40:     String line;
+41:     while ((line = in.readLine()) != null) {
+
+
+Stacktrace:] with root cause
+	java.lang.UnsupportedClassVersionError: IRUtilities/Porter has been compiled by a more recent version of the Java Runtime (class file version 62.0), this version of the Java Runtime only recognizes class file versions up to 55.0 (unable to load class [IRUtilities.Porter])
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:178)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-May-2024 02:56:02.347 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [An exception occurred processing [apis/getData.jsp] at line [38]
+
+35:     //Here is the part used for StopStem
+36:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+37:     HashSet<String> stopWords = new HashSet<String>();
+38:     Porter porter = new Porter();
+39:     BufferedReader in = new BufferedReader(new FileReader(stopWord));
+40:     String line;
+41:     while ((line = in.readLine()) != null) {
+
+
+Stacktrace:] with root cause
+	java.lang.UnsupportedClassVersionError: IRUtilities/Porter has been compiled by a more recent version of the Java Runtime (class file version 62.0), this version of the Java Runtime only recognizes class file versions up to 55.0 (unable to load class [IRUtilities.Porter])
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:178)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-May-2024 03:00:52.055 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [An exception occurred processing [apis/getData.jsp] at line [38]
+
+35:     //Here is the part used for StopStem
+36:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+37:     HashSet<String> stopWords = new HashSet<String>();
+38:     Porter porter = new Porter();
+39:     BufferedReader in = new BufferedReader(new FileReader(stopWord));
+40:     String line;
+41:     while ((line = in.readLine()) != null) {
+
+
+Stacktrace:] with root cause
+	java.lang.UnsupportedClassVersionError: IRUtilities/Porter has been compiled by a more recent version of the Java Runtime (class file version 62.0), this version of the Java Runtime only recognizes class file versions up to 55.0 (unable to load class [IRUtilities.Porter])
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:178)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-May-2024 03:03:42.868 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [An exception occurred processing [apis/getData.jsp] at line [38]
+
+35:     //Here is the part used for StopStem
+36:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+37:     HashSet<String> stopWords = new HashSet<String>();
+38:     Porter porter = new Porter();
+39:     BufferedReader in = new BufferedReader(new FileReader(stopWord));
+40:     String line;
+41:     while ((line = in.readLine()) != null) {
+
+
+Stacktrace:] with root cause
+	java.lang.UnsupportedClassVersionError: IRUtilities/Porter has been compiled by a more recent version of the Java Runtime (class file version 62.0), this version of the Java Runtime only recognizes class file versions up to 55.0 (unable to load class [IRUtilities.Porter])
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:178)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-May-2024 03:04:15.025 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [An exception occurred processing [apis/getData.jsp] at line [38]
+
+35:     //Here is the part used for StopStem
+36:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+37:     HashSet<String> stopWords = new HashSet<String>();
+38:     Porter porter = new Porter();
+39:     BufferedReader in = new BufferedReader(new FileReader(stopWord));
+40:     String line;
+41:     while ((line = in.readLine()) != null) {
+
+
+Stacktrace:] with root cause
+	java.lang.UnsupportedClassVersionError: IRUtilities/Porter has been compiled by a more recent version of the Java Runtime (class file version 62.0), this version of the Java Runtime only recognizes class file versions up to 55.0 (unable to load class [IRUtilities.Porter])
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:178)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-May-2024 03:08:24.707 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [An exception occurred processing [apis/getData.jsp] at line [38]
+
+35:     //Here is the part used for StopStem
+36:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+37:     HashSet<String> stopWords = new HashSet<String>();
+38:     Porter porter = new Porter();
+39:     BufferedReader in = new BufferedReader(new FileReader(stopWord));
+40:     String line;
+41:     while ((line = in.readLine()) != null) {
+
+
+Stacktrace:] with root cause
+	java.lang.UnsupportedClassVersionError: IRUtilities/Porter has been compiled by a more recent version of the Java Runtime (class file version 62.0), this version of the Java Runtime only recognizes class file versions up to 55.0 (unable to load class [IRUtilities.Porter])
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:178)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-May-2024 03:09:30.228 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [An exception occurred processing [apis/getData.jsp] at line [38]
+
+35:     //Here is the part used for StopStem
+36:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+37:     HashSet<String> stopWords = new HashSet<String>();
+38:     Porter porter = new Porter();
+39:     BufferedReader in = new BufferedReader(new FileReader(stopWord));
+40:     String line;
+41:     while ((line = in.readLine()) != null) {
+
+
+Stacktrace:] with root cause
+	java.lang.UnsupportedClassVersionError: IRUtilities/Porter has been compiled by a more recent version of the Java Runtime (class file version 62.0), this version of the Java Runtime only recognizes class file versions up to 55.0 (unable to load class [IRUtilities.Porter])
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:178)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-May-2024 03:12:07.040 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [An exception occurred processing [apis/getData.jsp] at line [38]
+
+35:     //Here is the part used for StopStem
+36:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+37:     HashSet<String> stopWords = new HashSet<String>();
+38:     Porter porter = new Porter();
+39:     BufferedReader in = new BufferedReader(new FileReader(stopWord));
+40:     String line;
+41:     while ((line = in.readLine()) != null) {
+
+
+Stacktrace:] with root cause
+	java.lang.UnsupportedClassVersionError: IRUtilities/Porter has been compiled by a more recent version of the Java Runtime (class file version 62.0), this version of the Java Runtime only recognizes class file versions up to 55.0 (unable to load class [IRUtilities.Porter])
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:178)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-May-2024 03:12:16.381 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [An exception occurred processing [apis/getData.jsp] at line [38]
+
+35:     //Here is the part used for StopStem
+36:     String stopWord = getServletContext().getRealPath("/WEB-INF/stopwords.txt");
+37:     HashSet<String> stopWords = new HashSet<String>();
+38:     Porter porter = new Porter();
+39:     BufferedReader in = new BufferedReader(new FileReader(stopWord));
+40:     String line;
+41:     while ((line = in.readLine()) != null) {
+
+
+Stacktrace:] with root cause
+	java.lang.UnsupportedClassVersionError: IRUtilities/Porter has been compiled by a more recent version of the Java Runtime (class file version 62.0), this version of the Java Runtime only recognizes class file versions up to 55.0 (unable to load class [IRUtilities.Porter])
+		at org.apache.jsp.apis.getData_jsp._jspService(getData_jsp.java:178)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-May-2024 03:29:06.818 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [/apis/getData.jsp (line: [21], column: [2]) Unterminated [&lt;%] tag] with root cause
+	org.apache.jasper.JasperException: /apis/getData.jsp (line: [21], column: [2]) Unterminated [&lt;%] tag
+		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:299)
+		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:99)
+		at org.apache.jasper.compiler.Parser.parseScriptlet(Parser.java:780)
+		at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1456)
+		at org.apache.jasper.compiler.Parser.parse(Parser.java:138)
+		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:245)
+		at org.apache.jasper.compiler.ParserController.parse(ParserController.java:106)
+		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:211)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-May-2024 03:29:52.233 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [166] in the jsp file: [/apis/getData.jsp]
+The type of the expression must be an array type but it resolved to Vector<Vector<Object>>
+163:     sb.append("{\"result\":[");
+164:     for (int i = 0; i < result.size(); i++) {
+165:         sb.append("[");
+166:         sb.append(String.valueOf(se.idToUrl(result[i].get(0)) + ","));
+167:         sb.append(result[i].get(1));
+168:         sb.append("]");
+169:         if (i != result.size() - 1) {
+
+
+An error occurred at line: [167] in the jsp file: [/apis/getData.jsp]
+The type of the expression must be an array type but it resolved to Vector<Vector<Object>>
+164:     for (int i = 0; i < result.size(); i++) {
+165:         sb.append("[");
+166:         sb.append(String.valueOf(se.idToUrl(result[i].get(0)) + ","));
+167:         sb.append(result[i].get(1));
+168:         sb.append("]");
+169:         if (i != result.size() - 1) {
+170:             sb.append(",");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [166] in the jsp file: [/apis/getData.jsp]
+The type of the expression must be an array type but it resolved to Vector<Vector<Object>>
+163:     sb.append("{\"result\":[");
+164:     for (int i = 0; i < result.size(); i++) {
+165:         sb.append("[");
+166:         sb.append(String.valueOf(se.idToUrl(result[i].get(0)) + ","));
+167:         sb.append(result[i].get(1));
+168:         sb.append("]");
+169:         if (i != result.size() - 1) {
+
+
+An error occurred at line: [167] in the jsp file: [/apis/getData.jsp]
+The type of the expression must be an array type but it resolved to Vector<Vector<Object>>
+164:     for (int i = 0; i < result.size(); i++) {
+165:         sb.append("[");
+166:         sb.append(String.valueOf(se.idToUrl(result[i].get(0)) + ","));
+167:         sb.append(result[i].get(1));
+168:         sb.append("]");
+169:         if (i != result.size() - 1) {
+170:             sb.append(",");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-May-2024 03:30:38.249 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [166] in the jsp file: [/apis/getData.jsp]
+The method idToUrl(Object) is undefined for the type SearchEngine
+163:     sb.append("{\"result\":[");
+164:     for (int i = 0; i < result.size(); i++) {
+165:         sb.append("[");
+166:         sb.append(String.valueOf(se.idToUrl(result.get(i).get(0)) + ","));
+167:         sb.append(result.get(i).get(1));
+168:         sb.append("]");
+169:         if (i != result.size() - 1) {
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [166] in the jsp file: [/apis/getData.jsp]
+The method idToUrl(Object) is undefined for the type SearchEngine
+163:     sb.append("{\"result\":[");
+164:     for (int i = 0; i < result.size(); i++) {
+165:         sb.append("[");
+166:         sb.append(String.valueOf(se.idToUrl(result.get(i).get(0)) + ","));
+167:         sb.append(result.get(i).get(1));
+168:         sb.append("]");
+169:         if (i != result.size() - 1) {
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-May-2024 03:31:34.153 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [166] in the jsp file: [/apis/getData.jsp]
+The method idToUrl(Object) is undefined for the type getData_jsp
+163:     sb.append("{\"result\":[");
+164:     for (int i = 0; i < result.size(); i++) {
+165:         sb.append("[");
+166:         sb.append(String.valueOf(idToUrl(result.get(i).get(0)) + ","));
+167:         sb.append(result.get(i).get(1));
+168:         sb.append("]");
+169:         if (i != result.size() - 1) {
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [166] in the jsp file: [/apis/getData.jsp]
+The method idToUrl(Object) is undefined for the type getData_jsp
+163:     sb.append("{\"result\":[");
+164:     for (int i = 0; i < result.size(); i++) {
+165:         sb.append("[");
+166:         sb.append(String.valueOf(idToUrl(result.get(i).get(0)) + ","));
+167:         sb.append(result.get(i).get(1));
+168:         sb.append("]");
+169:         if (i != result.size() - 1) {
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-May-2024 03:40:00.179 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [11] in the jsp file: [/apis/getData.jsp]
+The left-hand side of an assignment must be a variable
+8: input.contains("\""); } %> <% if (isPhraseSearch(request.getParameter("input")))
+9: { out.print("Phrase Search initiated"); } String input =
+10: request.getParameter("input").trim(); // case to handle null or empty input if
+11: (input == null || input.isEmpty()) { // add the JSON output for empty input
+12: (sortedPages and pages) out.print("{\"sortedPages\":[],\"pages\":{}}"); return;
+13: } //Here is the part used for StopStem String stopWord =
+14: getServletContext().getRealPath("/WEB-INF/stopwords.txt"); HashSet<String>
+
+
+An error occurred at line: [11] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+8: input.contains("\""); } %> <% if (isPhraseSearch(request.getParameter("input")))
+9: { out.print("Phrase Search initiated"); } String input =
+10: request.getParameter("input").trim(); // case to handle null or empty input if
+11: (input == null || input.isEmpty()) { // add the JSON output for empty input
+12: (sortedPages and pages) out.print("{\"sortedPages\":[],\"pages\":{}}"); return;
+13: } //Here is the part used for StopStem String stopWord =
+14: getServletContext().getRealPath("/WEB-INF/stopwords.txt"); HashSet<String>
+
+
+An error occurred at line: [11] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete Statement
+8: input.contains("\""); } %> <% if (isPhraseSearch(request.getParameter("input")))
+9: { out.print("Phrase Search initiated"); } String input =
+10: request.getParameter("input").trim(); // case to handle null or empty input if
+11: (input == null || input.isEmpty()) { // add the JSON output for empty input
+12: (sortedPages and pages) out.print("{\"sortedPages\":[],\"pages\":{}}"); return;
+13: } //Here is the part used for StopStem String stopWord =
+14: getServletContext().getRealPath("/WEB-INF/stopwords.txt"); HashSet<String>
+
+
+An error occurred at line: [12] in the jsp file: [/apis/getData.jsp]
+The left-hand side of an assignment must be a variable
+9: { out.print("Phrase Search initiated"); } String input =
+10: request.getParameter("input").trim(); // case to handle null or empty input if
+11: (input == null || input.isEmpty()) { // add the JSON output for empty input
+12: (sortedPages and pages) out.print("{\"sortedPages\":[],\"pages\":{}}"); return;
+13: } //Here is the part used for StopStem String stopWord =
+14: getServletContext().getRealPath("/WEB-INF/stopwords.txt"); HashSet<String>
+15:   stopWords = new HashSet<String
+
+
+An error occurred at line: [12] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "sortedPages", instanceof expected after this token
+9: { out.print("Phrase Search initiated"); } String input =
+10: request.getParameter("input").trim(); // case to handle null or empty input if
+11: (input == null || input.isEmpty()) { // add the JSON output for empty input
+12: (sortedPages and pages) out.print("{\"sortedPages\":[],\"pages\":{}}"); return;
+13: } //Here is the part used for StopStem String stopWord =
+14: getServletContext().getRealPath("/WEB-INF/stopwords.txt"); HashSet<String>
+15:   stopWords = new HashSet<String
+
+
+An error occurred at line: [12] in the jsp file: [/apis/getData.jsp]
+The Java feature 'Pattern Matching in instanceof Expressions' is only available with source level 16 and above
+9: { out.print("Phrase Search initiated"); } String input =
+10: request.getParameter("input").trim(); // case to handle null or empty input if
+11: (input == null || input.isEmpty()) { // add the JSON output for empty input
+12: (sortedPages and pages) out.print("{\"sortedPages\":[],\"pages\":{}}"); return;
+13: } //Here is the part used for StopStem String stopWord =
+14: getServletContext().getRealPath("/WEB-INF/stopwords.txt"); HashSet<String>
+15:   stopWords = new HashSet<String
+
+
+An error occurred at line: [12] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+9: { out.print("Phrase Search initiated"); } String input =
+10: request.getParameter("input").trim(); // case to handle null or empty input if
+11: (input == null || input.isEmpty()) { // add the JSON output for empty input
+12: (sortedPages and pages) out.print("{\"sortedPages\":[],\"pages\":{}}"); return;
+13: } //Here is the part used for StopStem String stopWord =
+14: getServletContext().getRealPath("/WEB-INF/stopwords.txt"); HashSet<String>
+15:   stopWords = new HashSet<String
+
+
+An error occurred at line: [12] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete BlockStatements
+9: { out.print("Phrase Search initiated"); } String input =
+10: request.getParameter("input").trim(); // case to handle null or empty input if
+11: (input == null || input.isEmpty()) { // add the JSON output for empty input
+12: (sortedPages and pages) out.print("{\"sortedPages\":[],\"pages\":{}}"); return;
+13: } //Here is the part used for StopStem String stopWord =
+14: getServletContext().getRealPath("/WEB-INF/stopwords.txt"); HashSet<String>
+15:   stopWords = new HashSet<String
+
+
+An error occurred at line: [17] in the jsp file: [/apis/getData.jsp]
+stopWord cannot be resolved to a variable
+14: getServletContext().getRealPath("/WEB-INF/stopwords.txt"); HashSet<String>
+15:   stopWords = new HashSet<String
+16:     >(); Porter porter = new Porter(); BufferedReader in = new
+17:     BufferedReader(new FileReader(stopWord)); String line; while ((line =
+18:     in.readLine()) != null) { stopWords.add(line); } in.close(); // Extract
+19:     n-grams from the list of words List<String>
+20:       words = Arrays.asList(input.split("\\s+")); List<String>
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+n.grams cannot be resolved to a type
+16:     >(); Porter porter = new Porter(); BufferedReader in = new
+17:     BufferedReader(new FileReader(stopWord)); String line; while ((line =
+18:     in.readLine()) != null) { stopWords.add(line); } in.close(); // Extract
+19:     n-grams from the list of words List<String>
+20:       words = Arrays.asList(input.split("\\s+")); List<String>
+21:         one_gram = new ArrayList<String
+22:           >(); List<String>
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "-", . expected
+16:     >(); Porter porter = new Porter(); BufferedReader in = new
+17:     BufferedReader(new FileReader(stopWord)); String line; while ((line =
+18:     in.readLine()) != null) { stopWords.add(line); } in.close(); // Extract
+19:     n-grams from the list of words List<String>
+20:       words = Arrays.asList(input.split("\\s+")); List<String>
+21:         one_gram = new ArrayList<String
+22:           >(); List<String>
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "the", ; expected
+16:     >(); Porter porter = new Porter(); BufferedReader in = new
+17:     BufferedReader(new FileReader(stopWord)); String line; while ((line =
+18:     in.readLine()) != null) { stopWords.add(line); } in.close(); // Extract
+19:     n-grams from the list of words List<String>
+20:       words = Arrays.asList(input.split("\\s+")); List<String>
+21:         one_gram = new ArrayList<String
+22:           >(); List<String>
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+list cannot be resolved to a type
+16:     >(); Porter porter = new Porter(); BufferedReader in = new
+17:     BufferedReader(new FileReader(stopWord)); String line; while ((line =
+18:     in.readLine()) != null) { stopWords.add(line); } in.close(); // Extract
+19:     n-grams from the list of words List<String>
+20:       words = Arrays.asList(input.split("\\s+")); List<String>
+21:         one_gram = new ArrayList<String
+22:           >(); List<String>
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "words", ; expected
+16:     >(); Porter porter = new Porter(); BufferedReader in = new
+17:     BufferedReader(new FileReader(stopWord)); String line; while ((line =
+18:     in.readLine()) != null) { stopWords.add(line); } in.close(); // Extract
+19:     n-grams from the list of words List<String>
+20:       words = Arrays.asList(input.split("\\s+")); List<String>
+21:         one_gram = new ArrayList<String
+22:           >(); List<String>
+
+
+An error occurred at line: [28] in the jsp file: [/apis/getData.jsp]
+j cannot be resolved to a variable
+25:                 three_gram = new ArrayList<String
+26:                   >(); for (int i=0; i < words.size(); i++) { String ngram = "";
+27:                   // 1-gram for (int j=0; j<1; j++) { String word =
+28:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+29:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+30:                   } if (ngram != ""){ one_gram.add(ngram.trim()); } // 2-gram
+31:                   ngram = ""; if (i < words.size()-1){ for (int j=0; j<2; j++) {
+
+
+An error occurred at line: [28] in the jsp file: [/apis/getData.jsp]
+word cannot be resolved to a variable
+25:                 three_gram = new ArrayList<String
+26:                   >(); for (int i=0; i < words.size(); i++) { String ngram = "";
+27:                   // 1-gram for (int j=0; j<1; j++) { String word =
+28:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+29:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+30:                   } if (ngram != ""){ one_gram.add(ngram.trim()); } // 2-gram
+31:                   ngram = ""; if (i < words.size()-1){ for (int j=0; j<2; j++) {
+
+
+An error occurred at line: [29] in the jsp file: [/apis/getData.jsp]
+word cannot be resolved to a variable
+26:                   >(); for (int i=0; i < words.size(); i++) { String ngram = "";
+27:                   // 1-gram for (int j=0; j<1; j++) { String word =
+28:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+29:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+30:                   } if (ngram != ""){ one_gram.add(ngram.trim()); } // 2-gram
+31:                   ngram = ""; if (i < words.size()-1){ for (int j=0; j<2; j++) {
+32:                   String word = words.get(i+j).toLowerCase(); if
+
+
+An error occurred at line: [30] in the jsp file: [/apis/getData.jsp]
+ngram cannot be resolved to a variable
+27:                   // 1-gram for (int j=0; j<1; j++) { String word =
+28:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+29:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+30:                   } if (ngram != ""){ one_gram.add(ngram.trim()); } // 2-gram
+31:                   ngram = ""; if (i < words.size()-1){ for (int j=0; j<2; j++) {
+32:                   String word = words.get(i+j).toLowerCase(); if
+33:                   (stopWords.contains(word)) { ngram = ""; break; } ngram +=
+
+
+An error occurred at line: [30] in the jsp file: [/apis/getData.jsp]
+ngram cannot be resolved
+27:                   // 1-gram for (int j=0; j<1; j++) { String word =
+28:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+29:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+30:                   } if (ngram != ""){ one_gram.add(ngram.trim()); } // 2-gram
+31:                   ngram = ""; if (i < words.size()-1){ for (int j=0; j<2; j++) {
+32:                   String word = words.get(i+j).toLowerCase(); if
+33:                   (stopWords.contains(word)) { ngram = ""; break; } ngram +=
+
+
+An error occurred at line: [31] in the jsp file: [/apis/getData.jsp]
+ngram cannot be resolved to a variable
+28:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+29:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+30:                   } if (ngram != ""){ one_gram.add(ngram.trim()); } // 2-gram
+31:                   ngram = ""; if (i < words.size()-1){ for (int j=0; j<2; j++) {
+32:                   String word = words.get(i+j).toLowerCase(); if
+33:                   (stopWords.contains(word)) { ngram = ""; break; } ngram +=
+34:                   porter.stripAffixes(word) + " "; } if (ngram != ""){
+
+
+An error occurred at line: [31] in the jsp file: [/apis/getData.jsp]
+i cannot be resolved to a variable
+28:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+29:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+30:                   } if (ngram != ""){ one_gram.add(ngram.trim()); } // 2-gram
+31:                   ngram = ""; if (i < words.size()-1){ for (int j=0; j<2; j++) {
+32:                   String word = words.get(i+j).toLowerCase(); if
+33:                   (stopWords.contains(word)) { ngram = ""; break; } ngram +=
+34:                   porter.stripAffixes(word) + " "; } if (ngram != ""){
+
+
+An error occurred at line: [32] in the jsp file: [/apis/getData.jsp]
+i cannot be resolved to a variable
+29:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+30:                   } if (ngram != ""){ one_gram.add(ngram.trim()); } // 2-gram
+31:                   ngram = ""; if (i < words.size()-1){ for (int j=0; j<2; j++) {
+32:                   String word = words.get(i+j).toLowerCase(); if
+33:                   (stopWords.contains(word)) { ngram = ""; break; } ngram +=
+34:                   porter.stripAffixes(word) + " "; } if (ngram != ""){
+35:                   two_gram.add(ngram.trim()); } } // 3-gram ngram = ""; if (i <
+
+
+An error occurred at line: [33] in the jsp file: [/apis/getData.jsp]
+ngram cannot be resolved to a variable
+30:                   } if (ngram != ""){ one_gram.add(ngram.trim()); } // 2-gram
+31:                   ngram = ""; if (i < words.size()-1){ for (int j=0; j<2; j++) {
+32:                   String word = words.get(i+j).toLowerCase(); if
+33:                   (stopWords.contains(word)) { ngram = ""; break; } ngram +=
+34:                   porter.stripAffixes(word) + " "; } if (ngram != ""){
+35:                   two_gram.add(ngram.trim()); } } // 3-gram ngram = ""; if (i <
+36:                   words.size()-2){ for (int j=0; j<3; j++) { String word =
+
+
+An error occurred at line: [33] in the jsp file: [/apis/getData.jsp]
+ngram cannot be resolved to a variable
+30:                   } if (ngram != ""){ one_gram.add(ngram.trim()); } // 2-gram
+31:                   ngram = ""; if (i < words.size()-1){ for (int j=0; j<2; j++) {
+32:                   String word = words.get(i+j).toLowerCase(); if
+33:                   (stopWords.contains(word)) { ngram = ""; break; } ngram +=
+34:                   porter.stripAffixes(word) + " "; } if (ngram != ""){
+35:                   two_gram.add(ngram.trim()); } } // 3-gram ngram = ""; if (i <
+36:                   words.size()-2){ for (int j=0; j<3; j++) { String word =
+
+
+An error occurred at line: [34] in the jsp file: [/apis/getData.jsp]
+ngram cannot be resolved to a variable
+31:                   ngram = ""; if (i < words.size()-1){ for (int j=0; j<2; j++) {
+32:                   String word = words.get(i+j).toLowerCase(); if
+33:                   (stopWords.contains(word)) { ngram = ""; break; } ngram +=
+34:                   porter.stripAffixes(word) + " "; } if (ngram != ""){
+35:                   two_gram.add(ngram.trim()); } } // 3-gram ngram = ""; if (i <
+36:                   words.size()-2){ for (int j=0; j<3; j++) { String word =
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+
+
+An error occurred at line: [35] in the jsp file: [/apis/getData.jsp]
+ngram cannot be resolved
+32:                   String word = words.get(i+j).toLowerCase(); if
+33:                   (stopWords.contains(word)) { ngram = ""; break; } ngram +=
+34:                   porter.stripAffixes(word) + " "; } if (ngram != ""){
+35:                   two_gram.add(ngram.trim()); } } // 3-gram ngram = ""; if (i <
+36:                   words.size()-2){ for (int j=0; j<3; j++) { String word =
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+
+
+An error occurred at line: [36] in the jsp file: [/apis/getData.jsp]
+The method size() in the type List<String> is not applicable for the arguments (int)
+33:                   (stopWords.contains(word)) { ngram = ""; break; } ngram +=
+34:                   porter.stripAffixes(word) + " "; } if (ngram != ""){
+35:                   two_gram.add(ngram.trim()); } } // 3-gram ngram = ""; if (i <
+36:                   words.size()-2){ for (int j=0; j<3; j++) { String word =
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+
+
+An error occurred at line: [36] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ")", delete this token
+33:                   (stopWords.contains(word)) { ngram = ""; break; } ngram +=
+34:                   porter.stripAffixes(word) + " "; } if (ngram != ""){
+35:                   two_gram.add(ngram.trim()); } } // 3-gram ngram = ""; if (i <
+36:                   words.size()-2){ for (int j=0; j<3; j++) { String word =
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+
+
+An error occurred at line: [36] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete Statement
+33:                   (stopWords.contains(word)) { ngram = ""; break; } ngram +=
+34:                   porter.stripAffixes(word) + " "; } if (ngram != ""){
+35:                   two_gram.add(ngram.trim()); } } // 3-gram ngram = ""; if (i <
+36:                   words.size()-2){ for (int j=0; j<3; j++) { String word =
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+
+
+An error occurred at line: [37] in the jsp file: [/apis/getData.jsp]
+i cannot be resolved to a variable
+34:                   porter.stripAffixes(word) + " "; } if (ngram != ""){
+35:                   two_gram.add(ngram.trim()); } } // 3-gram ngram = ""; if (i <
+36:                   words.size()-2){ for (int j=0; j<3; j++) { String word =
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+
+
+An error occurred at line: [38] in the jsp file: [/apis/getData.jsp]
+ngram cannot be resolved to a variable
+35:                   two_gram.add(ngram.trim()); } } // 3-gram ngram = ""; if (i <
+36:                   words.size()-2){ for (int j=0; j<3; j++) { String word =
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+
+
+An error occurred at line: [38] in the jsp file: [/apis/getData.jsp]
+ngram cannot be resolved to a variable
+35:                   two_gram.add(ngram.trim()); } } // 3-gram ngram = ""; if (i <
+36:                   words.size()-2){ for (int j=0; j<3; j++) { String word =
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+
+
+An error occurred at line: [39] in the jsp file: [/apis/getData.jsp]
+ngram cannot be resolved to a variable
+36:                   words.size()-2){ for (int j=0; j<3; j++) { String word =
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+
+
+An error occurred at line: [39] in the jsp file: [/apis/getData.jsp]
+ngram cannot be resolved
+36:                   words.size()-2){ for (int j=0; j<3; j++) { String word =
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+
+
+An error occurred at line: [39] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert "Finally" to complete TryStatement
+36:                   words.size()-2){ for (int j=0; j<3; j++) { String word =
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+
+
+An error occurred at line: [40] in the jsp file: [/apis/getData.jsp]
+create cannot be resolved to a type
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+43:                       ngrams.addAll(three_gram); //handle database here String
+
+
+An error occurred at line: [40] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "list", ; expected
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+43:                       ngrams.addAll(three_gram); //handle database here String
+
+
+An error occurred at line: [40] in the jsp file: [/apis/getData.jsp]
+of cannot be resolved to a type
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+43:                       ngrams.addAll(three_gram); //handle database here String
+
+
+An error occurred at line: [40] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "the", = expected
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+43:                       ngrams.addAll(three_gram); //handle database here String
+
+
+An error occurred at line: [40] in the jsp file: [/apis/getData.jsp]
+n cannot be resolved to a variable
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+43:                       ngrams.addAll(three_gram); //handle database here String
+
+
+An error occurred at line: [40] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+43:                       ngrams.addAll(three_gram); //handle database here String
+
+
+An error occurred at line: [40] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+43:                       ngrams.addAll(three_gram); //handle database here String
+
+
+An error occurred at line: [40] in the jsp file: [/apis/getData.jsp]
+grams cannot be resolved to a variable
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+43:                       ngrams.addAll(three_gram); //handle database here String
+
+
+An error occurred at line: [42] in the jsp file: [/apis/getData.jsp]
+one_gram cannot be resolved to a variable
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+43:                       ngrams.addAll(three_gram); //handle database here String
+44:                       dbPath =
+45:                       getServletContext().getRealPath("/WEB-INF/database/Database");
+
+
+An error occurred at line: [42] in the jsp file: [/apis/getData.jsp]
+two_gram cannot be resolved to a variable
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+43:                       ngrams.addAll(three_gram); //handle database here String
+44:                       dbPath =
+45:                       getServletContext().getRealPath("/WEB-INF/database/Database");
+
+
+An error occurred at line: [43] in the jsp file: [/apis/getData.jsp]
+three_gram cannot be resolved to a variable
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+43:                       ngrams.addAll(three_gram); //handle database here String
+44:                       dbPath =
+45:                       getServletContext().getRealPath("/WEB-INF/database/Database");
+46:                       RecordManager recman =
+
+
+An error occurred at line: [44] in the jsp file: [/apis/getData.jsp]
+dbPath cannot be resolved to a variable
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+43:                       ngrams.addAll(three_gram); //handle database here String
+44:                       dbPath =
+45:                       getServletContext().getRealPath("/WEB-INF/database/Database");
+46:                       RecordManager recman =
+47:                       RecordManagerFactory.createRecordManager(dbPath); long
+
+
+An error occurred at line: [47] in the jsp file: [/apis/getData.jsp]
+dbPath cannot be resolved to a variable
+44:                       dbPath =
+45:                       getServletContext().getRealPath("/WEB-INF/database/Database");
+46:                       RecordManager recman =
+47:                       RecordManagerFactory.createRecordManager(dbPath); long
+48:                       invertedindexid = recman.getNamedObject("invertedindex");
+49:                       HTree invertedindex = HTree.load(recman, invertedindexid);
+50:                       long forwardindexid =
+
+
+An error occurred at line: [75] in the jsp file: [/apis/getData.jsp]
+stopWords cannot be resolved to a variable
+72:                       Posting(1,1); out.println(posting);
+73:                       out.println(invertedindex);
+74:                       out.println(invertedindex.keys()); SearchEngine se = new
+75:                       SearchEngine( new Porter(), stopWords, urlToId, wordToId,
+76:                       idToWord, titleForwardindex, forwardindex,
+77:                       titleInvertedindex, invertedindex, bigram, trigram,
+78:                       recman, idToWordid); Vector<Vector<Object
+
+
+An error occurred at line: [79] in the jsp file: [/apis/getData.jsp]
+input cannot be resolved to a variable
+76:                       idToWord, titleForwardindex, forwardindex,
+77:                       titleInvertedindex, invertedindex, bigram, trigram,
+78:                       recman, idToWordid); Vector<Vector<Object
+79:                         >> result = se.query(input); StringBuilder sb = new
+80:                         StringBuilder(); sb.append("{\"result\":["); for (int i
+81:                         = 0; i < result.size(); i++) { sb.append("[");
+82:                         sb.append(String.valueOf(idToTitle.get(result.get(i).get(0))
+
+
+An error occurred at line: [82] in the jsp file: [/apis/getData.jsp]
+idToTitle cannot be resolved
+79:                         >> result = se.query(input); StringBuilder sb = new
+80:                         StringBuilder(); sb.append("{\"result\":["); for (int i
+81:                         = 0; i < result.size(); i++) { sb.append("[");
+82:                         sb.append(String.valueOf(idToTitle.get(result.get(i).get(0))
+83:                         + "," + idToUrl.get(result.get(i).get(0)) + "," +
+84:                         idToUrl.get(result.get(i).get(0)) + ","));
+85:                         sb.append(result.get(i).get(1)); sb.append("]"); if (i
+
+
+An error occurred at line: [238] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Syntax error on token "catch", Identifier expected
+
+An error occurred at line: [240] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [240] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+_jspx_out cannot be resolved to a variable
+
+An error occurred at line: [241] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [241] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [243] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+response cannot be resolved
+
+An error occurred at line: [244] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [246] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [249] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+An error occurred at line: [249] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+_jspx_page_context cannot be resolved
+
+An error occurred at line: [252] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Syntax error on token "finally", { expected
+
+An error occurred at line: [253] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [11] in the jsp file: [/apis/getData.jsp]
+The left-hand side of an assignment must be a variable
+8: input.contains("\""); } %> <% if (isPhraseSearch(request.getParameter("input")))
+9: { out.print("Phrase Search initiated"); } String input =
+10: request.getParameter("input").trim(); // case to handle null or empty input if
+11: (input == null || input.isEmpty()) { // add the JSON output for empty input
+12: (sortedPages and pages) out.print("{\"sortedPages\":[],\"pages\":{}}"); return;
+13: } //Here is the part used for StopStem String stopWord =
+14: getServletContext().getRealPath("/WEB-INF/stopwords.txt"); HashSet<String>
+
+
+An error occurred at line: [11] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+8: input.contains("\""); } %> <% if (isPhraseSearch(request.getParameter("input")))
+9: { out.print("Phrase Search initiated"); } String input =
+10: request.getParameter("input").trim(); // case to handle null or empty input if
+11: (input == null || input.isEmpty()) { // add the JSON output for empty input
+12: (sortedPages and pages) out.print("{\"sortedPages\":[],\"pages\":{}}"); return;
+13: } //Here is the part used for StopStem String stopWord =
+14: getServletContext().getRealPath("/WEB-INF/stopwords.txt"); HashSet<String>
+
+
+An error occurred at line: [11] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete Statement
+8: input.contains("\""); } %> <% if (isPhraseSearch(request.getParameter("input")))
+9: { out.print("Phrase Search initiated"); } String input =
+10: request.getParameter("input").trim(); // case to handle null or empty input if
+11: (input == null || input.isEmpty()) { // add the JSON output for empty input
+12: (sortedPages and pages) out.print("{\"sortedPages\":[],\"pages\":{}}"); return;
+13: } //Here is the part used for StopStem String stopWord =
+14: getServletContext().getRealPath("/WEB-INF/stopwords.txt"); HashSet<String>
+
+
+An error occurred at line: [12] in the jsp file: [/apis/getData.jsp]
+The left-hand side of an assignment must be a variable
+9: { out.print("Phrase Search initiated"); } String input =
+10: request.getParameter("input").trim(); // case to handle null or empty input if
+11: (input == null || input.isEmpty()) { // add the JSON output for empty input
+12: (sortedPages and pages) out.print("{\"sortedPages\":[],\"pages\":{}}"); return;
+13: } //Here is the part used for StopStem String stopWord =
+14: getServletContext().getRealPath("/WEB-INF/stopwords.txt"); HashSet<String>
+15:   stopWords = new HashSet<String
+
+
+An error occurred at line: [12] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "sortedPages", instanceof expected after this token
+9: { out.print("Phrase Search initiated"); } String input =
+10: request.getParameter("input").trim(); // case to handle null or empty input if
+11: (input == null || input.isEmpty()) { // add the JSON output for empty input
+12: (sortedPages and pages) out.print("{\"sortedPages\":[],\"pages\":{}}"); return;
+13: } //Here is the part used for StopStem String stopWord =
+14: getServletContext().getRealPath("/WEB-INF/stopwords.txt"); HashSet<String>
+15:   stopWords = new HashSet<String
+
+
+An error occurred at line: [12] in the jsp file: [/apis/getData.jsp]
+The Java feature 'Pattern Matching in instanceof Expressions' is only available with source level 16 and above
+9: { out.print("Phrase Search initiated"); } String input =
+10: request.getParameter("input").trim(); // case to handle null or empty input if
+11: (input == null || input.isEmpty()) { // add the JSON output for empty input
+12: (sortedPages and pages) out.print("{\"sortedPages\":[],\"pages\":{}}"); return;
+13: } //Here is the part used for StopStem String stopWord =
+14: getServletContext().getRealPath("/WEB-INF/stopwords.txt"); HashSet<String>
+15:   stopWords = new HashSet<String
+
+
+An error occurred at line: [12] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+9: { out.print("Phrase Search initiated"); } String input =
+10: request.getParameter("input").trim(); // case to handle null or empty input if
+11: (input == null || input.isEmpty()) { // add the JSON output for empty input
+12: (sortedPages and pages) out.print("{\"sortedPages\":[],\"pages\":{}}"); return;
+13: } //Here is the part used for StopStem String stopWord =
+14: getServletContext().getRealPath("/WEB-INF/stopwords.txt"); HashSet<String>
+15:   stopWords = new HashSet<String
+
+
+An error occurred at line: [12] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete BlockStatements
+9: { out.print("Phrase Search initiated"); } String input =
+10: request.getParameter("input").trim(); // case to handle null or empty input if
+11: (input == null || input.isEmpty()) { // add the JSON output for empty input
+12: (sortedPages and pages) out.print("{\"sortedPages\":[],\"pages\":{}}"); return;
+13: } //Here is the part used for StopStem String stopWord =
+14: getServletContext().getRealPath("/WEB-INF/stopwords.txt"); HashSet<String>
+15:   stopWords = new HashSet<String
+
+
+An error occurred at line: [17] in the jsp file: [/apis/getData.jsp]
+stopWord cannot be resolved to a variable
+14: getServletContext().getRealPath("/WEB-INF/stopwords.txt"); HashSet<String>
+15:   stopWords = new HashSet<String
+16:     >(); Porter porter = new Porter(); BufferedReader in = new
+17:     BufferedReader(new FileReader(stopWord)); String line; while ((line =
+18:     in.readLine()) != null) { stopWords.add(line); } in.close(); // Extract
+19:     n-grams from the list of words List<String>
+20:       words = Arrays.asList(input.split("\\s+")); List<String>
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+n.grams cannot be resolved to a type
+16:     >(); Porter porter = new Porter(); BufferedReader in = new
+17:     BufferedReader(new FileReader(stopWord)); String line; while ((line =
+18:     in.readLine()) != null) { stopWords.add(line); } in.close(); // Extract
+19:     n-grams from the list of words List<String>
+20:       words = Arrays.asList(input.split("\\s+")); List<String>
+21:         one_gram = new ArrayList<String
+22:           >(); List<String>
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "-", . expected
+16:     >(); Porter porter = new Porter(); BufferedReader in = new
+17:     BufferedReader(new FileReader(stopWord)); String line; while ((line =
+18:     in.readLine()) != null) { stopWords.add(line); } in.close(); // Extract
+19:     n-grams from the list of words List<String>
+20:       words = Arrays.asList(input.split("\\s+")); List<String>
+21:         one_gram = new ArrayList<String
+22:           >(); List<String>
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "the", ; expected
+16:     >(); Porter porter = new Porter(); BufferedReader in = new
+17:     BufferedReader(new FileReader(stopWord)); String line; while ((line =
+18:     in.readLine()) != null) { stopWords.add(line); } in.close(); // Extract
+19:     n-grams from the list of words List<String>
+20:       words = Arrays.asList(input.split("\\s+")); List<String>
+21:         one_gram = new ArrayList<String
+22:           >(); List<String>
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+list cannot be resolved to a type
+16:     >(); Porter porter = new Porter(); BufferedReader in = new
+17:     BufferedReader(new FileReader(stopWord)); String line; while ((line =
+18:     in.readLine()) != null) { stopWords.add(line); } in.close(); // Extract
+19:     n-grams from the list of words List<String>
+20:       words = Arrays.asList(input.split("\\s+")); List<String>
+21:         one_gram = new ArrayList<String
+22:           >(); List<String>
+
+
+An error occurred at line: [19] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "words", ; expected
+16:     >(); Porter porter = new Porter(); BufferedReader in = new
+17:     BufferedReader(new FileReader(stopWord)); String line; while ((line =
+18:     in.readLine()) != null) { stopWords.add(line); } in.close(); // Extract
+19:     n-grams from the list of words List<String>
+20:       words = Arrays.asList(input.split("\\s+")); List<String>
+21:         one_gram = new ArrayList<String
+22:           >(); List<String>
+
+
+An error occurred at line: [28] in the jsp file: [/apis/getData.jsp]
+j cannot be resolved to a variable
+25:                 three_gram = new ArrayList<String
+26:                   >(); for (int i=0; i < words.size(); i++) { String ngram = "";
+27:                   // 1-gram for (int j=0; j<1; j++) { String word =
+28:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+29:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+30:                   } if (ngram != ""){ one_gram.add(ngram.trim()); } // 2-gram
+31:                   ngram = ""; if (i < words.size()-1){ for (int j=0; j<2; j++) {
+
+
+An error occurred at line: [28] in the jsp file: [/apis/getData.jsp]
+word cannot be resolved to a variable
+25:                 three_gram = new ArrayList<String
+26:                   >(); for (int i=0; i < words.size(); i++) { String ngram = "";
+27:                   // 1-gram for (int j=0; j<1; j++) { String word =
+28:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+29:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+30:                   } if (ngram != ""){ one_gram.add(ngram.trim()); } // 2-gram
+31:                   ngram = ""; if (i < words.size()-1){ for (int j=0; j<2; j++) {
+
+
+An error occurred at line: [29] in the jsp file: [/apis/getData.jsp]
+word cannot be resolved to a variable
+26:                   >(); for (int i=0; i < words.size(); i++) { String ngram = "";
+27:                   // 1-gram for (int j=0; j<1; j++) { String word =
+28:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+29:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+30:                   } if (ngram != ""){ one_gram.add(ngram.trim()); } // 2-gram
+31:                   ngram = ""; if (i < words.size()-1){ for (int j=0; j<2; j++) {
+32:                   String word = words.get(i+j).toLowerCase(); if
+
+
+An error occurred at line: [30] in the jsp file: [/apis/getData.jsp]
+ngram cannot be resolved to a variable
+27:                   // 1-gram for (int j=0; j<1; j++) { String word =
+28:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+29:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+30:                   } if (ngram != ""){ one_gram.add(ngram.trim()); } // 2-gram
+31:                   ngram = ""; if (i < words.size()-1){ for (int j=0; j<2; j++) {
+32:                   String word = words.get(i+j).toLowerCase(); if
+33:                   (stopWords.contains(word)) { ngram = ""; break; } ngram +=
+
+
+An error occurred at line: [30] in the jsp file: [/apis/getData.jsp]
+ngram cannot be resolved
+27:                   // 1-gram for (int j=0; j<1; j++) { String word =
+28:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+29:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+30:                   } if (ngram != ""){ one_gram.add(ngram.trim()); } // 2-gram
+31:                   ngram = ""; if (i < words.size()-1){ for (int j=0; j<2; j++) {
+32:                   String word = words.get(i+j).toLowerCase(); if
+33:                   (stopWords.contains(word)) { ngram = ""; break; } ngram +=
+
+
+An error occurred at line: [31] in the jsp file: [/apis/getData.jsp]
+ngram cannot be resolved to a variable
+28:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+29:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+30:                   } if (ngram != ""){ one_gram.add(ngram.trim()); } // 2-gram
+31:                   ngram = ""; if (i < words.size()-1){ for (int j=0; j<2; j++) {
+32:                   String word = words.get(i+j).toLowerCase(); if
+33:                   (stopWords.contains(word)) { ngram = ""; break; } ngram +=
+34:                   porter.stripAffixes(word) + " "; } if (ngram != ""){
+
+
+An error occurred at line: [31] in the jsp file: [/apis/getData.jsp]
+i cannot be resolved to a variable
+28:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+29:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+30:                   } if (ngram != ""){ one_gram.add(ngram.trim()); } // 2-gram
+31:                   ngram = ""; if (i < words.size()-1){ for (int j=0; j<2; j++) {
+32:                   String word = words.get(i+j).toLowerCase(); if
+33:                   (stopWords.contains(word)) { ngram = ""; break; } ngram +=
+34:                   porter.stripAffixes(word) + " "; } if (ngram != ""){
+
+
+An error occurred at line: [32] in the jsp file: [/apis/getData.jsp]
+i cannot be resolved to a variable
+29:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+30:                   } if (ngram != ""){ one_gram.add(ngram.trim()); } // 2-gram
+31:                   ngram = ""; if (i < words.size()-1){ for (int j=0; j<2; j++) {
+32:                   String word = words.get(i+j).toLowerCase(); if
+33:                   (stopWords.contains(word)) { ngram = ""; break; } ngram +=
+34:                   porter.stripAffixes(word) + " "; } if (ngram != ""){
+35:                   two_gram.add(ngram.trim()); } } // 3-gram ngram = ""; if (i <
+
+
+An error occurred at line: [33] in the jsp file: [/apis/getData.jsp]
+ngram cannot be resolved to a variable
+30:                   } if (ngram != ""){ one_gram.add(ngram.trim()); } // 2-gram
+31:                   ngram = ""; if (i < words.size()-1){ for (int j=0; j<2; j++) {
+32:                   String word = words.get(i+j).toLowerCase(); if
+33:                   (stopWords.contains(word)) { ngram = ""; break; } ngram +=
+34:                   porter.stripAffixes(word) + " "; } if (ngram != ""){
+35:                   two_gram.add(ngram.trim()); } } // 3-gram ngram = ""; if (i <
+36:                   words.size()-2){ for (int j=0; j<3; j++) { String word =
+
+
+An error occurred at line: [33] in the jsp file: [/apis/getData.jsp]
+ngram cannot be resolved to a variable
+30:                   } if (ngram != ""){ one_gram.add(ngram.trim()); } // 2-gram
+31:                   ngram = ""; if (i < words.size()-1){ for (int j=0; j<2; j++) {
+32:                   String word = words.get(i+j).toLowerCase(); if
+33:                   (stopWords.contains(word)) { ngram = ""; break; } ngram +=
+34:                   porter.stripAffixes(word) + " "; } if (ngram != ""){
+35:                   two_gram.add(ngram.trim()); } } // 3-gram ngram = ""; if (i <
+36:                   words.size()-2){ for (int j=0; j<3; j++) { String word =
+
+
+An error occurred at line: [34] in the jsp file: [/apis/getData.jsp]
+ngram cannot be resolved to a variable
+31:                   ngram = ""; if (i < words.size()-1){ for (int j=0; j<2; j++) {
+32:                   String word = words.get(i+j).toLowerCase(); if
+33:                   (stopWords.contains(word)) { ngram = ""; break; } ngram +=
+34:                   porter.stripAffixes(word) + " "; } if (ngram != ""){
+35:                   two_gram.add(ngram.trim()); } } // 3-gram ngram = ""; if (i <
+36:                   words.size()-2){ for (int j=0; j<3; j++) { String word =
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+
+
+An error occurred at line: [35] in the jsp file: [/apis/getData.jsp]
+ngram cannot be resolved
+32:                   String word = words.get(i+j).toLowerCase(); if
+33:                   (stopWords.contains(word)) { ngram = ""; break; } ngram +=
+34:                   porter.stripAffixes(word) + " "; } if (ngram != ""){
+35:                   two_gram.add(ngram.trim()); } } // 3-gram ngram = ""; if (i <
+36:                   words.size()-2){ for (int j=0; j<3; j++) { String word =
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+
+
+An error occurred at line: [36] in the jsp file: [/apis/getData.jsp]
+The method size() in the type List<String> is not applicable for the arguments (int)
+33:                   (stopWords.contains(word)) { ngram = ""; break; } ngram +=
+34:                   porter.stripAffixes(word) + " "; } if (ngram != ""){
+35:                   two_gram.add(ngram.trim()); } } // 3-gram ngram = ""; if (i <
+36:                   words.size()-2){ for (int j=0; j<3; j++) { String word =
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+
+
+An error occurred at line: [36] in the jsp file: [/apis/getData.jsp]
+Syntax error on token ")", delete this token
+33:                   (stopWords.contains(word)) { ngram = ""; break; } ngram +=
+34:                   porter.stripAffixes(word) + " "; } if (ngram != ""){
+35:                   two_gram.add(ngram.trim()); } } // 3-gram ngram = ""; if (i <
+36:                   words.size()-2){ for (int j=0; j<3; j++) { String word =
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+
+
+An error occurred at line: [36] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete Statement
+33:                   (stopWords.contains(word)) { ngram = ""; break; } ngram +=
+34:                   porter.stripAffixes(word) + " "; } if (ngram != ""){
+35:                   two_gram.add(ngram.trim()); } } // 3-gram ngram = ""; if (i <
+36:                   words.size()-2){ for (int j=0; j<3; j++) { String word =
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+
+
+An error occurred at line: [37] in the jsp file: [/apis/getData.jsp]
+i cannot be resolved to a variable
+34:                   porter.stripAffixes(word) + " "; } if (ngram != ""){
+35:                   two_gram.add(ngram.trim()); } } // 3-gram ngram = ""; if (i <
+36:                   words.size()-2){ for (int j=0; j<3; j++) { String word =
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+
+
+An error occurred at line: [38] in the jsp file: [/apis/getData.jsp]
+ngram cannot be resolved to a variable
+35:                   two_gram.add(ngram.trim()); } } // 3-gram ngram = ""; if (i <
+36:                   words.size()-2){ for (int j=0; j<3; j++) { String word =
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+
+
+An error occurred at line: [38] in the jsp file: [/apis/getData.jsp]
+ngram cannot be resolved to a variable
+35:                   two_gram.add(ngram.trim()); } } // 3-gram ngram = ""; if (i <
+36:                   words.size()-2){ for (int j=0; j<3; j++) { String word =
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+
+
+An error occurred at line: [39] in the jsp file: [/apis/getData.jsp]
+ngram cannot be resolved to a variable
+36:                   words.size()-2){ for (int j=0; j<3; j++) { String word =
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+
+
+An error occurred at line: [39] in the jsp file: [/apis/getData.jsp]
+ngram cannot be resolved
+36:                   words.size()-2){ for (int j=0; j<3; j++) { String word =
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+
+
+An error occurred at line: [39] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert "Finally" to complete TryStatement
+36:                   words.size()-2){ for (int j=0; j<3; j++) { String word =
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+
+
+An error occurred at line: [40] in the jsp file: [/apis/getData.jsp]
+create cannot be resolved to a type
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+43:                       ngrams.addAll(three_gram); //handle database here String
+
+
+An error occurred at line: [40] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "list", ; expected
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+43:                       ngrams.addAll(three_gram); //handle database here String
+
+
+An error occurred at line: [40] in the jsp file: [/apis/getData.jsp]
+of cannot be resolved to a type
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+43:                       ngrams.addAll(three_gram); //handle database here String
+
+
+An error occurred at line: [40] in the jsp file: [/apis/getData.jsp]
+Syntax error on token "the", = expected
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+43:                       ngrams.addAll(three_gram); //handle database here String
+
+
+An error occurred at line: [40] in the jsp file: [/apis/getData.jsp]
+n cannot be resolved to a variable
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+43:                       ngrams.addAll(three_gram); //handle database here String
+
+
+An error occurred at line: [40] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+43:                       ngrams.addAll(three_gram); //handle database here String
+
+
+An error occurred at line: [40] in the jsp file: [/apis/getData.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+43:                       ngrams.addAll(three_gram); //handle database here String
+
+
+An error occurred at line: [40] in the jsp file: [/apis/getData.jsp]
+grams cannot be resolved to a variable
+37:                   words.get(i+j).toLowerCase(); if (stopWords.contains(word)) {
+38:                   ngram = ""; break; } ngram += porter.stripAffixes(word) + " ";
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+43:                       ngrams.addAll(three_gram); //handle database here String
+
+
+An error occurred at line: [42] in the jsp file: [/apis/getData.jsp]
+one_gram cannot be resolved to a variable
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+43:                       ngrams.addAll(three_gram); //handle database here String
+44:                       dbPath =
+45:                       getServletContext().getRealPath("/WEB-INF/database/Database");
+
+
+An error occurred at line: [42] in the jsp file: [/apis/getData.jsp]
+two_gram cannot be resolved to a variable
+39:                   } if (ngram != ""){ three_gram.add(ngram.trim()); } } }; //
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+43:                       ngrams.addAll(three_gram); //handle database here String
+44:                       dbPath =
+45:                       getServletContext().getRealPath("/WEB-INF/database/Database");
+
+
+An error occurred at line: [43] in the jsp file: [/apis/getData.jsp]
+three_gram cannot be resolved to a variable
+40:                   create a list of all the n-grams List<String>
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+43:                       ngrams.addAll(three_gram); //handle database here String
+44:                       dbPath =
+45:                       getServletContext().getRealPath("/WEB-INF/database/Database");
+46:                       RecordManager recman =
+
+
+An error occurred at line: [44] in the jsp file: [/apis/getData.jsp]
+dbPath cannot be resolved to a variable
+41:                     ngrams = new ArrayList<String
+42:                       >(); ngrams.addAll(one_gram); ngrams.addAll(two_gram);
+43:                       ngrams.addAll(three_gram); //handle database here String
+44:                       dbPath =
+45:                       getServletContext().getRealPath("/WEB-INF/database/Database");
+46:                       RecordManager recman =
+47:                       RecordManagerFactory.createRecordManager(dbPath); long
+
+
+An error occurred at line: [47] in the jsp file: [/apis/getData.jsp]
+dbPath cannot be resolved to a variable
+44:                       dbPath =
+45:                       getServletContext().getRealPath("/WEB-INF/database/Database");
+46:                       RecordManager recman =
+47:                       RecordManagerFactory.createRecordManager(dbPath); long
+48:                       invertedindexid = recman.getNamedObject("invertedindex");
+49:                       HTree invertedindex = HTree.load(recman, invertedindexid);
+50:                       long forwardindexid =
+
+
+An error occurred at line: [75] in the jsp file: [/apis/getData.jsp]
+stopWords cannot be resolved to a variable
+72:                       Posting(1,1); out.println(posting);
+73:                       out.println(invertedindex);
+74:                       out.println(invertedindex.keys()); SearchEngine se = new
+75:                       SearchEngine( new Porter(), stopWords, urlToId, wordToId,
+76:                       idToWord, titleForwardindex, forwardindex,
+77:                       titleInvertedindex, invertedindex, bigram, trigram,
+78:                       recman, idToWordid); Vector<Vector<Object
+
+
+An error occurred at line: [79] in the jsp file: [/apis/getData.jsp]
+input cannot be resolved to a variable
+76:                       idToWord, titleForwardindex, forwardindex,
+77:                       titleInvertedindex, invertedindex, bigram, trigram,
+78:                       recman, idToWordid); Vector<Vector<Object
+79:                         >> result = se.query(input); StringBuilder sb = new
+80:                         StringBuilder(); sb.append("{\"result\":["); for (int i
+81:                         = 0; i < result.size(); i++) { sb.append("[");
+82:                         sb.append(String.valueOf(idToTitle.get(result.get(i).get(0))
+
+
+An error occurred at line: [82] in the jsp file: [/apis/getData.jsp]
+idToTitle cannot be resolved
+79:                         >> result = se.query(input); StringBuilder sb = new
+80:                         StringBuilder(); sb.append("{\"result\":["); for (int i
+81:                         = 0; i < result.size(); i++) { sb.append("[");
+82:                         sb.append(String.valueOf(idToTitle.get(result.get(i).get(0))
+83:                         + "," + idToUrl.get(result.get(i).get(0)) + "," +
+84:                         idToUrl.get(result.get(i).get(0)) + ","));
+85:                         sb.append(result.get(i).get(1)); sb.append("]"); if (i
+
+
+An error occurred at line: [238] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Syntax error on token "catch", Identifier expected
+
+An error occurred at line: [240] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [240] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+_jspx_out cannot be resolved to a variable
+
+An error occurred at line: [241] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [241] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [243] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+response cannot be resolved
+
+An error occurred at line: [244] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [246] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [249] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+An error occurred at line: [249] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+_jspx_page_context cannot be resolved
+
+An error occurred at line: [252] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Syntax error on token "finally", { expected
+
+An error occurred at line: [253] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-May-2024 03:40:36.091 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [168] in the jsp file: [/apis/getData.jsp]
+idToTitle cannot be resolved
+165:     sb.append("{\"result\":[");
+166:     for (int i = 0; i < result.size(); i++) {
+167:         sb.append("[");
+168:         sb.append(String.valueOf(idToTitle.get(result.get(i).get(0)) + "," + idToUrl.get(result.get(i).get(0)) + ","));
+169:         sb.append(result.get(i).get(1));
+170:         sb.append("]");
+171:         if (i != result.size() - 1) {
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [168] in the jsp file: [/apis/getData.jsp]
+idToTitle cannot be resolved
+165:     sb.append("{\"result\":[");
+166:     for (int i = 0; i < result.size(); i++) {
+167:         sb.append("[");
+168:         sb.append(String.valueOf(idToTitle.get(result.get(i).get(0)) + "," + idToUrl.get(result.get(i).get(0)) + ","));
+169:         sb.append(result.get(i).get(1));
+170:         sb.append("]");
+171:         if (i != result.size() - 1) {
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-May-2024 04:30:52.440 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [180] in the jsp file: [/apis/getData.jsp]
+Unreachable code
+177:     response.setCharacterEncoding("UTF-8");
+178:     out.print(sb.toString());
+179:     return;
+180: %>
+181: 
+182: 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [180] in the jsp file: [/apis/getData.jsp]
+Unreachable code
+177:     response.setCharacterEncoding("UTF-8");
+178:     out.print(sb.toString());
+179:     return;
+180: %>
+181: 
+182: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-May-2024 04:47:40.919 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+10-May-2024 04:47:40.920 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+10-May-2024 04:47:40.922 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@7f02251')
+10-May-2024 04:50:58.905 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [179] in the jsp file: [/apis/getData.jsp]
+Syntax error on token(s), misplaced construct(s)
+176:     //response.setContentType("application/json");
+177:     response.setCharacterEncoding("UTF-8");
+178:     response.setContentType("text/html;charset=UTF-8");
+179:     response.writeHead(200,
+180:           {
+181:             "Content-Type": "application/json",
+182:             "Access-Control-Allow-Origin": "http://localhost:8080"
+
+
+An error occurred at line: [181] in the jsp file: [/apis/getData.jsp]
+Syntax error on tokens, delete these tokens
+178:     response.setContentType("text/html;charset=UTF-8");
+179:     response.writeHead(200,
+180:           {
+181:             "Content-Type": "application/json",
+182:             "Access-Control-Allow-Origin": "http://localhost:8080"
+183:         });
+184:     out.println(sb.toString());
+
+
+An error occurred at line: [330] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [179] in the jsp file: [/apis/getData.jsp]
+Syntax error on token(s), misplaced construct(s)
+176:     //response.setContentType("application/json");
+177:     response.setCharacterEncoding("UTF-8");
+178:     response.setContentType("text/html;charset=UTF-8");
+179:     response.writeHead(200,
+180:           {
+181:             "Content-Type": "application/json",
+182:             "Access-Control-Allow-Origin": "http://localhost:8080"
+
+
+An error occurred at line: [181] in the jsp file: [/apis/getData.jsp]
+Syntax error on tokens, delete these tokens
+178:     response.setContentType("text/html;charset=UTF-8");
+179:     response.writeHead(200,
+180:           {
+181:             "Content-Type": "application/json",
+182:             "Access-Control-Allow-Origin": "http://localhost:8080"
+183:         });
+184:     out.println(sb.toString());
+
+
+An error occurred at line: [330] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-May-2024 04:52:19.851 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/comp4321] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [179] in the jsp file: [/apis/getData.jsp]
+Syntax error on token(s), misplaced construct(s)
+176:     //response.setContentType("application/json");
+177:     response.setCharacterEncoding("UTF-8");
+178:     response.setContentType("text/html;charset=UTF-8");
+179:     response.writeHead(200, {"Access-Control-Allow-Origin": "http://localhost:8080"});
+180:     out.println(sb.toString());
+181:     response.getWriter().write(sb.toString());
+182: %>
+
+
+An error occurred at line: [179] in the jsp file: [/apis/getData.jsp]
+Syntax error on tokens, delete these tokens
+176:     //response.setContentType("application/json");
+177:     response.setCharacterEncoding("UTF-8");
+178:     response.setContentType("text/html;charset=UTF-8");
+179:     response.writeHead(200, {"Access-Control-Allow-Origin": "http://localhost:8080"});
+180:     out.println(sb.toString());
+181:     response.getWriter().write(sb.toString());
+182: %>
+
+
+An error occurred at line: [326] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [179] in the jsp file: [/apis/getData.jsp]
+Syntax error on token(s), misplaced construct(s)
+176:     //response.setContentType("application/json");
+177:     response.setCharacterEncoding("UTF-8");
+178:     response.setContentType("text/html;charset=UTF-8");
+179:     response.writeHead(200, {"Access-Control-Allow-Origin": "http://localhost:8080"});
+180:     out.println(sb.toString());
+181:     response.getWriter().write(sb.toString());
+182: %>
+
+
+An error occurred at line: [179] in the jsp file: [/apis/getData.jsp]
+Syntax error on tokens, delete these tokens
+176:     //response.setContentType("application/json");
+177:     response.setCharacterEncoding("UTF-8");
+178:     response.setContentType("text/html;charset=UTF-8");
+179:     response.writeHead(200, {"Access-Control-Allow-Origin": "http://localhost:8080"});
+180:     out.println(sb.toString());
+181:     response.getWriter().write(sb.toString());
+182: %>
+
+
+An error occurred at line: [326] in the generated java file: [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\work\Catalina\localhost\comp4321\org\apache\jsp\apis\getData_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:524)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-May-2024 05:05:13.041 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+10-May-2024 05:05:13.041 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+10-May-2024 05:05:13.043 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@566d0c69')
+10-May-2024 05:12:20.056 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+10-May-2024 05:12:20.056 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+10-May-2024 05:12:20.059 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@4d8126f')
+10-May-2024 05:14:30.566 INFO [Catalina-utility-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+10-May-2024 05:14:30.566 INFO [Catalina-utility-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+10-May-2024 05:14:31.045 INFO [Catalina-utility-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+10-May-2024 05:14:31.045 INFO [Catalina-utility-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+10-May-2024 05:14:31.046 INFO [Catalina-utility-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@16bc284c')
+10-May-2024 05:14:36.505 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+10-May-2024 05:14:36.505 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+10-May-2024 05:14:36.505 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@73a00e09')
+10-May-2024 05:16:36.967 INFO [Catalina-utility-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+10-May-2024 05:16:36.967 INFO [Catalina-utility-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+10-May-2024 05:16:37.442 INFO [Catalina-utility-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+10-May-2024 05:16:37.442 INFO [Catalina-utility-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+10-May-2024 05:16:37.445 INFO [Catalina-utility-2] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@54540477')

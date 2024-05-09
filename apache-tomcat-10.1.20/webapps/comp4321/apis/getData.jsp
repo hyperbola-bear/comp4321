@@ -140,10 +140,10 @@
 
     
 
-    Posting posting = new Posting(1,1);
-    out.println(posting);
-    out.println(invertedindex);
-    out.println(invertedindex.keys());
+    //Posting posting = new Posting(1,1);
+    //out.println(posting);
+    //out.println(invertedindex);
+    //out.println(invertedindex.keys());
 
     SearchEngine se = new SearchEngine(
     new Porter(), 
@@ -162,18 +162,27 @@
 
     Vector<Vector<Object>> result = se.query(input);
     StringBuilder sb = new StringBuilder();
-    sb.append("{\"result\":[");
+    sb.append("{\"input\":");
+    sb.append("\"" + input + "\",");
+    sb.append("\"results\":[");
     for (int i = 0; i < result.size(); i++) {
-        sb.append("[");
-        sb.append(String.valueOf(idToUrl.get(result.get(i).get(0)) + ","));
+        sb.append("{");
+        sb.append("\"url\":");
+        sb.append("\"" +String.valueOf(idToUrl.get(result.get(i).get(0)) + "\","));
+        sb.append("\"score\":");
         sb.append(result.get(i).get(1));
-        sb.append("]");
+        //sb.append(",");
+        sb.append("}");
         if (i != result.size() - 1) {
             sb.append(",");
         }
     }
     sb.append("]}");
-    out.print(sb.toString());
+    //response.setContentType("application/json");
+    response.setCharacterEncoding("UTF-8");
+    response.setContentType("text/html;charset=UTF-8");
+    //out.println(sb.toString());
+    response.getWriter().write(sb.toString());
 %>
 
 

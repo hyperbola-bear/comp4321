@@ -2,35 +2,84 @@ function showResults(response) {
   // Clear the existing content of the data container
   $("#dataContainer").empty();
   $("#num-results").empty();
+  $("#searchResults").empty();
   console.log("show results");
+  console.log("response", response);
+  // Parse the response data
+  // response = response.replace('"', '\"')
+  response = JSON.stringify(response);
+  response = JSON.parse(response);
+  response = JSON.parse(response); // not a duplication this is required
+  
+  // Extract the search input and search results
+  response = {
+    input: response.input,
+    results: [
+      {
+        title: "title1",
+        url: "url1",
+        lastModified: "lastModified1",
+        size: "size1",
+        keywords: ["keyword1", "keyword2", "keyword3"],
+        children: ["child1", "child2", "child3"],
+        score : "0.5",
+      },
+      {
+        title: "title1",
+        url: "url1",
+        lastModified: "lastModified1",
+        size: "size1",
+        keywords: ["keyword1", "keyword2", "keyword3"],
+        children: ["child1", "child2", "child3"],
+        score: "0.6",
+      },
+      {
+        title: "title1",
+        url: "url1",
+        lastModified: "lastModified1",
+        size: "size1",
+        keywords: ["keyword1", "keyword2", "keyword3"],
+        children: ["child1", "child2", "child3"],
+        score: "0.7",
+      },
+    ],
+  };
 
   //test section
-  var container = $("<div>Hi</div>");
-  var url = "https://www.google.com";
-  for (var j = 1; j <= 3; j++) {
-    var title = "Page Titties" + j;
-    entrycontainer = $(`<div>${title}</div>`);
+  var size = response.results.length;
+  for (var i = 0; i < size; i++) {
+    var container = $(`<div>${response.input}</div>`);
+    var title = response.results[i].title
+    var url = response.results[i].url;
+    var lastModifiedDate = response.results[i].lastModified;
+    var sizeofPage = response.results[i].size;
+    var entrycontainer = $(`<div>${title}</div>`);
     var pageUrl = $(`<div><a href=${url}>${url}</a></div>`);
-    var lastModifiedDate = "12 April 24";
-    sizeofPage = 1024;
     var lastModnSize = $(
       `<div> Last Modified: ${lastModifiedDate}, Size of Page: ${sizeofPage}kb </div>`
     );
     entrycontainer.append(lastModnSize);
     entrycontainer.append([pageUrl]);
     var keywords = $(`<div>`);
-    var keywordCount = 3;
-    for (var i = 0; i < keywordCount; i++) {
-      keywords.append("keyword" + i + ": " + i + ",");
+    var keywordArray = response.results[i].keywords;
+    var keywordCount = response.results[i].keywords.length;
+    for (var j = 0; j < keywordCount; j++) {
+      keywords.append(keywordArray[j] + ": " + keywordArray[j]);
+      if (j != keywordCount - 1) {
+        keywords.append(";");
+      }
     }
     keywords.append(`</div>`);
     entrycontainer.append(keywords);
-    var childlinks = 3;
-    childUrl = ["child1", "child2", "child3"];
-    for (var i = 0; i < childlinks; i++) {
-      var childlink = $(`<div>${childUrl[i]}</div>`);
+    var childlinks = response.results[i].children.length;
+    childUrl = response.results[i].children;
+    for (var j = 0; j < childlinks; j++) {
+      var childlink = $(`<div>${childUrl[j]}</div>`);
       entrycontainer.append(childlink);
     }
+    var score = response.results[i].score;
+    var scorecontainer = $(`<div> score: ${score}</div>`);
+    entrycontainer.append(scorecontainer);
     container.append(entrycontainer);
   }
   $("#searchResults").append(container);
