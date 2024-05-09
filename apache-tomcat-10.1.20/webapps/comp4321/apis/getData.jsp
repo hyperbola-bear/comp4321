@@ -138,6 +138,8 @@
     long trigramid = recman.getNamedObject("trigram");
     HTree trigram = HTree.load(recman, trigramid);
 
+    
+
     Posting posting = new Posting(1,1);
     out.println(posting);
     out.println(invertedindex);
@@ -158,7 +160,20 @@
     recman,
     idToWordid);
 
-    out.println(se.query("hi"));
+    Vector<Vector<Object>> result = se.query(input);
+    StringBuilder sb = new StringBuilder();
+    sb.append("{\"result\":[");
+    for (int i = 0; i < result.size(); i++) {
+        sb.append("[");
+        sb.append(String.valueOf(idToUrl.get(result.get(i).get(0)) + ","));
+        sb.append(result.get(i).get(1));
+        sb.append("]");
+        if (i != result.size() - 1) {
+            sb.append(",");
+        }
+    }
+    sb.append("]}");
+    out.print(sb.toString());
 %>
 
 

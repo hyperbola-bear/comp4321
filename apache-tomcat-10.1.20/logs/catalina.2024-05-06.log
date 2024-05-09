@@ -1,0 +1,1200 @@
+06-May-2024 01:00:42.366 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.20
+06-May-2024 01:00:42.375 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 12:49:58 UTC
+06-May-2024 01:00:42.378 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.20.0
+06-May-2024 01:00:42.378 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+06-May-2024 01:00:42.378 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+06-May-2024 01:00:42.378 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-May-2024 01:00:42.378 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-11.0.17
+06-May-2024 01:00:42.378 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.17+10-LTS-269
+06-May-2024 01:00:42.378 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-May-2024 01:00:42.378 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 01:00:42.378 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 01:00:42.387 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\conf\logging.properties
+06-May-2024 01:00:42.387 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-May-2024 01:00:42.387 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-May-2024 01:00:42.387 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-May-2024 01:00:42.387 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-May-2024 01:00:42.387 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-May-2024 01:00:42.387 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-May-2024 01:00:42.387 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-May-2024 01:00:42.387 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-May-2024 01:00:42.387 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 01:00:42.387 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 01:00:42.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\temp
+06-May-2024 01:00:42.406 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\phant\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\phant\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\MATLAB\R2021a\bin;C:\Program Files\nodejs;C:\WINDOWS\System32\WBem;C:\Program Files\usbipd-win;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\apache-maven-3.9.0\bin;C:\Users\phant\AppData\Local\Programs\Python\Python311;C:\Program Files\dotnet;C:\Program Files\gs\gs10.01.1\bin;C:\Program Files\gs\gs10.01.1\lib;C:\Program Files\Stripe;C:\Program Files\poppler-23.07.0\Library\bin;C:\Program Files\Tesseract-OCR;C:\Program Files\Amazon\AWSCLIV2;C:\Program Files\Go\bin;C:\Users\phant\scoop\shims;C:\Program Files\Java\jdk-11.0.17\bin;C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\bin;C:\Users\phant\scoop\shims;C:\Users\phant\AppData\Local\activestate\cache\bin;C:\Users\phant\AppData\Local\ActiveState\StateTool\release\bin;C:\Users\phant\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\phant\AppData\Local\Programs\Python\Python311;C:\Users\phant\AppData\Local\Microsoft\WindowsApps;C:\Users\phant\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0;C:\Users\phant\AppData\Roaming\npm;C:\Program Files\PostgreSQL\14\bin;C:\Users\phant\AppData\Roaming\TinyTeX\bin\win32;C:\Program Files\heroku\bin;C:\Users\phant\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.2\bin;C:\Users\phant\.dotnet\tools;C:\Program Files\gs\gs10.01.1\bin;C:\Program Files\Stripe;C:\Program Files\JetBrains\DataGrip 2023.3.2\bin;C:\Users\phant\go\bin;C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+06-May-2024 01:00:42.682 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-May-2024 01:00:42.706 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [542] milliseconds
+06-May-2024 01:00:42.758 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-May-2024 01:00:42.758 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-May-2024 01:00:42.775 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321]
+06-May-2024 01:00:43.264 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-May-2024 01:00:43.554 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [254] milliseconds.
+06-May-2024 01:00:43.594 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321] has finished in [819] ms
+06-May-2024 01:00:43.594 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\docs]
+06-May-2024 01:00:43.636 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\docs] has finished in [42] ms
+06-May-2024 01:00:43.636 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\examples]
+06-May-2024 01:00:43.964 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\examples] has finished in [328] ms
+06-May-2024 01:00:43.964 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\host-manager]
+06-May-2024 01:00:44.016 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\host-manager] has finished in [52] ms
+06-May-2024 01:00:44.017 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\manager]
+06-May-2024 01:00:44.085 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\manager] has finished in [68] ms
+06-May-2024 01:00:44.092 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\ROOT]
+06-May-2024 01:00:44.112 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\ROOT] has finished in [20] ms
+06-May-2024 01:00:44.123 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+06-May-2024 01:00:44.395 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1689] milliseconds
+06-May-2024 01:12:00.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.20
+06-May-2024 01:12:00.424 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 12:49:58 UTC
+06-May-2024 01:12:00.424 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.20.0
+06-May-2024 01:12:00.424 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+06-May-2024 01:12:00.424 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+06-May-2024 01:12:00.424 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-May-2024 01:12:00.424 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-11.0.17
+06-May-2024 01:12:00.424 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.17+10-LTS-269
+06-May-2024 01:12:00.424 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-May-2024 01:12:00.424 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 01:12:00.424 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 01:12:00.446 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\conf\logging.properties
+06-May-2024 01:12:00.446 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-May-2024 01:12:00.446 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-May-2024 01:12:00.447 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-May-2024 01:12:00.447 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-May-2024 01:12:00.447 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-May-2024 01:12:00.447 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-May-2024 01:12:00.447 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-May-2024 01:12:00.447 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-May-2024 01:12:00.447 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 01:12:00.447 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 01:12:00.447 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\temp
+06-May-2024 01:12:00.465 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\phant\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\phant\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\MATLAB\R2021a\bin;C:\Program Files\nodejs;C:\WINDOWS\System32\WBem;C:\Program Files\usbipd-win;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\apache-maven-3.9.0\bin;C:\Users\phant\AppData\Local\Programs\Python\Python311;C:\Program Files\dotnet;C:\Program Files\gs\gs10.01.1\bin;C:\Program Files\gs\gs10.01.1\lib;C:\Program Files\Stripe;C:\Program Files\poppler-23.07.0\Library\bin;C:\Program Files\Tesseract-OCR;C:\Program Files\Amazon\AWSCLIV2;C:\Program Files\Go\bin;C:\Users\phant\scoop\shims;C:\Program Files\Java\jdk-11.0.17\bin;C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\bin;C:\Users\phant\scoop\shims;C:\Users\phant\AppData\Local\activestate\cache\bin;C:\Users\phant\AppData\Local\ActiveState\StateTool\release\bin;C:\Users\phant\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\phant\AppData\Local\Programs\Python\Python311;C:\Users\phant\AppData\Local\Microsoft\WindowsApps;C:\Users\phant\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0;C:\Users\phant\AppData\Roaming\npm;C:\Program Files\PostgreSQL\14\bin;C:\Users\phant\AppData\Roaming\TinyTeX\bin\win32;C:\Program Files\heroku\bin;C:\Users\phant\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.2\bin;C:\Users\phant\.dotnet\tools;C:\Program Files\gs\gs10.01.1\bin;C:\Program Files\Stripe;C:\Program Files\JetBrains\DataGrip 2023.3.2\bin;C:\Users\phant\go\bin;C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+06-May-2024 01:12:00.749 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-May-2024 01:12:00.769 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1016)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:554)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1017)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:708)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:731)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:459)
+		at java.base/sun.nio.ch.Net.bind(Net.java:448)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:239)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:194)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1307)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1320)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:624)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:77)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1014)
+		... 13 more
+06-May-2024 01:12:00.771 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [587] milliseconds
+06-May-2024 01:12:00.821 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-May-2024 01:12:00.821 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-May-2024 01:12:00.845 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321]
+06-May-2024 01:12:01.166 SEVERE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [org/Pair.class] from Jar [file:/C:/Users/phant/Desktop/NUS%20Stuff/Year%203/HKUST%20sem%202/Comp4321/project2/comp4321/apache-tomcat-10.1.20/webapps/comp4321/WEB-INF/lib/htmlparser.jar] for annotations
+	org.apache.tomcat.util.bcel.classfile.ClassFormatException: It is not a Java .class file
+		at org.apache.tomcat.util.bcel.classfile.ClassParser.readID(ClassParser.java:209)
+		at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:74)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2226)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:2184)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:2157)
+		at org.apache.catalina.startup.ContextConfig.scanWebXmlFragment(ContextConfig.java:2065)
+		at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:2045)
+		at org.apache.catalina.startup.ContextConfig.processClasses(ContextConfig.java:1360)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1261)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:961)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4796)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:712)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1130)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1933)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1041)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:425)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1629)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:303)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:757)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+06-May-2024 01:12:01.267 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-May-2024 01:12:01.581 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [296] milliseconds.
+06-May-2024 01:12:01.610 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321] has finished in [765] ms
+06-May-2024 01:12:01.610 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\docs]
+06-May-2024 01:12:01.667 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\docs] has finished in [57] ms
+06-May-2024 01:12:01.667 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\examples]
+06-May-2024 01:12:02.060 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\examples] has finished in [393] ms
+06-May-2024 01:12:02.060 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\host-manager]
+06-May-2024 01:12:02.098 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\host-manager] has finished in [38] ms
+06-May-2024 01:12:02.098 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\manager]
+06-May-2024 01:12:02.155 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\manager] has finished in [57] ms
+06-May-2024 01:12:02.155 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\ROOT]
+06-May-2024 01:12:02.182 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\ROOT] has finished in [27] ms
+06-May-2024 01:12:02.194 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1419] milliseconds
+06-May-2024 01:12:02.198 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: NET_Bind
+		at java.base/java.net.PlainSocketImpl.bind0(Native Method)
+		at java.base/java.net.PlainSocketImpl.socketBind(PlainSocketImpl.java:132)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:452)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:381)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:243)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:577)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:847)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+06-May-2024 01:12:02.198 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+06-May-2024 01:12:02.198 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-May-2024 01:12:02.226 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+06-May-2024 01:12:02.233 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+06-May-2024 01:12:22.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.20
+06-May-2024 01:12:22.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 12:49:58 UTC
+06-May-2024 01:12:22.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.20.0
+06-May-2024 01:12:22.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+06-May-2024 01:12:22.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+06-May-2024 01:12:22.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-May-2024 01:12:22.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-11.0.17
+06-May-2024 01:12:22.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.17+10-LTS-269
+06-May-2024 01:12:22.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-May-2024 01:12:22.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 01:12:22.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 01:12:22.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\conf\logging.properties
+06-May-2024 01:12:22.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-May-2024 01:12:22.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-May-2024 01:12:22.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-May-2024 01:12:22.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-May-2024 01:12:22.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-May-2024 01:12:22.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-May-2024 01:12:22.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-May-2024 01:12:22.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-May-2024 01:12:22.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 01:12:22.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 01:12:22.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\temp
+06-May-2024 01:12:22.841 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\phant\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\phant\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\MATLAB\R2021a\bin;C:\Program Files\nodejs;C:\WINDOWS\System32\WBem;C:\Program Files\usbipd-win;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\apache-maven-3.9.0\bin;C:\Users\phant\AppData\Local\Programs\Python\Python311;C:\Program Files\dotnet;C:\Program Files\gs\gs10.01.1\bin;C:\Program Files\gs\gs10.01.1\lib;C:\Program Files\Stripe;C:\Program Files\poppler-23.07.0\Library\bin;C:\Program Files\Tesseract-OCR;C:\Program Files\Amazon\AWSCLIV2;C:\Program Files\Go\bin;C:\Users\phant\scoop\shims;C:\Program Files\Java\jdk-11.0.17\bin;C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\bin;C:\Users\phant\scoop\shims;C:\Users\phant\AppData\Local\activestate\cache\bin;C:\Users\phant\AppData\Local\ActiveState\StateTool\release\bin;C:\Users\phant\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\phant\AppData\Local\Programs\Python\Python311;C:\Users\phant\AppData\Local\Microsoft\WindowsApps;C:\Users\phant\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0;C:\Users\phant\AppData\Roaming\npm;C:\Program Files\PostgreSQL\14\bin;C:\Users\phant\AppData\Roaming\TinyTeX\bin\win32;C:\Program Files\heroku\bin;C:\Users\phant\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.2\bin;C:\Users\phant\.dotnet\tools;C:\Program Files\gs\gs10.01.1\bin;C:\Program Files\Stripe;C:\Program Files\JetBrains\DataGrip 2023.3.2\bin;C:\Users\phant\go\bin;C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+06-May-2024 01:12:23.173 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-May-2024 01:12:23.197 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [598] milliseconds
+06-May-2024 01:12:23.248 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-May-2024 01:12:23.248 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-May-2024 01:12:23.264 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321]
+06-May-2024 01:12:23.554 SEVERE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [org/Pair.class] from Jar [file:/C:/Users/phant/Desktop/NUS%20Stuff/Year%203/HKUST%20sem%202/Comp4321/project2/comp4321/apache-tomcat-10.1.20/webapps/comp4321/WEB-INF/lib/htmlparser.jar] for annotations
+	org.apache.tomcat.util.bcel.classfile.ClassFormatException: It is not a Java .class file
+		at org.apache.tomcat.util.bcel.classfile.ClassParser.readID(ClassParser.java:209)
+		at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:74)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2226)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:2184)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:2157)
+		at org.apache.catalina.startup.ContextConfig.scanWebXmlFragment(ContextConfig.java:2065)
+		at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:2045)
+		at org.apache.catalina.startup.ContextConfig.processClasses(ContextConfig.java:1360)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1261)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:961)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4796)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:712)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1130)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1933)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1041)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:425)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1629)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:303)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:757)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+06-May-2024 01:12:23.659 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-May-2024 01:12:23.991 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [305] milliseconds.
+06-May-2024 01:12:24.034 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321] has finished in [770] ms
+06-May-2024 01:12:24.034 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\docs]
+06-May-2024 01:12:24.066 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\docs] has finished in [32] ms
+06-May-2024 01:12:24.066 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\examples]
+06-May-2024 01:12:24.331 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\examples] has finished in [265] ms
+06-May-2024 01:12:24.331 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\host-manager]
+06-May-2024 01:12:24.373 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\host-manager] has finished in [42] ms
+06-May-2024 01:12:24.373 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\manager]
+06-May-2024 01:12:24.425 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\manager] has finished in [52] ms
+06-May-2024 01:12:24.433 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\ROOT]
+06-May-2024 01:12:24.452 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\ROOT] has finished in [19] ms
+06-May-2024 01:12:24.464 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+06-May-2024 01:12:24.714 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1520] milliseconds
+06-May-2024 01:27:36.624 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.20
+06-May-2024 01:27:36.624 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 12:49:58 UTC
+06-May-2024 01:27:36.624 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.20.0
+06-May-2024 01:27:36.632 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+06-May-2024 01:27:36.632 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+06-May-2024 01:27:36.633 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-May-2024 01:27:36.633 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-11.0.17
+06-May-2024 01:27:36.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.17+10-LTS-269
+06-May-2024 01:27:36.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-May-2024 01:27:36.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 01:27:36.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 01:27:36.654 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\conf\logging.properties
+06-May-2024 01:27:36.654 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-May-2024 01:27:36.654 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-May-2024 01:27:36.654 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-May-2024 01:27:36.654 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-May-2024 01:27:36.654 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-May-2024 01:27:36.654 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-May-2024 01:27:36.654 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-May-2024 01:27:36.654 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-May-2024 01:27:36.663 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 01:27:36.663 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 01:27:36.663 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\temp
+06-May-2024 01:27:36.687 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\phant\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\phant\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\MATLAB\R2021a\bin;C:\Program Files\nodejs;C:\WINDOWS\System32\WBem;C:\Program Files\usbipd-win;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\apache-maven-3.9.0\bin;C:\Users\phant\AppData\Local\Programs\Python\Python311;C:\Program Files\dotnet;C:\Program Files\gs\gs10.01.1\bin;C:\Program Files\gs\gs10.01.1\lib;C:\Program Files\Stripe;C:\Program Files\poppler-23.07.0\Library\bin;C:\Program Files\Tesseract-OCR;C:\Program Files\Amazon\AWSCLIV2;C:\Program Files\Go\bin;C:\Users\phant\scoop\shims;C:\Program Files\Java\jdk-11.0.17\bin;C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\bin;C:\Users\phant\scoop\shims;C:\Users\phant\AppData\Local\activestate\cache\bin;C:\Users\phant\AppData\Local\ActiveState\StateTool\release\bin;C:\Users\phant\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\phant\AppData\Local\Programs\Python\Python311;C:\Users\phant\AppData\Local\Microsoft\WindowsApps;C:\Users\phant\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0;C:\Users\phant\AppData\Roaming\npm;C:\Program Files\PostgreSQL\14\bin;C:\Users\phant\AppData\Roaming\TinyTeX\bin\win32;C:\Program Files\heroku\bin;C:\Users\phant\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.2\bin;C:\Users\phant\.dotnet\tools;C:\Program Files\gs\gs10.01.1\bin;C:\Program Files\Stripe;C:\Program Files\JetBrains\DataGrip 2023.3.2\bin;C:\Users\phant\go\bin;C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+06-May-2024 01:27:37.052 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-May-2024 01:27:37.094 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [748] milliseconds
+06-May-2024 01:27:37.152 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-May-2024 01:27:37.152 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-May-2024 01:27:37.182 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321]
+06-May-2024 01:27:37.590 SEVERE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [org/Pair.class] from Jar [file:/C:/Users/phant/Desktop/NUS%20Stuff/Year%203/HKUST%20sem%202/Comp4321/project2/comp4321/apache-tomcat-10.1.20/webapps/comp4321/WEB-INF/lib/htmlparser.jar] for annotations
+	org.apache.tomcat.util.bcel.classfile.ClassFormatException: It is not a Java .class file
+		at org.apache.tomcat.util.bcel.classfile.ClassParser.readID(ClassParser.java:209)
+		at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:74)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2226)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:2184)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:2157)
+		at org.apache.catalina.startup.ContextConfig.scanWebXmlFragment(ContextConfig.java:2065)
+		at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:2045)
+		at org.apache.catalina.startup.ContextConfig.processClasses(ContextConfig.java:1360)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1261)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:961)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4796)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:712)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1130)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1933)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1041)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:425)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1629)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:303)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:757)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+06-May-2024 01:27:37.719 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-May-2024 01:27:38.086 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [338] milliseconds.
+06-May-2024 01:27:38.124 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321] has finished in [942] ms
+06-May-2024 01:27:38.124 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\docs]
+06-May-2024 01:27:38.170 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\docs] has finished in [46] ms
+06-May-2024 01:27:38.170 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\examples]
+06-May-2024 01:27:38.573 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\examples] has finished in [403] ms
+06-May-2024 01:27:38.573 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\host-manager]
+06-May-2024 01:27:38.618 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\host-manager] has finished in [45] ms
+06-May-2024 01:27:38.626 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\manager]
+06-May-2024 01:27:38.711 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\manager] has finished in [77] ms
+06-May-2024 01:27:38.711 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\ROOT]
+06-May-2024 01:27:38.740 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\ROOT] has finished in [29] ms
+06-May-2024 01:27:38.752 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+06-May-2024 01:27:39.096 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1997] milliseconds
+06-May-2024 09:34:44.197 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.20
+06-May-2024 09:34:44.201 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 12:49:58 UTC
+06-May-2024 09:34:44.204 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.20.0
+06-May-2024 09:34:44.204 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+06-May-2024 09:34:44.204 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+06-May-2024 09:34:44.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-May-2024 09:34:44.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-11.0.17
+06-May-2024 09:34:44.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.17+10-LTS-269
+06-May-2024 09:34:44.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-May-2024 09:34:44.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 09:34:44.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 09:34:44.232 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\conf\logging.properties
+06-May-2024 09:34:44.232 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-May-2024 09:34:44.233 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-May-2024 09:34:44.233 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-May-2024 09:34:44.233 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-May-2024 09:34:44.233 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-May-2024 09:34:44.234 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-May-2024 09:34:44.239 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-May-2024 09:34:44.239 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-May-2024 09:34:44.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 09:34:44.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 09:34:44.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\temp
+06-May-2024 09:34:44.259 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\phant\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\phant\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\MATLAB\R2021a\bin;C:\Program Files\nodejs;C:\WINDOWS\System32\WBem;C:\Program Files\usbipd-win;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\apache-maven-3.9.0\bin;C:\Users\phant\AppData\Local\Programs\Python\Python311;C:\Program Files\dotnet;C:\Program Files\gs\gs10.01.1\bin;C:\Program Files\gs\gs10.01.1\lib;C:\Program Files\Stripe;C:\Program Files\poppler-23.07.0\Library\bin;C:\Program Files\Tesseract-OCR;C:\Program Files\Amazon\AWSCLIV2;C:\Program Files\Go\bin;C:\Users\phant\scoop\shims;C:\Program Files\Java\jdk-11.0.17\bin;C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\bin;C:\Users\phant\scoop\shims;C:\Users\phant\AppData\Local\activestate\cache\bin;C:\Users\phant\AppData\Local\ActiveState\StateTool\release\bin;C:\Users\phant\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\phant\AppData\Local\Programs\Python\Python311;C:\Users\phant\AppData\Local\Microsoft\WindowsApps;C:\Users\phant\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0;C:\Users\phant\AppData\Roaming\npm;C:\Program Files\PostgreSQL\14\bin;C:\Users\phant\AppData\Roaming\TinyTeX\bin\win32;C:\Program Files\heroku\bin;C:\Users\phant\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.2\bin;C:\Users\phant\.dotnet\tools;C:\Program Files\gs\gs10.01.1\bin;C:\Program Files\Stripe;C:\Program Files\JetBrains\DataGrip 2023.3.2\bin;C:\Users\phant\go\bin;C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+06-May-2024 09:34:44.675 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-May-2024 09:34:44.707 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [795] milliseconds
+06-May-2024 09:34:44.774 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-May-2024 09:34:44.774 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-May-2024 09:34:44.788 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321]
+06-May-2024 09:34:45.217 SEVERE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [org/Pair.class] from Jar [file:/C:/Users/phant/Desktop/NUS%20Stuff/Year%203/HKUST%20sem%202/Comp4321/project2/comp4321/apache-tomcat-10.1.20/webapps/comp4321/WEB-INF/lib/htmlparser.jar] for annotations
+	org.apache.tomcat.util.bcel.classfile.ClassFormatException: It is not a Java .class file
+		at org.apache.tomcat.util.bcel.classfile.ClassParser.readID(ClassParser.java:209)
+		at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:74)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2226)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:2184)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:2157)
+		at org.apache.catalina.startup.ContextConfig.scanWebXmlFragment(ContextConfig.java:2065)
+		at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:2045)
+		at org.apache.catalina.startup.ContextConfig.processClasses(ContextConfig.java:1360)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1261)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:961)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4796)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:712)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1130)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1933)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1041)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:425)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1629)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:303)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:757)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+06-May-2024 09:34:45.341 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-May-2024 09:34:45.686 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [308] milliseconds.
+06-May-2024 09:34:45.721 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321] has finished in [933] ms
+06-May-2024 09:34:45.725 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\docs]
+06-May-2024 09:34:45.776 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\docs] has finished in [50] ms
+06-May-2024 09:34:45.778 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\examples]
+06-May-2024 09:34:46.203 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\examples] has finished in [426] ms
+06-May-2024 09:34:46.203 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\host-manager]
+06-May-2024 09:34:46.259 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\host-manager] has finished in [56] ms
+06-May-2024 09:34:46.259 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\manager]
+06-May-2024 09:34:46.367 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\manager] has finished in [108] ms
+06-May-2024 09:34:46.367 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\ROOT]
+06-May-2024 09:34:46.403 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\ROOT] has finished in [33] ms
+06-May-2024 09:34:46.411 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+06-May-2024 09:34:46.983 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2271] milliseconds
+06-May-2024 09:41:53.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.20
+06-May-2024 09:41:53.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 12:49:58 UTC
+06-May-2024 09:41:53.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.20.0
+06-May-2024 09:41:53.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+06-May-2024 09:41:53.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+06-May-2024 09:41:53.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-May-2024 09:41:53.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-11.0.17
+06-May-2024 09:41:53.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.17+10-LTS-269
+06-May-2024 09:41:53.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-May-2024 09:41:53.409 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 09:41:53.409 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 09:41:53.418 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\conf\logging.properties
+06-May-2024 09:41:53.418 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-May-2024 09:41:53.418 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-May-2024 09:41:53.418 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-May-2024 09:41:53.418 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-May-2024 09:41:53.418 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-May-2024 09:41:53.418 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-May-2024 09:41:53.418 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-May-2024 09:41:53.418 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-May-2024 09:41:53.418 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 09:41:53.426 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 09:41:53.426 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\temp
+06-May-2024 09:41:53.435 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\phant\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\phant\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\MATLAB\R2021a\bin;C:\Program Files\nodejs;C:\WINDOWS\System32\WBem;C:\Program Files\usbipd-win;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\apache-maven-3.9.0\bin;C:\Users\phant\AppData\Local\Programs\Python\Python311;C:\Program Files\dotnet;C:\Program Files\gs\gs10.01.1\bin;C:\Program Files\gs\gs10.01.1\lib;C:\Program Files\Stripe;C:\Program Files\poppler-23.07.0\Library\bin;C:\Program Files\Tesseract-OCR;C:\Program Files\Amazon\AWSCLIV2;C:\Program Files\Go\bin;C:\Users\phant\scoop\shims;C:\Program Files\Java\jdk-11.0.17\bin;C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\bin;C:\Users\phant\scoop\shims;C:\Users\phant\AppData\Local\activestate\cache\bin;C:\Users\phant\AppData\Local\ActiveState\StateTool\release\bin;C:\Users\phant\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\phant\AppData\Local\Programs\Python\Python311;C:\Users\phant\AppData\Local\Microsoft\WindowsApps;C:\Users\phant\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0;C:\Users\phant\AppData\Roaming\npm;C:\Program Files\PostgreSQL\14\bin;C:\Users\phant\AppData\Roaming\TinyTeX\bin\win32;C:\Program Files\heroku\bin;C:\Users\phant\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.2\bin;C:\Users\phant\.dotnet\tools;C:\Program Files\gs\gs10.01.1\bin;C:\Program Files\Stripe;C:\Program Files\JetBrains\DataGrip 2023.3.2\bin;C:\Users\phant\go\bin;C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+06-May-2024 09:41:53.716 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-May-2024 09:41:53.741 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [551] milliseconds
+06-May-2024 09:41:53.801 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-May-2024 09:41:53.801 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-May-2024 09:41:53.810 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321]
+06-May-2024 09:41:54.287 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-May-2024 09:41:54.583 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [261] milliseconds.
+06-May-2024 09:41:54.618 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321] has finished in [799] ms
+06-May-2024 09:41:54.618 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\docs]
+06-May-2024 09:41:54.652 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\docs] has finished in [34] ms
+06-May-2024 09:41:54.652 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\examples]
+06-May-2024 09:41:54.979 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\examples] has finished in [327] ms
+06-May-2024 09:41:54.987 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\host-manager]
+06-May-2024 09:41:55.031 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\host-manager] has finished in [44] ms
+06-May-2024 09:41:55.031 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\manager]
+06-May-2024 09:41:55.119 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\manager] has finished in [88] ms
+06-May-2024 09:41:55.122 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\ROOT]
+06-May-2024 09:41:55.158 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\ROOT] has finished in [38] ms
+06-May-2024 09:41:55.166 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+06-May-2024 09:41:55.444 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1698] milliseconds
+06-May-2024 09:50:16.558 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.20
+06-May-2024 09:50:16.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 12:49:58 UTC
+06-May-2024 09:50:16.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.20.0
+06-May-2024 09:50:16.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+06-May-2024 09:50:16.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+06-May-2024 09:50:16.572 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-May-2024 09:50:16.573 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-11.0.17
+06-May-2024 09:50:16.573 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.17+10-LTS-269
+06-May-2024 09:50:16.573 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-May-2024 09:50:16.574 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 09:50:16.574 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 09:50:16.591 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\conf\logging.properties
+06-May-2024 09:50:16.591 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-May-2024 09:50:16.591 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-May-2024 09:50:16.591 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-May-2024 09:50:16.591 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-May-2024 09:50:16.591 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-May-2024 09:50:16.591 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-May-2024 09:50:16.599 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-May-2024 09:50:16.599 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-May-2024 09:50:16.599 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 09:50:16.599 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 09:50:16.599 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\temp
+06-May-2024 09:50:16.632 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\phant\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\phant\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\MATLAB\R2021a\bin;C:\Program Files\nodejs;C:\WINDOWS\System32\WBem;C:\Program Files\usbipd-win;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\apache-maven-3.9.0\bin;C:\Users\phant\AppData\Local\Programs\Python\Python311;C:\Program Files\dotnet;C:\Program Files\gs\gs10.01.1\bin;C:\Program Files\gs\gs10.01.1\lib;C:\Program Files\Stripe;C:\Program Files\poppler-23.07.0\Library\bin;C:\Program Files\Tesseract-OCR;C:\Program Files\Amazon\AWSCLIV2;C:\Program Files\Go\bin;C:\Users\phant\scoop\shims;C:\Program Files\Java\jdk-11.0.17\bin;C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\bin;C:\Users\phant\scoop\shims;C:\Users\phant\AppData\Local\activestate\cache\bin;C:\Users\phant\AppData\Local\ActiveState\StateTool\release\bin;C:\Users\phant\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\phant\AppData\Local\Programs\Python\Python311;C:\Users\phant\AppData\Local\Microsoft\WindowsApps;C:\Users\phant\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0;C:\Users\phant\AppData\Roaming\npm;C:\Program Files\PostgreSQL\14\bin;C:\Users\phant\AppData\Roaming\TinyTeX\bin\win32;C:\Program Files\heroku\bin;C:\Users\phant\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.2\bin;C:\Users\phant\.dotnet\tools;C:\Program Files\gs\gs10.01.1\bin;C:\Program Files\Stripe;C:\Program Files\JetBrains\DataGrip 2023.3.2\bin;C:\Users\phant\go\bin;C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+06-May-2024 09:50:16.925 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-May-2024 09:50:16.964 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [646] milliseconds
+06-May-2024 09:50:17.023 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-May-2024 09:50:17.023 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-May-2024 09:50:17.042 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321]
+06-May-2024 09:50:17.458 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-May-2024 09:50:17.706 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [231] milliseconds.
+06-May-2024 09:50:17.741 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321] has finished in [699] ms
+06-May-2024 09:50:17.741 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\docs]
+06-May-2024 09:50:17.778 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\docs] has finished in [37] ms
+06-May-2024 09:50:17.778 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\examples]
+06-May-2024 09:50:18.100 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\examples] has finished in [322] ms
+06-May-2024 09:50:18.100 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\host-manager]
+06-May-2024 09:50:18.145 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\host-manager] has finished in [45] ms
+06-May-2024 09:50:18.145 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\manager]
+06-May-2024 09:50:18.217 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\manager] has finished in [72] ms
+06-May-2024 09:50:18.218 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\ROOT]
+06-May-2024 09:50:18.244 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\ROOT] has finished in [26] ms
+06-May-2024 09:50:18.255 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+06-May-2024 09:50:18.506 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1542] milliseconds
+06-May-2024 09:52:10.188 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.20
+06-May-2024 09:52:10.189 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 12:49:58 UTC
+06-May-2024 09:52:10.189 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.20.0
+06-May-2024 09:52:10.189 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+06-May-2024 09:52:10.189 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+06-May-2024 09:52:10.189 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-May-2024 09:52:10.189 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-11.0.17
+06-May-2024 09:52:10.189 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.17+10-LTS-269
+06-May-2024 09:52:10.189 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-May-2024 09:52:10.189 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 09:52:10.189 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 09:52:10.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\conf\logging.properties
+06-May-2024 09:52:10.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-May-2024 09:52:10.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-May-2024 09:52:10.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-May-2024 09:52:10.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-May-2024 09:52:10.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-May-2024 09:52:10.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-May-2024 09:52:10.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-May-2024 09:52:10.211 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-May-2024 09:52:10.212 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 09:52:10.212 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 09:52:10.217 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\temp
+06-May-2024 09:52:10.232 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\phant\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\phant\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\MATLAB\R2021a\bin;C:\Program Files\nodejs;C:\WINDOWS\System32\WBem;C:\Program Files\usbipd-win;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\apache-maven-3.9.0\bin;C:\Users\phant\AppData\Local\Programs\Python\Python311;C:\Program Files\dotnet;C:\Program Files\gs\gs10.01.1\bin;C:\Program Files\gs\gs10.01.1\lib;C:\Program Files\Stripe;C:\Program Files\poppler-23.07.0\Library\bin;C:\Program Files\Tesseract-OCR;C:\Program Files\Amazon\AWSCLIV2;C:\Program Files\Go\bin;C:\Users\phant\scoop\shims;C:\Program Files\Java\jdk-11.0.17\bin;C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\bin;C:\Users\phant\scoop\shims;C:\Users\phant\AppData\Local\activestate\cache\bin;C:\Users\phant\AppData\Local\ActiveState\StateTool\release\bin;C:\Users\phant\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\phant\AppData\Local\Programs\Python\Python311;C:\Users\phant\AppData\Local\Microsoft\WindowsApps;C:\Users\phant\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0;C:\Users\phant\AppData\Roaming\npm;C:\Program Files\PostgreSQL\14\bin;C:\Users\phant\AppData\Roaming\TinyTeX\bin\win32;C:\Program Files\heroku\bin;C:\Users\phant\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.2\bin;C:\Users\phant\.dotnet\tools;C:\Program Files\gs\gs10.01.1\bin;C:\Program Files\Stripe;C:\Program Files\JetBrains\DataGrip 2023.3.2\bin;C:\Users\phant\go\bin;C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+06-May-2024 09:52:10.497 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-May-2024 09:52:10.531 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [563] milliseconds
+06-May-2024 09:52:10.589 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-May-2024 09:52:10.589 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-May-2024 09:52:10.602 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321]
+06-May-2024 09:52:10.956 SEVERE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [org/Pair.class] from Jar [file:/C:/Users/phant/Desktop/NUS%20Stuff/Year%203/HKUST%20sem%202/Comp4321/project2/comp4321/apache-tomcat-10.1.20/webapps/comp4321/WEB-INF/lib/htmlparser.jar] for annotations
+	org.apache.tomcat.util.bcel.classfile.ClassFormatException: It is not a Java .class file
+		at org.apache.tomcat.util.bcel.classfile.ClassParser.readID(ClassParser.java:209)
+		at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:74)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2226)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:2184)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:2157)
+		at org.apache.catalina.startup.ContextConfig.scanWebXmlFragment(ContextConfig.java:2065)
+		at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:2045)
+		at org.apache.catalina.startup.ContextConfig.processClasses(ContextConfig.java:1360)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1261)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:961)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4796)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:712)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1130)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1933)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1041)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:425)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1629)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:303)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:757)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+06-May-2024 09:52:11.099 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-May-2024 09:52:11.429 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [273] milliseconds.
+06-May-2024 09:52:11.463 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321] has finished in [861] ms
+06-May-2024 09:52:11.463 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\docs]
+06-May-2024 09:52:11.511 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\docs] has finished in [48] ms
+06-May-2024 09:52:11.515 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\examples]
+06-May-2024 09:52:11.878 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\examples] has finished in [363] ms
+06-May-2024 09:52:11.878 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\host-manager]
+06-May-2024 09:52:11.910 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\host-manager] has finished in [32] ms
+06-May-2024 09:52:11.910 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\manager]
+06-May-2024 09:52:11.987 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\manager] has finished in [76] ms
+06-May-2024 09:52:11.987 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\ROOT]
+06-May-2024 09:52:12.011 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\ROOT] has finished in [24] ms
+06-May-2024 09:52:12.019 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+06-May-2024 09:52:12.321 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1788] milliseconds
+06-May-2024 09:55:12.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.20
+06-May-2024 09:55:12.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 12:49:58 UTC
+06-May-2024 09:55:12.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.20.0
+06-May-2024 09:55:12.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+06-May-2024 09:55:12.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+06-May-2024 09:55:12.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-May-2024 09:55:12.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-11.0.17
+06-May-2024 09:55:12.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.17+10-LTS-269
+06-May-2024 09:55:12.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-May-2024 09:55:12.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 09:55:12.981 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 09:55:12.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\conf\logging.properties
+06-May-2024 09:55:12.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-May-2024 09:55:12.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-May-2024 09:55:12.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-May-2024 09:55:12.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-May-2024 09:55:12.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-May-2024 09:55:12.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-May-2024 09:55:12.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-May-2024 09:55:12.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-May-2024 09:55:12.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 09:55:12.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 09:55:13.001 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\temp
+06-May-2024 09:55:13.010 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\phant\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\phant\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\MATLAB\R2021a\bin;C:\Program Files\nodejs;C:\WINDOWS\System32\WBem;C:\Program Files\usbipd-win;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\apache-maven-3.9.0\bin;C:\Users\phant\AppData\Local\Programs\Python\Python311;C:\Program Files\dotnet;C:\Program Files\gs\gs10.01.1\bin;C:\Program Files\gs\gs10.01.1\lib;C:\Program Files\Stripe;C:\Program Files\poppler-23.07.0\Library\bin;C:\Program Files\Tesseract-OCR;C:\Program Files\Amazon\AWSCLIV2;C:\Program Files\Go\bin;C:\Users\phant\scoop\shims;C:\Program Files\Java\jdk-11.0.17\bin;C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\bin;C:\Users\phant\scoop\shims;C:\Users\phant\AppData\Local\activestate\cache\bin;C:\Users\phant\AppData\Local\ActiveState\StateTool\release\bin;C:\Users\phant\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\phant\AppData\Local\Programs\Python\Python311;C:\Users\phant\AppData\Local\Microsoft\WindowsApps;C:\Users\phant\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0;C:\Users\phant\AppData\Roaming\npm;C:\Program Files\PostgreSQL\14\bin;C:\Users\phant\AppData\Roaming\TinyTeX\bin\win32;C:\Program Files\heroku\bin;C:\Users\phant\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.2\bin;C:\Users\phant\.dotnet\tools;C:\Program Files\gs\gs10.01.1\bin;C:\Program Files\Stripe;C:\Program Files\JetBrains\DataGrip 2023.3.2\bin;C:\Users\phant\go\bin;C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+06-May-2024 09:55:13.269 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-May-2024 09:55:13.293 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1016)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:554)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1017)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:708)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:731)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:459)
+		at java.base/sun.nio.ch.Net.bind(Net.java:448)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:239)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:194)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1307)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1320)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:624)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:77)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1014)
+		... 13 more
+06-May-2024 09:55:13.297 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [527] milliseconds
+06-May-2024 09:55:13.361 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-May-2024 09:55:13.362 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-May-2024 09:55:13.386 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321]
+06-May-2024 09:55:13.898 SEVERE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [org/Pair.class] from Jar [file:/C:/Users/phant/Desktop/NUS%20Stuff/Year%203/HKUST%20sem%202/Comp4321/project2/comp4321/apache-tomcat-10.1.20/webapps/comp4321/WEB-INF/lib/htmlparser.jar] for annotations
+	org.apache.tomcat.util.bcel.classfile.ClassFormatException: It is not a Java .class file
+		at org.apache.tomcat.util.bcel.classfile.ClassParser.readID(ClassParser.java:209)
+		at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:74)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2226)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:2184)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:2157)
+		at org.apache.catalina.startup.ContextConfig.scanWebXmlFragment(ContextConfig.java:2065)
+		at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:2045)
+		at org.apache.catalina.startup.ContextConfig.processClasses(ContextConfig.java:1360)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1261)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:961)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4796)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:712)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1130)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1933)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1041)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:425)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1629)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:303)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:757)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+06-May-2024 09:55:14.016 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-May-2024 09:55:14.306 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [267] milliseconds.
+06-May-2024 09:55:14.350 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321] has finished in [964] ms
+06-May-2024 09:55:14.352 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\docs]
+06-May-2024 09:55:14.402 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\docs] has finished in [52] ms
+06-May-2024 09:55:14.403 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\examples]
+06-May-2024 09:55:14.723 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\examples] has finished in [320] ms
+06-May-2024 09:55:14.723 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\host-manager]
+06-May-2024 09:55:14.771 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\host-manager] has finished in [48] ms
+06-May-2024 09:55:14.771 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\manager]
+06-May-2024 09:55:14.848 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\manager] has finished in [77] ms
+06-May-2024 09:55:14.848 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\ROOT]
+06-May-2024 09:55:14.877 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\ROOT] has finished in [29] ms
+06-May-2024 09:55:14.888 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1590] milliseconds
+06-May-2024 09:55:14.892 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: NET_Bind
+		at java.base/java.net.PlainSocketImpl.bind0(Native Method)
+		at java.base/java.net.PlainSocketImpl.socketBind(PlainSocketImpl.java:132)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:452)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:381)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:243)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:577)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:847)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+06-May-2024 09:55:14.892 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+06-May-2024 09:55:14.892 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-May-2024 09:55:14.931 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+06-May-2024 09:55:14.933 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+06-May-2024 10:17:07.357 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.20
+06-May-2024 10:17:07.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 12:49:58 UTC
+06-May-2024 10:17:07.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.20.0
+06-May-2024 10:17:07.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+06-May-2024 10:17:07.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+06-May-2024 10:17:07.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-May-2024 10:17:07.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-11.0.17
+06-May-2024 10:17:07.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.17+10-LTS-269
+06-May-2024 10:17:07.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-May-2024 10:17:07.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 10:17:07.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 10:17:07.383 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\conf\logging.properties
+06-May-2024 10:17:07.383 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-May-2024 10:17:07.383 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-May-2024 10:17:07.383 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-May-2024 10:17:07.383 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-May-2024 10:17:07.383 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-May-2024 10:17:07.383 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-May-2024 10:17:07.383 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-May-2024 10:17:07.383 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-May-2024 10:17:07.389 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 10:17:07.389 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 10:17:07.389 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\temp
+06-May-2024 10:17:07.402 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\phant\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\phant\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\MATLAB\R2021a\bin;C:\Program Files\nodejs;C:\WINDOWS\System32\WBem;C:\Program Files\usbipd-win;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\apache-maven-3.9.0\bin;C:\Users\phant\AppData\Local\Programs\Python\Python311;C:\Program Files\dotnet;C:\Program Files\gs\gs10.01.1\bin;C:\Program Files\gs\gs10.01.1\lib;C:\Program Files\Stripe;C:\Program Files\poppler-23.07.0\Library\bin;C:\Program Files\Tesseract-OCR;C:\Program Files\Amazon\AWSCLIV2;C:\Program Files\Go\bin;C:\Users\phant\scoop\shims;C:\Program Files\Java\jdk-11.0.17\bin;C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\bin;C:\Users\phant\scoop\shims;C:\Users\phant\AppData\Local\activestate\cache\bin;C:\Users\phant\AppData\Local\ActiveState\StateTool\release\bin;C:\Users\phant\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\phant\AppData\Local\Programs\Python\Python311;C:\Users\phant\AppData\Local\Microsoft\WindowsApps;C:\Users\phant\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0;C:\Users\phant\AppData\Roaming\npm;C:\Program Files\PostgreSQL\14\bin;C:\Users\phant\AppData\Roaming\TinyTeX\bin\win32;C:\Program Files\heroku\bin;C:\Users\phant\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.2\bin;C:\Users\phant\.dotnet\tools;C:\Program Files\gs\gs10.01.1\bin;C:\Program Files\Stripe;C:\Program Files\JetBrains\DataGrip 2023.3.2\bin;C:\Users\phant\go\bin;C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+06-May-2024 10:17:07.794 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-May-2024 10:17:07.818 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1016)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:554)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1017)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:708)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:731)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:459)
+		at java.base/sun.nio.ch.Net.bind(Net.java:448)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:239)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:194)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1307)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1320)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:624)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:77)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1014)
+		... 13 more
+06-May-2024 10:17:07.818 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [703] milliseconds
+06-May-2024 10:17:07.925 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-May-2024 10:17:07.926 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-May-2024 10:17:07.949 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321]
+06-May-2024 10:17:08.358 SEVERE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [org/Pair.class] from Jar [file:/C:/Users/phant/Desktop/NUS%20Stuff/Year%203/HKUST%20sem%202/Comp4321/project2/comp4321/apache-tomcat-10.1.20/webapps/comp4321/WEB-INF/lib/htmlparser.jar] for annotations
+	org.apache.tomcat.util.bcel.classfile.ClassFormatException: It is not a Java .class file
+		at org.apache.tomcat.util.bcel.classfile.ClassParser.readID(ClassParser.java:209)
+		at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:74)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2226)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:2184)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:2157)
+		at org.apache.catalina.startup.ContextConfig.scanWebXmlFragment(ContextConfig.java:2065)
+		at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:2045)
+		at org.apache.catalina.startup.ContextConfig.processClasses(ContextConfig.java:1360)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1261)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:961)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4796)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:712)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1130)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1933)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1041)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:425)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1629)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:303)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:757)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+06-May-2024 10:17:08.490 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-May-2024 10:17:08.825 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [305] milliseconds.
+06-May-2024 10:17:08.867 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321] has finished in [918] ms
+06-May-2024 10:17:08.867 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\docs]
+06-May-2024 10:17:08.934 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\docs] has finished in [67] ms
+06-May-2024 10:17:08.934 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\examples]
+06-May-2024 10:17:09.367 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\examples] has finished in [433] ms
+06-May-2024 10:17:09.368 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\host-manager]
+06-May-2024 10:17:09.425 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\host-manager] has finished in [55] ms
+06-May-2024 10:17:09.426 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\manager]
+06-May-2024 10:17:09.522 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\manager] has finished in [96] ms
+06-May-2024 10:17:09.522 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\ROOT]
+06-May-2024 10:17:09.561 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\ROOT] has finished in [39] ms
+06-May-2024 10:17:09.576 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1745] milliseconds
+06-May-2024 10:17:09.584 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: NET_Bind
+		at java.base/java.net.PlainSocketImpl.bind0(Native Method)
+		at java.base/java.net.PlainSocketImpl.socketBind(PlainSocketImpl.java:132)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:452)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:381)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:243)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:577)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:847)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+06-May-2024 10:17:09.585 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+06-May-2024 10:17:09.585 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-May-2024 10:17:09.633 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+06-May-2024 10:17:09.640 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+06-May-2024 10:19:19.918 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.20
+06-May-2024 10:19:19.920 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 12:49:58 UTC
+06-May-2024 10:19:19.920 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.20.0
+06-May-2024 10:19:19.920 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+06-May-2024 10:19:19.920 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+06-May-2024 10:19:19.920 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-May-2024 10:19:19.920 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-11.0.17
+06-May-2024 10:19:19.920 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.17+10-LTS-269
+06-May-2024 10:19:19.920 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-May-2024 10:19:19.920 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 10:19:19.920 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 10:19:19.941 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\conf\logging.properties
+06-May-2024 10:19:19.941 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-May-2024 10:19:19.941 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-May-2024 10:19:19.941 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-May-2024 10:19:19.941 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-May-2024 10:19:19.941 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-May-2024 10:19:19.941 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-May-2024 10:19:19.941 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-May-2024 10:19:19.941 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-May-2024 10:19:19.941 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 10:19:19.941 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 10:19:19.941 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\temp
+06-May-2024 10:19:19.968 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\phant\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\phant\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\MATLAB\R2021a\bin;C:\Program Files\nodejs;C:\WINDOWS\System32\WBem;C:\Program Files\usbipd-win;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\apache-maven-3.9.0\bin;C:\Users\phant\AppData\Local\Programs\Python\Python311;C:\Program Files\dotnet;C:\Program Files\gs\gs10.01.1\bin;C:\Program Files\gs\gs10.01.1\lib;C:\Program Files\Stripe;C:\Program Files\poppler-23.07.0\Library\bin;C:\Program Files\Tesseract-OCR;C:\Program Files\Amazon\AWSCLIV2;C:\Program Files\Go\bin;C:\Users\phant\scoop\shims;C:\Program Files\Java\jdk-11.0.17\bin;C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\bin;C:\Users\phant\scoop\shims;C:\Users\phant\AppData\Local\activestate\cache\bin;C:\Users\phant\AppData\Local\ActiveState\StateTool\release\bin;C:\Users\phant\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\phant\AppData\Local\Programs\Python\Python311;C:\Users\phant\AppData\Local\Microsoft\WindowsApps;C:\Users\phant\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0;C:\Users\phant\AppData\Roaming\npm;C:\Program Files\PostgreSQL\14\bin;C:\Users\phant\AppData\Roaming\TinyTeX\bin\win32;C:\Program Files\heroku\bin;C:\Users\phant\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.2\bin;C:\Users\phant\.dotnet\tools;C:\Program Files\gs\gs10.01.1\bin;C:\Program Files\Stripe;C:\Program Files\JetBrains\DataGrip 2023.3.2\bin;C:\Users\phant\go\bin;C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+06-May-2024 10:19:20.333 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-May-2024 10:19:20.353 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1016)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:554)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1017)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:708)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:731)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:459)
+		at java.base/sun.nio.ch.Net.bind(Net.java:448)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:239)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:194)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1307)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1320)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:624)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:77)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1014)
+		... 13 more
+06-May-2024 10:19:20.359 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [685] milliseconds
+06-May-2024 10:19:20.434 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-May-2024 10:19:20.437 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-May-2024 10:19:20.467 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321]
+06-May-2024 10:19:20.956 SEVERE [main] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [org/Pair.class] from Jar [file:/C:/Users/phant/Desktop/NUS%20Stuff/Year%203/HKUST%20sem%202/Comp4321/project2/comp4321/apache-tomcat-10.1.20/webapps/comp4321/WEB-INF/lib/htmlparser.jar] for annotations
+	org.apache.tomcat.util.bcel.classfile.ClassFormatException: It is not a Java .class file
+		at org.apache.tomcat.util.bcel.classfile.ClassParser.readID(ClassParser.java:209)
+		at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:74)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2226)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:2184)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:2157)
+		at org.apache.catalina.startup.ContextConfig.scanWebXmlFragment(ContextConfig.java:2065)
+		at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:2045)
+		at org.apache.catalina.startup.ContextConfig.processClasses(ContextConfig.java:1360)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1261)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:961)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4796)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:712)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1130)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1933)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1041)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:425)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1629)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:303)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:757)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+06-May-2024 10:19:21.095 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-May-2024 10:19:21.407 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [287] milliseconds.
+06-May-2024 10:19:21.451 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321] has finished in [984] ms
+06-May-2024 10:19:21.451 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\docs]
+06-May-2024 10:19:21.502 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\docs] has finished in [43] ms
+06-May-2024 10:19:21.503 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\examples]
+06-May-2024 10:19:21.875 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\examples] has finished in [373] ms
+06-May-2024 10:19:21.875 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\host-manager]
+06-May-2024 10:19:21.934 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\host-manager] has finished in [56] ms
+06-May-2024 10:19:21.934 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\manager]
+06-May-2024 10:19:22.017 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\manager] has finished in [83] ms
+06-May-2024 10:19:22.017 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\ROOT]
+06-May-2024 10:19:22.047 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\ROOT] has finished in [30] ms
+06-May-2024 10:19:22.061 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1696] milliseconds
+06-May-2024 10:19:22.068 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: NET_Bind
+		at java.base/java.net.PlainSocketImpl.bind0(Native Method)
+		at java.base/java.net.PlainSocketImpl.socketBind(PlainSocketImpl.java:132)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:452)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:381)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:243)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:577)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:847)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+06-May-2024 10:19:22.068 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+06-May-2024 10:19:22.068 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-May-2024 10:19:22.108 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+06-May-2024 10:19:22.109 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+06-May-2024 10:36:17.677 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.20
+06-May-2024 10:36:17.685 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 12:49:58 UTC
+06-May-2024 10:36:17.685 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.20.0
+06-May-2024 10:36:17.685 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+06-May-2024 10:36:17.685 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+06-May-2024 10:36:17.685 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-May-2024 10:36:17.685 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-11.0.17
+06-May-2024 10:36:17.685 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.17+10-LTS-269
+06-May-2024 10:36:17.685 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-May-2024 10:36:17.685 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 10:36:17.685 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 10:36:17.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\conf\logging.properties
+06-May-2024 10:36:17.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-May-2024 10:36:17.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-May-2024 10:36:17.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-May-2024 10:36:17.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-May-2024 10:36:17.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-May-2024 10:36:17.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-May-2024 10:36:17.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-May-2024 10:36:17.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-May-2024 10:36:17.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 10:36:17.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20
+06-May-2024 10:36:17.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\temp
+06-May-2024 10:36:17.740 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\phant\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\phant\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\MATLAB\R2021a\bin;C:\Program Files\nodejs;C:\WINDOWS\System32\WBem;C:\Program Files\usbipd-win;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\apache-maven-3.9.0\bin;C:\Users\phant\AppData\Local\Programs\Python\Python311;C:\Program Files\dotnet;C:\Program Files\gs\gs10.01.1\bin;C:\Program Files\gs\gs10.01.1\lib;C:\Program Files\Stripe;C:\Program Files\poppler-23.07.0\Library\bin;C:\Program Files\Tesseract-OCR;C:\Program Files\Amazon\AWSCLIV2;C:\Program Files\Go\bin;C:\Users\phant\scoop\shims;C:\Program Files\Java\jdk-11.0.17\bin;C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\bin;C:\Users\phant\scoop\shims;C:\Users\phant\AppData\Local\activestate\cache\bin;C:\Users\phant\AppData\Local\ActiveState\StateTool\release\bin;C:\Users\phant\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\phant\AppData\Local\Programs\Python\Python311;C:\Users\phant\AppData\Local\Microsoft\WindowsApps;C:\Users\phant\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0;C:\Users\phant\AppData\Roaming\npm;C:\Program Files\PostgreSQL\14\bin;C:\Users\phant\AppData\Roaming\TinyTeX\bin\win32;C:\Program Files\heroku\bin;C:\Users\phant\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.2\bin;C:\Users\phant\.dotnet\tools;C:\Program Files\gs\gs10.01.1\bin;C:\Program Files\Stripe;C:\Program Files\JetBrains\DataGrip 2023.3.2\bin;C:\Users\phant\go\bin;C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+06-May-2024 10:36:18.077 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-May-2024 10:36:18.106 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1016)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:554)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1017)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:708)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:731)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:459)
+		at java.base/sun.nio.ch.Net.bind(Net.java:448)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:239)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:194)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1307)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1320)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:624)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:77)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1014)
+		... 13 more
+06-May-2024 10:36:18.106 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [656] milliseconds
+06-May-2024 10:36:18.189 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-May-2024 10:36:18.189 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-May-2024 10:36:18.215 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321]
+06-May-2024 10:36:18.803 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-May-2024 10:36:19.105 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [270] milliseconds.
+06-May-2024 10:36:19.139 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\comp4321] has finished in [924] ms
+06-May-2024 10:36:19.139 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\docs]
+06-May-2024 10:36:19.190 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\docs] has finished in [51] ms
+06-May-2024 10:36:19.190 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\examples]
+06-May-2024 10:36:19.630 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\examples] has finished in [440] ms
+06-May-2024 10:36:19.639 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\host-manager]
+06-May-2024 10:36:19.672 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\host-manager] has finished in [33] ms
+06-May-2024 10:36:19.672 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\manager]
+06-May-2024 10:36:19.756 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\manager] has finished in [84] ms
+06-May-2024 10:36:19.756 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\ROOT]
+06-May-2024 10:36:19.794 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\phant\Desktop\NUS Stuff\Year 3\HKUST sem 2\Comp4321\project2\comp4321\apache-tomcat-10.1.20\webapps\ROOT] has finished in [38] ms
+06-May-2024 10:36:19.802 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1693] milliseconds
+06-May-2024 10:36:19.808 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: NET_Bind
+		at java.base/java.net.PlainSocketImpl.bind0(Native Method)
+		at java.base/java.net.PlainSocketImpl.socketBind(PlainSocketImpl.java:132)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:452)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:381)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:243)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:577)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:847)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+06-May-2024 10:36:19.808 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+06-May-2024 10:36:19.808 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-May-2024 10:36:19.849 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+06-May-2024 10:36:19.852 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]

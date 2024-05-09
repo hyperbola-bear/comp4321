@@ -1,0 +1,15 @@
+0:0:0:0:0:0:0:1 - - [10/May/2024:00:52:14 +0900] "GET /comp4321/apis/getData.jsp?input=test HTTP/1.1" 500 2891
+0:0:0:0:0:0:0:1 - - [10/May/2024:00:55:14 +0900] "GET /comp4321/apis/getData.jsp?input=test HTTP/1.1" 500 2893
+0:0:0:0:0:0:0:1 - - [10/May/2024:00:56:17 +0900] "GET /comp4321/apis/getData.jsp?input=test HTTP/1.1" 500 2901
+0:0:0:0:0:0:0:1 - - [10/May/2024:00:59:18 +0900] "GET /comp4321/apis/getData.jsp?input=test HTTP/1.1" 500 2891
+0:0:0:0:0:0:0:1 - - [10/May/2024:01:54:51 +0900] "GET /comp4321/ HTTP/1.1" 200 1184
+0:0:0:0:0:0:0:1 - - [10/May/2024:01:54:57 +0900] "GET /comp4321/apis/getData.jsp?input=word HTTP/1.1" 500 2930
+0:0:0:0:0:0:0:1 - - [10/May/2024:02:00:40 +0900] "GET /comp4321/apis/getData.jsp?input=word HTTP/1.1" 500 5023
+0:0:0:0:0:0:0:1 - - [10/May/2024:02:01:38 +0900] "GET /comp4321/apis/getData.jsp?input=word HTTP/1.1" 500 4207
+0:0:0:0:0:0:0:1 - - [10/May/2024:02:03:14 +0900] "GET /comp4321/apis/getData.jsp?input=word HTTP/1.1" 500 4256
+0:0:0:0:0:0:0:1 - - [10/May/2024:02:36:33 +0900] "GET /comp4321/apis/getData.jsp?input=word HTTP/1.1" 500 4307
+0:0:0:0:0:0:0:1 - - [10/May/2024:02:37:05 +0900] "GET /comp4321/ HTTP/1.1" 200 1184
+0:0:0:0:0:0:0:1 - - [10/May/2024:02:37:09 +0900] "GET /comp4321/apis/getData.jsp?input=test HTTP/1.1" 500 3777
+0:0:0:0:0:0:0:1 - - [10/May/2024:02:38:34 +0900] "GET /comp4321/apis/getData.jsp?input=test HTTP/1.1" 500 3777
+0:0:0:0:0:0:0:1 - - [10/May/2024:02:40:54 +0900] "GET /comp4321/apis/getData.jsp?input=test HTTP/1.1" 500 2107
+0:0:0:0:0:0:0:1 - - [10/May/2024:02:45:43 +0900] "GET /comp4321/apis/getData.jsp?input=test HTTP/1.1" 500 4307
