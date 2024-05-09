@@ -8,10 +8,21 @@
 <%@ page import="java.io.*" %>
 <%@ page import="java.util.*" %>
 <%@ page import="IRUtilities.*" %>
-<%@ page import="TEST.*"%>
 <%@ page import="PROJECT.*"%>
+<%@ page import="java.io.Serializable"%>
+<%@ page import="java.util.Vector"%>
+
+<%! 
+    boolean isPhraseSearch(String input) {
+        return input.contains("\"");
+    }
+%>
 
 <%
+    if (isPhraseSearch(request.getParameter("input"))) {
+        out.print("Phrase Search initiated");
+    }
+
     String input = request.getParameter("input").trim();
     
     // case to handle null or empty input
@@ -90,13 +101,64 @@
     ngrams.addAll(two_gram);
     ngrams.addAll(three_gram);
 
-    TEST test = new TEST();
-    SearchEngine se = new SearchEngine();
+
+    //handle database here
+    String dbPath = getServletContext().getRealPath("/WEB-INF/database/Database");
+
+    RecordManager recman = RecordManagerFactory.createRecordManager(dbPath);
 
 
+    long invertedindexid = recman.getNamedObject("invertedindex");
+    HTree invertedindex = HTree.load(recman, invertedindexid);
 
+    long forwardindexid = recman.getNamedObject("forwardindex");
+    HTree forwardindex = HTree.load(recman, forwardindexid);
 
+    long titleInvertedindexid = recman.getNamedObject("titleInvertedindex");
+    HTree titleInvertedindex = HTree.load(recman, titleInvertedindexid);
 
+    long titleForwardindexid = recman.getNamedObject("titleForwardindex");
+    HTree titleForwardindex = HTree.load(recman, titleForwardindexid);
+
+    long urlToIdid = recman.getNamedObject("urlToId");
+    HTree urlToId = HTree.load(recman, urlToIdid);
+
+    long idToUrlid = recman.getNamedObject("idToUrl");
+    HTree idToUrl = HTree.load(recman, idToUrlid);
+
+    long wordToIdid = recman.getNamedObject("wordToId");
+    HTree wordToId = HTree.load(recman, wordToIdid);
+
+    long idToWordid = recman.getNamedObject("idToWord");
+    HTree idToWord = HTree.load(recman, idToWordid);
+
+    long bigramid = recman.getNamedObject("bigram");
+    HTree bigram = HTree.load(recman, bigramid);
+
+    long trigramid = recman.getNamedObject("trigram");
+    HTree trigram = HTree.load(recman, trigramid);
+
+    Posting posting = new Posting(1,1);
+    out.println(posting);
+    out.println(invertedindex);
+    out.println(invertedindex.keys());
+
+    SearchEngine se = new SearchEngine(
+    new Porter(), 
+    stopWords,
+    urlToId,
+    wordToId,
+    idToWord,
+    titleForwardindex,
+    forwardindex,
+    titleInvertedindex,
+    invertedindex,
+    bigram,
+    trigram,
+    recman,
+    idToWordid);
+
+    out.println(se.query("hi"));
 %>
 
 

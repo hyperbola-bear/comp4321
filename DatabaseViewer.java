@@ -145,33 +145,6 @@ public class DatabaseViewer {
 		}
     }
 
-    public void viewTrigrams() throws IOException{
-        System.out.println("Viewing trigrams");
-        FastIterator iter = trigram.keys(); 
-        String key; 
-        while ((key = (String) iter.next())!= null) {
-            HashSet<Integer> docIds = (HashSet<Integer>) trigram.get(key);
-            System.out.println("trigram is: " + key);
-            Iterator itr = docIds.iterator();
-            while (itr.hasNext()) {
-                System.out.println(itr.next());
-            }
-        }
-    }
-
-    public void viewBigrams() throws IOException{
-        System.out.println("Viewing bigrams");
-        FastIterator iter = bigram.keys(); 
-        String key; 
-        while ((key = (String) iter.next())!= null) {
-            HashSet<Integer> docIds = (HashSet<Integer>) bigram.get(key);
-            System.out.println("bigram is: " + key);
-            Iterator itr = docIds.iterator();
-            while (itr.hasNext()) {
-                System.out.println(itr.next());
-            }
-        }
-    }
 
     public static void view(HTree tree) throws IOException {
         System.out.println("Viewing entries"); 
@@ -186,9 +159,7 @@ public class DatabaseViewer {
 
     public static void main(String[] args) throws IOException {
         DatabaseViewer dbv = new DatabaseViewer(); 
-        //dbv.viewBigrams();
-        //dbv.viewTrigrams();
-        dbv.view(trigram);
+        dbv.view(docInvertedIndex);
     }
 
 
