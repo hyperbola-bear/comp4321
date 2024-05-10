@@ -7,49 +7,52 @@ function showResults(response) {
   console.log("response", response);
   // Parse the response data
   // response = response.replace('"', '\"')
-  response = JSON.stringify(response);
+  // response = JSON.stringify(response);
   response = JSON.parse(response);
-  response = JSON.parse(response); // not a duplication this is required
-  
+  console.log(typeof response);
+  console.log("response:", response);
+  // response = JSON.parse(response); // not a duplication this is required
+
   // Extract the search input and search results
-  response = {
-    input: response.input,
-    results: [
-      {
-        title: "title1",
-        url: "url1",
-        lastModified: "lastModified1",
-        size: "size1",
-        keywords: ["keyword1", "keyword2", "keyword3"],
-        children: ["child1", "child2", "child3"],
-        score : "0.5",
-      },
-      {
-        title: "title1",
-        url: "url1",
-        lastModified: "lastModified1",
-        size: "size1",
-        keywords: ["keyword1", "keyword2", "keyword3"],
-        children: ["child1", "child2", "child3"],
-        score: "0.6",
-      },
-      {
-        title: "title1",
-        url: "url1",
-        lastModified: "lastModified1",
-        size: "size1",
-        keywords: ["keyword1", "keyword2", "keyword3"],
-        children: ["child1", "child2", "child3"],
-        score: "0.7",
-      },
-    ],
-  };
+  // response = {
+  //   input: response.input,
+  //   results: [
+  //     {
+  //       title: "title1",
+  //       url: "url1",
+  //       lastModified: "lastModified1",
+  //       size: "size1",
+  //       keywords: ["keyword1", "keyword2", "keyword3"],
+  //       children: ["child1", "child2", "child3"],
+  //       score: "0.5",
+  //     },
+  //     {
+  //       title: "title1",
+  //       url: "url1",
+  //       lastModified: "lastModified1",
+  //       size: "size1",
+  //       keywords: ["keyword1", "keyword2", "keyword3"],
+  //       children: ["child1", "child2", "child3"],
+  //       score: "0.6",
+  //     },
+  //     {
+  //       title: "title1",
+  //       url: "url1",
+  //       lastModified: "lastModified1",
+  //       size: "size1",
+  //       keywords: [["keyword1", freq1], "keyword2", "keyword3"],
+  //       children: ["child1", "child2", "child3"],
+  //       score: "0.7",
+  //     },
+  //   ],
+  // };
 
   //test section
   var size = response.results.length;
+  console.log(size);
   for (var i = 0; i < size; i++) {
-    var container = $(`<div>${response.input}</div>`);
-    var title = response.results[i].title
+    var container = $(`<div></div>`);
+    var title = response.results[i].title;
     var url = response.results[i].url;
     var lastModifiedDate = response.results[i].lastModified;
     var sizeofPage = response.results[i].size;
@@ -61,18 +64,18 @@ function showResults(response) {
     entrycontainer.append(lastModnSize);
     entrycontainer.append([pageUrl]);
     var keywords = $(`<div>`);
-    var keywordArray = response.results[i].keywords;
-    var keywordCount = response.results[i].keywords.length;
+    var keywordArray = response.results[i].wordFrequencies;
+    var keywordCount = keywordArray.length;
     for (var j = 0; j < keywordCount; j++) {
-      keywords.append(keywordArray[j] + ": " + keywordArray[j]);
+      keywords.append(keywordArray[j].word + ": " + keywordArray[j].frequency);
       if (j != keywordCount - 1) {
         keywords.append(";");
       }
     }
     keywords.append(`</div>`);
     entrycontainer.append(keywords);
-    var childlinks = response.results[i].children.length;
-    childUrl = response.results[i].children;
+    var childlinks = response.results[i].childLinks.length;
+    var childUrl = response.results[i].childLinks;
     for (var j = 0; j < childlinks; j++) {
       var childlink = $(`<div>${childUrl[j]}</div>`);
       entrycontainer.append(childlink);
@@ -81,8 +84,8 @@ function showResults(response) {
     var scorecontainer = $(`<div> score: ${score}</div>`);
     entrycontainer.append(scorecontainer);
     container.append(entrycontainer);
+    $("#searchResults").append(container);
   }
-  $("#searchResults").append(container);
 }
 
 // Attach event handler for "show more" button

@@ -138,6 +138,9 @@
     long trigramid = recman.getNamedObject("trigram");
     HTree trigram = HTree.load(recman, trigramid);
 
+    long metadataid = recman.getNamedObject("metadata");
+    HTree metadata = HTree.load(recman, metadataid);
+
     
 
     //Posting posting = new Posting(1,1);
@@ -158,20 +161,55 @@
     bigram,
     trigram,
     recman,
-    idToWordid);
+    idToWordid
+    );
 
     Vector<Vector<Object>> result = se.query(input);
     StringBuilder sb = new StringBuilder();
-    sb.append("{\"input\":");
-    sb.append("\"" + input + "\",");
-    sb.append("\"results\":[");
-    for (int i = 0; i < result.size(); i++) {
+    sb.append("{\"results\":[");
+    for (int i = 0; i < result.size() && i < 50; i++) {
+        Object docId = result.get(i).get(0);
+        String url = String.valueOf(idToUrl.get(result.get(i).get(0))); 
         sb.append("{");
         sb.append("\"url\":");
         sb.append("\"" +String.valueOf(idToUrl.get(result.get(i).get(0)) + "\","));
         sb.append("\"score\":");
         sb.append(result.get(i).get(1));
-        //sb.append(",");
+        sb.append(",");
+        Container data = (Container) metadata.get(url);
+        Vector<String> childLinks = data.childLinks;
+        int size = data.pageSize;
+        long lastModified = data.lastModificationDate;
+        Vector<String> title = data.title;        
+        Vector<Posting> wordFrequencies = (Vector<Posting>) forwardindex.get(docId);
+        sb.append("\"size\":" + "\"" + String.valueOf(size) + "\"" + ",");
+        sb.append("\"lastModified\":" + "\"" + String.valueOf(lastModified) + "\"" + ",");
+        String titleString = "";
+        for (String s : title) {
+            titleString += s;
+        }
+        sb.append("\"title\":" + "\"" + titleString + "\"" + ",");
+        sb.append("\"childLinks\":[");
+        for (int j = 0; j < childLinks.size(); j++) {
+            sb.append("\"" + childLinks.get(j) + "\"");
+            if (j != childLinks.size() - 1) {
+                sb.append(",");
+            }
+        }
+        sb.append("],");
+        sb.append("\"wordFrequencies\":[");
+        for (Posting wordFrequency : wordFrequencies) {
+            sb.append("{");
+            sb.append("\"word\":");
+            sb.append("\"" + idToWord.get(wordFrequency.id) + "\"");
+            sb.append(",");
+            sb.append("\"frequency\":");
+            sb.append(wordFrequency.freq);
+            sb.append("},");
+
+        }
+        sb.deleteCharAt(sb.length()-1);
+        sb.append("]");
         sb.append("}");
         if (i != result.size() - 1) {
             sb.append(",");
